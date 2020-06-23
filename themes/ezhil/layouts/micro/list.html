@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header.html" . }}
+
+<body>
+	<div class="container wrapper list">
+		{{ partial "head.html" . }}
+
+		{{ if isset .Data "Term" }}
+			<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+		{{ else }}
+			<h1 class="page-title">Micro Posts</h1>
+		{{ end }}
+
+        <br>
+		{{ with .Content }}{{ . }}{{ end }}
+
+		<div class="posts">
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "micro") }}
+            {{ range $paginator.Pages }}
+			<div class="post">
+                <div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+                {{.Content}}
+                <div align=right><a href="{{.RelPermalink}}">Permalink</a></div>
+                <hr>
+			</div>
+			{{- end -}}
+            {{ template "partials/paginator.html" . }}
+		</div>
+	</div>
+
+	{{ partial "footer.html" . }}
+</body>
+
+</html>
