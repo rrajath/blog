@@ -13,7 +13,7 @@ hugo -t ezhil # if using a theme, replace with `hugo -t <YOURTHEME>`
 # or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.
 # In order to make this script work properly, the public folder that is generated is copied to the repo outside
 # this folder and then committed and pushed
-cp -r public ../rrajath.github.io
+cp -r public/* ../rrajath.github.io
 
 # Go To Public folder
 cd ../rrajath.github.io
