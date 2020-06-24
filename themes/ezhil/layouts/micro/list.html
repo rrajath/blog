@@ -19,7 +19,7 @@
             {{ $paginator := .Paginate (where .Data.Pages "Type" "micro") }}
             {{ range $paginator.Pages }}
 			<div class="post">
-                <div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+                <div class="meta u-url">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
                 {{.Content}}
                 <div align=right><a href="{{.RelPermalink}}">Permalink</a></div>
                 <hr>
