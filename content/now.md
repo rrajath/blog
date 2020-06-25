@@ -10,14 +10,13 @@ type: now
 * [Building a second brain](https://maggieappleton.com/basb/)
 * [The Society of Mind](https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135)
 
+### Projects
+* Trying to set up micropub on my website
+* Self-hosting my data using Nextcloud on my Raspberry Pi
+
 ### Health
 * Working out at home
 * Meditating
-
-### Projects
-* Moved my blog from Jekyll to Hugo and now customizing some templates
-* IndieWeb integration
-* Self-hosting my data using Nextcloud on my Raspberry Pi
 
 ### What else?
 * Playing chess, a lot
