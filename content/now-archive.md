@@ -9,3 +9,4 @@ This page contains everything that was moved from the [Now page](https://rrajath
 #### Jun 24, 2020
 * Moved my blog from Jekyll to Hugo and now customizing some templates
 * Indieweb integration
+* Self-hosting my data using Nextcloud on my Raspberry Pi
