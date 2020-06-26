@@ -17,14 +17,16 @@
 				{{ range $paginator.Pages }}
 				<div class="post">
 					<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
-					<a class="title u-url" href="{{ .RelPermalink }}">{{.Title}}</a> &mdash;
-					<span class="description">
-						{{ if isset .Params "description" }}
-						{{ .Description }}
-						{{ else }}
-						{{ .Summary }}&hellip;
-						{{ end }}
-					</span>
+                    <a class="title u-url" href="{{ .RelPermalink }}"><font size="+2">{{.Title}}</font></a> 
+                    <div>
+					    <span class="description">
+						    {{ if isset .Params "description" }}
+						    {{ .Description }}
+						    {{ else }}
+						    {{ .Summary }}&hellip;
+						    {{ end }}
+					    </span>
+                    </div>
 				</div>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
