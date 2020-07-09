@@ -106,3 +106,4 @@ url = "https://linkedin.com/in/rrajath"
 # Enable tags.
 [taxonomies]
    tag = "tags"
+   series = "series"
