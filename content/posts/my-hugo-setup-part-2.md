@@ -1,6 +1,7 @@
 ---
 title: "My Hugo Setup Part 2"
 date: 2020-07-05T22:16:04-07:00
+series: ["hugo-setup"]
 tags:
 - hugo
 - 100DaysToOffload

@@ -1,6 +1,7 @@
 ---
 title: "My Hugo Setup"
 date: 2020-06-29T22:32:42-07:00
+series: ["hugo-setup"]
 tags: [hugo, 100DaysToOffload]
 ---
 I recently moved my blog to Hugo and [wrote a brief post about it](https://rrajath.com/posts/moving-to-hugo/). This post explains how I selected a theme and how I made the modifications I needed.

@@ -12,7 +12,12 @@
 		</div>
 
 		<div class="markdown">
+			{{if .Params.series}}
+  				{{ $name := index .Params.series 0 }}
+  				<p class="series_top_page" style="font-weight:50; background-color:#333"><i>This post is part of the <a href="{{.Site.BaseURL}}/series/{{$name | urlize}}">{{$name}}</a> series.</i></p>
+			{{end}}
 			{{ .Content }}
+			{{ partial "series_links.html" . }}
 		</div>
 
 		<div class="post-tags">
