@@ -7,12 +7,12 @@ type: now
 ### Reading
 * [Digital Minimalism](https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy-ebook/dp/B07DBRBP7G)
 * [What to write down when you're reading to learn](https://acesounderglass.com/2020/06/10/what-to-write-down-when-youre-reading-to-learn/)
-* [Building a second brain](https://maggieappleton.com/basb/)
+* [Hammertime](https://www.lesswrong.com/s/qRxTKm7DAftSuTGvj/p/QzBuuNEqJGQFeWM4f)
+* [Sum: Forty Tales from the Afterlives](https://www.goodreads.com/book/show/4948826-sum?ac=1&from_search=true&qid=4nUZPNXCOw&rank=1)
 * [The Society of Mind](https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135)
 
 ### Projects
 * Trying to set up micropub on my website
-* Self-hosting my data using Nextcloud on my Raspberry Pi
 
 ### Health
 * Working out at home
