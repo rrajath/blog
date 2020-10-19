@@ -6,6 +6,10 @@ type: now
 ---
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
+### Oct 18, 2020
+* Setting up a sustainable sync for my org files on my phone and laptop (since Orgzly is a bit of a pain when it comes to this)
+* Learning Emacs and org-mode. Loving it
+
 ### Aug 29, 2020
 * [What to write down when you're reading to learn](https://acesounderglass.com/2020/06/10/what-to-write-down-when-youre-reading-to-learn/)
 

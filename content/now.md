@@ -12,14 +12,14 @@ type: now
 
 ### Projects
 * Setting up a Digital Garden
-* Setting up a sustainable sync for my org files on my phone and laptop (since Orgzly is a bit of a pain when it comes to this)
+* Building a Zettelkasten
 
 ### Health
 * Working out at home
 * Meditating
 
 ### What else?
-* Learning Emacs and org-mode. Loving it
+* Found out about Literate Programming. In the process of converting my configs into READMEs with tangled code blocks
 
 ---
-##### Visit the [Now Archive](https://rrajath.com/now-archive) to check out things that used to be on this page
+##### Visit the [Now Archive](/now-archive) to check out things that used to be on this page
