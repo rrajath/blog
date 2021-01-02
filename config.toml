@@ -91,11 +91,6 @@ name = "Now"
 url = "/now"
 weight = 6
 
-[[menu.main]]
-name = "Knowledge"
-url = "/knowledge"
-weight = 7
-
 # Social media links which shows up on site header.
 # Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
 [[params.social]]
