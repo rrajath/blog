@@ -1,7 +1,12 @@
 ---
 title: "2020 - Year in Review"
+categories:
+- annual-review
+tags:
+- annual-review
+- 2020
+aliases: [/annual-review/2020-year-in-review/]
 date: 2021-01-01T20:30:59-08:00
-draft: true
 ---
 
 2020 has been quite a year for all of us and I don't want to get into the long list of things that have shook us this year. We're still resilient and stand strong even though we experience some of the most horrific events we're thrown into. I'm grateful for being privileged enough in terms of health, career, etc. This year hasn't been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.
