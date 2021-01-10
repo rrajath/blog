@@ -5,7 +5,6 @@ tags:
 - whatsapp
 - signal
 - privacy
-draft: true
 ---
 
 I've been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I'd uninstall it because I didn't really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn't have a feature to filter texts by keyword made me not use it as an SMS app either.
