@@ -6,6 +6,11 @@ type: now
 ---
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
+### Jan 9, 2021
+* Adding more blog posts
+* Configured some YASnippets on my Emacs
+* Added a bunch of dotfiles as literate configs
+
 ### Oct 18, 2020
 * Setting up a sustainable sync for my org files on my phone and laptop (since Orgzly is a bit of a pain when it comes to this)
 * Learning Emacs and org-mode. Loving it
