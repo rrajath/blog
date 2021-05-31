@@ -5,7 +5,7 @@ type: now
 ---
 
 ### Reading
-* [Digital Minimalism](https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy-ebook/dp/B07DBRBP7G)
+* [The Elephant in the Brain](https://www.amazon.com/The-Elephant-in-Brain-audiobook/dp/B07H8K4G9G)
 * [Hammertime](https://www.lesswrong.com/s/qRxTKm7DAftSuTGvj/p/QzBuuNEqJGQFeWM4f)
 * [Sum: Forty Tales from the Afterlives](https://www.goodreads.com/book/show/4948826-sum?ac=1&from_search=true&qid=4nUZPNXCOw&rank=1)
 * [LessWrong Book Set](https://www.lesswrong.com/books)
@@ -18,12 +18,10 @@ type: now
 * Meditating
 
 ### Learning
-* GraphQL
-* NodeJS
 * Typescript
 
 ### What else?
-* Playing Super Mario Bros and Overcooked 2 on my Nintendo Switch I recently bought
+* Doing a lot of home automation with Home Assistant on RPi, a bunch of zwave and zigbee devices
 
 ---
 ##### Visit the [Now Archive](/now-archive) to check out things that used to be on this page

@@ -6,6 +6,9 @@ type: now
 ---
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
+### May 30, 2021
+* Finished reading The Great Mental Models Vol. 1
+
 ### Jan 9, 2021
 * Adding more blog posts
 * Configured some YASnippets on my Emacs
