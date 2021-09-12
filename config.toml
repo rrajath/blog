@@ -21,6 +21,9 @@ paginate = 10
 # Number of characters to show in summary.
 summaryLength = 20
 
+# RSS Config
+rssLimit = 20
+
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
     subtitle = "random ramblings"
