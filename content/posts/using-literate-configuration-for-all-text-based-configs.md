@@ -1,8 +1,9 @@
 +++
 title = "Using literate configuration for all text-based configs"
 author = ["Rajath Ramakrishna"]
-lastmod = 2021-09-17T21:18:22-07:00
-draft = true
+date = 2021-09-17T21:22:00-07:00
+lastmod = 2021-09-17T21:22:16-07:00
+draft = false
 +++
 
 Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it's even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.
