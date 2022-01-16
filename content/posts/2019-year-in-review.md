@@ -8,6 +8,7 @@ tags:
 - annual-review
 - 2019
 title: 2019 in Review
+series: ["year-in-review"]
 ---
 
 Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went. This time I categorized my activities and personal growth into 3 sections - things I did more of, things I did less of, things I explored. Let's begin!
