@@ -7,6 +7,7 @@ tags:
 - annual-review
 - 2018
 title: 2018 in Review
+series: ["year-in-review"]
 ---
 2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments. I have been following James Clear and Tim Ferris for a long time now and [their posts](https://jamesclear.com/2018-annual-review) about [past year review](https://tim.blog/2018/12/28/past-year-review/) have been the inspiration behind this blog post.
 

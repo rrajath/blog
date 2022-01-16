@@ -6,6 +6,7 @@ tags:
 - 2015
 - lessons
 title: 2015 - Lessons Learned
+series: ["year-in-review"]
 ---
 I saw a couple of posts about what people did in 2015 ([this](https://medium.com/@vanschneider/my-2015-the-year-of-change-e90c71a50a1e#.lxzac07mb) and [this](http://blog.fogus.me/2015/12/29/the-best-things-and-stuff-of-2015/)) that inspired me to write my own. While both posts go in good detail about what they accomplished, my post kind of does the opposite. Mine is more about me reflecting on what I had planned to do, what I did and what I didn't do, and lessons learned during that. And
 new year is a good time to look back on how the past one year went; how productive/lazy you were, how committed/easy going you were.
