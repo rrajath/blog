@@ -11,7 +11,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 # Enable relative URLs
-relURLs = true
+relativeURLs = true
 
 # Your Google analytics code.
 # googleAnalytics = "UA-123-45"
