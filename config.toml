@@ -10,6 +10,9 @@ pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+# Enable relative URLs
+relURLs = true
+
 # Your Google analytics code.
 # googleAnalytics = "UA-123-45"
 # Your Disqus sortname.
