@@ -5,23 +5,24 @@ type: now
 ---
 
 ### Reading
-* [The Elephant in the Brain](https://www.amazon.com/The-Elephant-in-Brain-audiobook/dp/B07H8K4G9G)
-* [Hammertime](https://www.lesswrong.com/s/qRxTKm7DAftSuTGvj/p/QzBuuNEqJGQFeWM4f)
-* [Sum: Forty Tales from the Afterlives](https://www.goodreads.com/book/show/4948826-sum?ac=1&from_search=true&qid=4nUZPNXCOw&rank=1)
+* [The Beginning of Infinity](https://www.goodreads.com/book/show/10483171-the-beginning-of-infinity)
 * [LessWrong Book Set](https://www.lesswrong.com/books)
+
+### Watching
+* [Awakening from the Meaning Crisis](https://www.youtube.com/watch?v=54l8_ewcOlY&list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ)
 
 ### Projects
 * Building a Zettelkasten
 
 ### Health
-* Working out at home
+* Bouldering, Muay Thai and Workouts
 * Meditating
 
 ### Learning
-* Typescript
+* Systems Thinking
 
 ### What else?
-* Doing a lot of home automation with Home Assistant on RPi, a bunch of zwave and zigbee devices
+* [Configuring emacs](https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org)
 
 ---
 ##### Visit the [Now Archive](/now-archive) to check out things that used to be on this page
