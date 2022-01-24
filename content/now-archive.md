@@ -6,6 +6,9 @@ type: now
 ---
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
+### Jan 23, 2022
+* [Sum: Forty Tales from the Afterlives](https://www.goodreads.com/book/show/4948826-sum?ac=1&from_search=true&qid=4nUZPNXCOw&rank=1)
+
 ### May 30, 2021
 * Finished reading The Great Mental Models Vol. 1
 
