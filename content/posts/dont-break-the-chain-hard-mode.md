@@ -2,7 +2,7 @@
 title = "Don't break the chain - hard mode"
 author = ["Rajath Ramakrishna"]
 date = 2022-01-24T22:45:00-08:00
-lastmod = 2022-01-24T22:45:34-08:00
+lastmod = 2022-01-24T22:53:12-08:00
 draft = false
 +++
 
