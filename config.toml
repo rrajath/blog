@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "Rajath Ramakrishna"
 theme = "ezhil"
@@ -9,9 +9,6 @@ copyright = "© Copyright notice"
 pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-# Enable relative URLs
-relURLs = true
 
 # Your Google analytics code.
 # googleAnalytics = "UA-123-45"
