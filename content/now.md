@@ -1,7 +1,7 @@
 +++
 title = "Now"
 author = ["Rajath Ramakrishna"]
-lastmod = 2022-06-26T13:24:16-07:00
+lastmod = 2022-06-26T13:28:24-07:00
 draft = false
 +++
 
@@ -35,4 +35,4 @@ draft = false
 ---
 
 
-#### Visit the [Now Archive](/now-archive) to check out things that used to be on this page {#visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page}
+#### This is a Now page, based on the [concept by Derek Sivers](https://sivers.org/nowff). Visit [nownownow.com](https://nownownow.com) for more inspiration. Visit the [Now Archive](/now-archive) to check out things that used to be on this page {#this-is-a-now-page-based-on-the-concept-by-derek-sivers-dot-visit-nownownow-dot-com-for-more-inspiration-dot-visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page}
