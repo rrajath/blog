@@ -1,14 +1,16 @@
 +++
 title = "Now"
 author = ["Rajath Ramakrishna"]
-lastmod = 2022-06-26T13:28:24-07:00
+lastmod = 2022-07-31T23:34:00-07:00
 draft = false
 +++
 
 ## Reading {#reading}
 
 -   [Code](https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2)
--   [Effective TypeScript](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve-ebook/dp/B07Z8HRZZ3)
+-   [Flow](https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202)
+-   [Effective TypeScript](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve-ebook/dp/B07Z8HRZZ3) (on hold)
+-   [Clean Architecture](https://a.co/d/8G4c6OO) (on hold)
 
 
 ## Watching {#watching}
