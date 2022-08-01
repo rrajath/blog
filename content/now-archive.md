@@ -1,13 +1,18 @@
 +++
 title = "Now Archive"
 author = ["Rajath Ramakrishna"]
-lastmod = 2022-06-26T13:23:06-07:00
+lastmod = 2022-07-31T23:33:38-07:00
 draft = false
 +++
 
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
 ---
+
+
+## Jul 31, 2022 {#jul-31-2022}
+
+-   [Building a Second Brain](https://www.amazon.com/dp/B09LVVN9L3/ref=cm_sw_r_cp_api_ADKEAC3M8TS8DNTXXCEN)
 
 
 ## Jun 26, 2022 {#jun-26-2022}
