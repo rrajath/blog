@@ -8,6 +8,9 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo -t ezhil # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+# git push committed changes in existing folder
+git push origin master
+
 # Copy public folder to the repo outside the submodule
 # The issue is, submodule does not get updated when running this script either because of incorrect setup 
 # or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.
