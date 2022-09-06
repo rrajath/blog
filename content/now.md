@@ -1,21 +1,20 @@
 +++
 title = "Now"
 author = ["Rajath Ramakrishna"]
-lastmod = 2022-07-31T23:34:00-07:00
+lastmod = 2022-09-05T21:51:34-07:00
 draft = false
 +++
 
 ## Reading {#reading}
 
 -   [Code](https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2)
--   [Flow](https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202)
--   [Effective TypeScript](https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve-ebook/dp/B07Z8HRZZ3) (on hold)
--   [Clean Architecture](https://a.co/d/8G4c6OO) (on hold)
+-   [Immune](https://www.amazon.com/dp/B08XTNHRR5)
+-   [Self-Sovereign Identity](https://www.amazon.com/dp/B098PGCSXT/ref=cm_sw_r_cp_api_5GVD160NQV7KHC41TVXT)
 
 
 ## Watching {#watching}
 
--   [Awakening from the Meaning Crisis](https://www.youtube.com/watch?v=54l8_ewcOlY&list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ) (12 episodes in)
+-   [Awakening from the Meaning Crisis](https://www.youtube.com/watch?v=54l8_ewcOlY&list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ) (16 episodes in)
 
 
 ## Projects {#projects}
@@ -26,6 +25,7 @@ draft = false
 ## Health {#health}
 
 -   Working out
+-   Running
 -   Meditating
 
 
