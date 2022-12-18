@@ -1,9 +1,8 @@
 +++
 title = "Colored Kindle Highlights"
 author = ["Rajath Ramakrishna"]
-date = 2022-11-12T12:58:00-08:00
-publishDate = 2022-11-15T00:00:00-08:00
-lastmod = 2022-11-12T12:58:11-08:00
+date = 2022-12-17T18:29:00-08:00
+lastmod = 2022-12-17T18:29:08-08:00
 draft = false
 +++
 
