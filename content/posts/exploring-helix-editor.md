@@ -2,7 +2,7 @@
 title = "Exploring Helix Editor"
 author = ["Rajath Ramakrishna"]
 date = 2022-12-25T23:10:00-08:00
-lastmod = 2022-12-25T23:10:41-08:00
+lastmod = 2022-12-25T23:13:04-08:00
 draft = false
 +++
 
