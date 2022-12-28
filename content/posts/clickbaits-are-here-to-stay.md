@@ -2,7 +2,7 @@
 title = "Clickbaits are here to stay"
 author = ["Rajath Ramakrishna"]
 date = 2022-12-27T22:43:00-08:00
-lastmod = 2022-12-27T22:43:11-08:00
+lastmod = 2022-12-27T22:44:12-08:00
 tags = ["clickbait"]
 draft = false
 +++
