@@ -3,12 +3,12 @@
 {{ partial "header.html" . }}
 <body>
     <article class="h-entry">
-	<div class="container wrapper post e-content p-name">
+	<div class="container wrapper post e-content p-name" data-pagefind-body>
 		{{ partial "head.html" . }}
 
 		<div class="post-header">
 			<h1 class="title">{{ .Title }}</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="{{ .Permalink }}"><time class="dt-published">{{ dateFormat "Jan 2, 2006" .Date }}</time></a></div> 
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="{{ .Permalink }}"><time class="dt-published" data-pagefind-meta="date">{{ dateFormat "Jan 2, 2006" .Date }}</time></a></div> 
 		</div>
 
 		<div class="markdown">
