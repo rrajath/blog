@@ -1,9 +1,9 @@
 +++
 title = "Make Helix use your workspace prettier config"
 author = ["Rajath Ramakrishna"]
-date = 2023-01-08T18:27:00-08:00
+date = 2023-01-09T13:25:00-08:00
 publishDate = 2023-01-09T00:00:00-08:00
-lastmod = 2023-01-08T18:27:41-08:00
+lastmod = 2023-01-09T13:25:14-08:00
 draft = false
 +++
 
