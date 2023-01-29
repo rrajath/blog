@@ -1,8 +1,8 @@
 +++
-title = "The pointlessness of a Mac Dockbar"
+title = "The pointlessness of the Mac Dockbar"
 author = ["Rajath Ramakrishna"]
 date = 2023-01-28T20:59:00-08:00
-lastmod = 2023-01-28T21:00:04-08:00
+lastmod = 2023-01-28T23:39:49-08:00
 tags = ["rant"]
 draft = false
 +++
