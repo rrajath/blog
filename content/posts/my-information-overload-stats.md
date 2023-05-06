@@ -1,8 +1,9 @@
 +++
 title = "My information overload stats"
 author = ["Rajath Ramakrishna"]
-lastmod = 2023-05-01T21:27:14-07:00
-draft = true
+date = 2023-05-05T20:49:00-07:00
+lastmod = 2023-05-05T20:49:47-07:00
+draft = false
 +++
 
 I’m no stranger to consuming information on my phone, computer, iPad, etc. I consume them in various forms - text (with newsletters, RSS feeds, read it later services), audio (with podcasts) and video (YouTube). I quit social media several years ago and I’ve always felt good that I don’t spend hours and hours scrolling through my feed on websites like Facebook, Instagram, etc. And my YouTube subscriptions are most educational anyway.
