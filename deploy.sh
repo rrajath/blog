@@ -8,6 +8,9 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo -t ezhil # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+# Run pagefind to update search indexes
+npx pagefind --source public
+
 # git push committed changes in existing folder
 git push origin master
 
