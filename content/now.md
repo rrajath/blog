@@ -1,7 +1,7 @@
 +++
 title = "Now"
 author = ["Rajath Ramakrishna"]
-lastmod = 2024-08-24T21:25:29-07:00
+lastmod = 2024-08-24T21:42:37-07:00
 draft = false
 +++
 
@@ -17,6 +17,7 @@ draft = false
 ### Health {#health}
 
 -   Working out
+-   Meditating
 
 
 ### Learning {#learning}
