@@ -1,2 +1,2 @@
-source: public
-bundle_dir: pagefind
+site: public
+output_dir: pagefind
