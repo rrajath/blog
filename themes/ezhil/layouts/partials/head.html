@@ -1,34 +1,108 @@
 <div class="header">
-	<base href="{{ .Site.BaseURL }}">
-	<h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-	<div class="site-description">
-		{{- if isset .Site.Params "subtitle" -}}
-		<h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
+  <base href="{{ .Site.BaseURL }}">
+  <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  <div class="site-description">
+	{{- if isset .Site.Params "subtitle" -}}
+	<h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
+	{{- end -}}
+	<nav class="nav social">
+	  <ul class="flat">
+		{{- range $index, $key := .Site.Params.Social -}}
+		<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
 		{{- end -}}
-		<nav class="nav social">
-			<ul class="flat">
-				{{- range $index, $key := .Site.Params.Social -}}
-				<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-				{{- end -}}
-			</ul>
-		</nav>
-	</div>
+	  </ul>
+	</nav>
+  </div>
 
-	<nav class="nav">
-		<ul class="flat">
-			{{ range .Site.Menus.main }}
-			<li>
-				<a href="{{ .URL }}">{{ .Name }}</a>
-			</li>
-			{{ end }}
-			<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-			<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
-			<div id="search"></div>
-			<script>
+  <nav class="nav">
+	<ul class="flat" style="display: flex; align-items: center; width: 100%;">
+	  {{ range .Site.Menus.main }}
+	  <li>
+		<a href="{{ .URL }}">{{ .Name }}</a>
+	  </li>
+	  {{ end }}
+	  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+	  <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+      <!-- CSS Styles -->
+      <style>
+        /* 1. Pagefind Dark Mode Overrides */
+        :root {
+            --pagefind-ui-text: #eeeeee;
+            --pagefind-ui-background: #111111; 
+            --pagefind-ui-border: #333333;
+        }
+        
+        /* 2. Search Input Styling */
+        .pagefind-ui__search-input {
+            background-color: transparent !important;
+            border: 0 !important;
+            border-bottom: 2px solid #ff7979 !important;
+            border-radius: 0 !important;
+            padding-left: 2.5rem !important;
+            color: white !important;
+            font-size: 1rem;
+        }
+        
+        /* --- FIX: REMOVE FOCUS OUTLINE --- */
+        .pagefind-ui__search-input:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border-bottom: 2px solid #a00 !important; /* Keeps your custom underline */
+        }
+        
+        .pagefind-ui__search-clear {
+            background-color: transparent !important;
+        }
+        
+        /* 3. LAYOUT FIXES (Nav & Search Bar) */
+        .nav { width: 100%; display: block; }
+        .nav .flat { display: flex; align-items: center; width: 100%; margin: 0; padding: 0; }
+        .nav .flat li { margin-right: 15px; list-style: none; }
+        
+        /* Push search to the right */
+        li.search-wrap {
+            margin-left: auto !important; 
+            display: flex;
+            align-items: center;
+            position: relative; /* Establishes a reference point for the results */
+        }
+        
+        /* Constrain the INPUT width */
+        #search {
+            width: 200px;
+            margin-top: -4px;
+        }
+        
+        /* 4. RESULTS DRAWER FIX (The "Breakout") */
+        .pagefind-ui__drawer {
+            position: absolute !important;
+            left: auto !important;
+            right: 0 !important; /* Anchor the right edge to the search bar */
+            top: 100% !important; /* Push it down below the bar */
+                            
+            /* Make it wide, but responsive */
+            width: 85vw !important; /* 85% of viewport width on small screens */
+            max-width: 600px !important; /* Cap it at 600px on desktop */
+                            
+            z-index: 9999 !important; /* Ensure it floats ON TOP of your page content */
+                            
+            /* Visuals for the dropdown box */
+            background-color: #000000 !important; /* Solid black background so page text doesn't bleed through */
+            border: 1px solid #333 !important;
+            box-shadow: 0 10px 20px rgba(0,0,0, 0.9) !important;
+            padding: 10px !important;
+            border-radius: 4px !important;
+        }
+      </style>
+	  <!-- WRAPPED IN LI TAG -->
+	  <li class="search-wrap">
+		<div id="search"></div>
+	  </li>
+	  <script>
 				window.addEventListener('DOMContentLoaded', (event) => {
 					new PagefindUI({element: "#search"});
 				});
-			</script>
-		</ul>
-	</nav>
+	  </script>
+	</ul>
+  </nav>
 </div>

@@ -2,7 +2,7 @@
 title = "A better Back to Indentation in Emacs"
 author = ["Rajath Ramakrishna"]
 date = 2025-01-17T16:23:00-08:00
-lastmod = 2025-01-17T16:23:58-08:00
+lastmod = 2026-01-15T09:22:02-08:00
 draft = false
 +++
 
