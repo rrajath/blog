@@ -1,13 +1,75 @@
 +++
 title = "Now Archive"
 author = ["Rajath Ramakrishna"]
-lastmod = 2022-09-05T21:51:51-07:00
+lastmod = 2026-01-15T21:44:52-08:00
 draft = false
 +++
 
 This page contains everything that was moved from the [Now page](https://rrajath.com/now/)
 
 ---
+
+
+## Aug 24, 2024 {#aug-24-2024}
+
+
+### Reading {#reading}
+
+-   [Clear Thinking: Turning Ordinary Moments into Extraordinary Results](https://www.amazon.com/Clear-Thinking-Turning-Ordinary-Extraordinary/dp/B0BVP84J94?crid=1LIVX2T8T2WMY&dib=eyJ2IjoiMSJ9.IVDv8d6zei_6tBZWVKMvzd20A-aK02Y9L_tLittFG6NL7lzttUEi2qxRigwkOz4om7E41PqIq2BSclZnzoS0RR2qvnKep7ft8mCBNT-2SDhr3e6Gj3SrE4Z7hvuT9b4OPuk4TFCe8QpmT4o1LX0NQXkl3oozKhtx8JTeCNvUsbHQzNOJm_YSglRqj0AzBEzOGXvLV2qN5PbsHREmbI6gsmigrs6G35hjWdwMES2z7G8.sRXphyX3mi3ouWg25abP3DBV6a64gwuopDGlLW7B3Vw&dib_tag=se&keywords=clear+thinking+shane+parrish&qid=1724559730&sprefix=clear+thinking,aps,164&sr=8-1)
+-   [A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](https://www.amazon.com/Brief-History-Intelligence-Humans-Breakthroughs/dp/B0BCC76563?crid=17NB05VAG7XLW&dib=eyJ2IjoiMSJ9.DBmhWFwRVO0JHcBuVdZ6RNGf_tPhfP15JqBC87hDadeRSv7bFVrZWb8QOCfA-nRwqfJ90hap37eBAigH9F_tcBe3sJw8dEmeeEcUpQSquxcJJh_a3S1mi5mIk5YBxLKZhA-C5zfoJKfLgolxcA5XSSjr2LX4Sb9_L_NCgX_--cG_qUKq0MYCBFGaIj_zKVxrCRAyt6B0f8M_YonBX0iH-UUdCMvbGZ1na8Vv3U5rASk.g79-IJzwvcUh_PMwph2Mf51ZOH47DpJTITaQUFVPQyo&dib_tag=se&keywords=a+brief+history+of+intelligence+book&qid=1724559778&sprefix=a+brief+history+of+intell,aps,144&sr=8-1)
+
+
+### Health {#health}
+
+-   Working out
+-   Meditating
+
+
+### Learning {#learning}
+
+-   Guitar
+    -   Nothing Else Matters - Metallica
+    -   Mellowing - All Them Witches
+    -   Breathe - Pink Floyd
+-   Drawing
+
+
+## Aug 24, 2022 {#aug-24-2022}
+
+
+### Reading {#reading}
+
+-   [Self-Sovereign Identity](https://www.amazon.com/dp/B098PGCSXT/ref=cm_sw_r_cp_api_5GVD160NQV7KHC41TVXT)
+-   [Thinking in Bets](https://www.amazon.com/gp/aw/d/B074DG9LQF)
+-   [Code](https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2)
+
+
+### Watching {#watching}
+
+-   [Awakening from the Meaning Crisis](https://www.youtube.com/watch?v=54l8_ewcOlY&list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ) (16 episodes in)
+
+
+### Projects {#projects}
+
+-   Building split ergo mech keyboards (built a corne choc, a microdox bud mx and a 3x5 cantor so far)
+
+
+### Health {#health}
+
+-   Working out
+-   Running
+-   Meditating
+
+
+### Learning {#learning}
+
+-   NextJs
+-   Building keyboards, soldering, debugging
+
+
+## Sep 22, 2022 {#sep-22-2022}
+
+-   [Immune](https://www.amazon.com/dp/B08XTNHRR5)
 
 
 ## Sep 5, 2022 {#sep-5-2022}
