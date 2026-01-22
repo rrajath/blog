@@ -66,34 +66,29 @@ rssLimit = 20
 
 # Main menu which appears below site header.
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
 name = "All posts"
 url = "/posts"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 2
 
 [[menu.main]]
 name = "Micro"
 url = "/micro"
-weight = 4
+weight = 3
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 5
+weight = 4
 
 [[menu.main]]
 name = "Now"
 url = "/now"
-weight = 6
+weight = 5
 
 # Social media links which shows up on site header.
 # Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
