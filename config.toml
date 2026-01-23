@@ -102,14 +102,19 @@ name = "LinkedIn"
 icon = "linkedin"
 url = "https://linkedin.com/in/rrajath"
 
+[[params.social]]
+name = "Mastodon"
+icon = "link"
+url = "https://social.lol/rrajath"
+
 # Enable tags.
 [taxonomies]
-   tag = "tags"
-   series = "series"
+tag = "tags"
+series = "series"
 
 # Markdown renderer
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
