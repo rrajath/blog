@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on Rajath Ramakrishna</title>
-    <link>//localhost:1313/tags/thoughts/</link>
+    <link>/tags/thoughts/</link>
     <description>Recent content in Thoughts on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 30 May 2021 17:44:42 -0700</lastBuildDate><atom:link href="//localhost:1313/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 May 2021 17:44:42 -0700</lastBuildDate><atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Analysis Paralysis</title>
-      <link>//localhost:1313/posts/on-analysis-paralysis/</link>
+      <link>/posts/on-analysis-paralysis/</link>
       <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
       
-      <guid>//localhost:1313/posts/on-analysis-paralysis/</guid>
+      <guid>/posts/on-analysis-paralysis/</guid>
       <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
 &lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
 &lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Defaults on Rajath Ramakrishna</title>
-    <link>//localhost:1313/tags/defaults/</link>
+    <link>/tags/defaults/</link>
     <description>Recent content in Defaults on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/defaults/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="/tags/defaults/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App Defaults - 2025 Edition</title>
-      <link>//localhost:1313/posts/app-defaults-2025/</link>
+      <link>/posts/app-defaults-2025/</link>
       <pubDate>Thu, 22 Jan 2026 12:16:10 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/app-defaults-2025/</guid>
+      <guid>/posts/app-defaults-2025/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been seeing quite a lot of &lt;code&gt;/defaults&lt;/code&gt; posts where people post their defaults. The first post I found was from &lt;a href=&#34;https://www.neilmacy.co.uk/blog/app-defaults-2025&#34;&gt;Neil Macy&amp;rsquo;s blog&lt;/a&gt;. Most of the blog posts reference the podcast episode &lt;a href=&#34;https://listen.hemisphericviews.com/097&#34;&gt;Hemispheric Views 097 - Duel of the Defaults!&lt;/a&gt;, so I listened to the episode. Now, I have my own app defaults list and this one&amp;rsquo;s what I was using in 2025.&lt;/p&gt;
 &lt;p&gt;(You can find other people’s defaults &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;📬 Mail Client: web on desktop, &lt;a href=&#34;https://play.google.com/store/apps/details?id=ch.protonmail.android&#34;&gt;ProtonMail on Android&lt;/a&gt;&lt;br&gt;

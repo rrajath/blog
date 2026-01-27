@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graduation on Rajath Ramakrishna</title>
-    <link>//localhost:1313/tags/graduation/</link>
+    <link>/tags/graduation/</link>
     <description>Recent content in Graduation on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 10 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/graduation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/graduation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graduated :)</title>
-      <link>//localhost:1313/posts/graduation/</link>
+      <link>/posts/graduation/</link>
       <pubDate>Sat, 10 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/graduation/</guid>
+      <guid>/posts/graduation/</guid>
       <description>&lt;p&gt;Today I graduated with Masters in Computer Science from University of Illinois at Chicago. It&amp;rsquo;s been about two years since I came to this country and I had some really nice experiences working with my project mates, doing my internship, attending meetups and hackathons, spending sleepless nights working on projects and assignments while surviving on pizza, and sometimes coffee. Two years went by really fast. It feels like just yesterday I landed here. Done with college and now
 I&amp;rsquo;m going into a much more challenging phase of my life where I get to learn and innovate everyday. Will try my best to keep working on my hobby projects as and when I get time.&lt;/p&gt;
 </description>

@@ -2,406 +2,400 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/tags/emacs/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/title-about-vibecoding-an-emacs-package-for-journal-lookback/</loc>
-    <lastmod>2026-01-26T22:53:47-08:00</lastmod>
+    <loc>/posts/org-retro-journal/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
+    <loc>/posts/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/vibecoding/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
+    <loc>/tags/vibecoding/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/org-retro-journal/</loc>
-    <lastmod>2026-01-26T22:54:26-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/app-defaults-2025/</loc>
+    <loc>/posts/app-defaults-2025/</loc>
     <lastmod>2026-01-22T12:19:02-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/defaults/</loc>
+    <loc>/tags/defaults/</loc>
     <lastmod>2026-01-22T12:19:02-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/now-archive/</loc>
+    <loc>/now-archive/</loc>
     <lastmod>2026-01-15T21:44:52-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/now/</loc>
+    <loc>/now/</loc>
     <lastmod>2026-01-15T21:34:49-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/add-modeline-indicators-to-prodigy-in-emacs/</loc>
+    <loc>/posts/add-modeline-indicators-to-prodigy-in-emacs/</loc>
     <lastmod>2026-01-26T22:01:36-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/a-better-back-to-indentation-in-emacs/</loc>
+    <loc>/posts/a-better-back-to-indentation-in-emacs/</loc>
     <lastmod>2026-01-15T09:22:03-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-favorite-youtube-update/</loc>
+    <loc>/posts/my-favorite-youtube-update/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/continuous-self-improvement-tracking-progress-in-5-key-areas/</loc>
+    <loc>/posts/my-information-overload-stats/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-information-overload-stats/</loc>
+    <loc>/posts/muscle-memory-is-surprisingly-malleable/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/muscle-memory-is-surprisingly-malleable/</loc>
+    <loc>/posts/ditching-evil-for-meow/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/ditching-evil-for-meow/</loc>
+    <loc>/posts/stoicquotes-my-first-raycast-extension/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/stoicquotes-my-first-raycast-extension/</loc>
+    <loc>/posts/constraint-relaxation-as-a-mental-model/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/constraint-relaxation-as-a-mental-model/</loc>
+    <loc>/posts/every-day-is-a-knapsack-problem/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/every-day-is-a-knapsack-problem/</loc>
+    <loc>/posts/raycast-my-new-favorite-macos-app/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/raycast-my-new-favorite-macos-app/</loc>
+    <loc>/tags/rant/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/rant/</loc>
+    <loc>/posts/the-pointlessness-of-the-mac-dockbar/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/the-pointlessness-of-the-mac-dockbar/</loc>
+    <loc>/posts/switching-between-qwerty-and-colemak/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/switching-between-qwerty-and-colemak/</loc>
+    <loc>/posts/make-helix-use-your-workspace-prettier-config/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/make-helix-use-your-workspace-prettier-config/</loc>
+    <loc>/posts/2022-year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2022-year-in-review/</loc>
+    <loc>/series/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>/series/year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/year-in-review/</loc>
+    <loc>/micro/futurepedia/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/futurepedia/</loc>
+    <loc>/micro/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/</loc>
+    <loc>/tags/clickbait/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/clickbait/</loc>
+    <loc>/posts/clickbaits-are-here-to-stay/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/clickbaits-are-here-to-stay/</loc>
+    <loc>/posts/exploring-helix-editor/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/exploring-helix-editor/</loc>
+    <loc>/posts/colored-kindle-highlights/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/colored-kindle-highlights/</loc>
+    <loc>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</loc>
+    <loc>/posts/it-depends/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/it-depends/</loc>
+    <loc>/posts/my-beorg-to-blog-workflow/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-beorg-to-blog-workflow/</loc>
+    <loc>/posts/write-emails-from-bottom-to-top/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/write-emails-from-bottom-to-top/</loc>
+    <loc>/posts/dont-break-the-chain-hard-mode/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/dont-break-the-chain-hard-mode/</loc>
+    <loc>/posts/replacing-knee-jerk-reactions-with-new-learnings/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/replacing-knee-jerk-reactions-with-new-learnings/</loc>
+    <loc>/posts/2021-year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2021-year-in-review/</loc>
+    <loc>/posts/using-literate-configuration-for-all-text-based-configs/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/using-literate-configuration-for-all-text-based-configs/</loc>
+    <loc>/posts/my-experience-with-emacs-so-far/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-experience-with-emacs-so-far/</loc>
+    <loc>/micro/untools-tools-for-better-thinking/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/untools-tools-for-better-thinking/</loc>
+    <loc>/tags/orgmode/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/orgmode/</loc>
+    <loc>/posts/orgmode-tips-tricks/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/orgmode-tips-tricks/</loc>
+    <loc>/tags/productivity/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/productivity/</loc>
+    <loc>/posts/on-analysis-paralysis/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/on-analysis-paralysis/</loc>
+    <loc>/tags/thoughts/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/thoughts/</loc>
+    <loc>/tags/privacy/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/privacy/</loc>
+    <loc>/tags/signal/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/signal/</loc>
+    <loc>/tags/whatsapp/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/whatsapp/</loc>
+    <loc>/posts/whatsapp-privacy-policy-signal/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/whatsapp-privacy-policy-signal/</loc>
+    <loc>/tags/baketime/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/baketime/</loc>
+    <loc>/tags/ideas/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ideas/</loc>
+    <loc>/posts/ideas-need-sufficient-baketime/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/ideas-need-sufficient-baketime/</loc>
+    <loc>/tags/learning/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/learning/</loc>
+    <loc>/tags/export/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/export/</loc>
+    <loc>/posts/exporting-google-photos/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/exporting-google-photos/</loc>
+    <loc>/tags/google/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/google/</loc>
+    <loc>/tags/photos/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/photos/</loc>
+    <loc>/tags/2020/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/2020/</loc>
+    <loc>/posts/2020-year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2020-year-in-review/</loc>
+    <loc>/tags/annual-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/annual-review/</loc>
+    <loc>/micro/cognitive-bias-cheat-sheet/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/cognitive-bias-cheat-sheet/</loc>
+    <loc>/posts/org-mode-smart-archive/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/org-mode-smart-archive/</loc>
+    <loc>/micro/internet-explained-first-principles/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/internet-explained-first-principles/</loc>
+    <loc>/micro/gordon-brander/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/gordon-brander/</loc>
+    <loc>/micro/pkm/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/pkm/</loc>
+    <loc>/micro/building-a-second-brain/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/building-a-second-brain/</loc>
+    <loc>/tags/100daystooffload/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/100daystooffload/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hugo/</loc>
+    <loc>/series/hugo-setup/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/hugo-setup/</loc>
+    <loc>/posts/my-hugo-setup-part-3/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-hugo-setup-part-3/</loc>
+    <loc>/posts/my-hugo-setup-part-2/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-hugo-setup-part-2/</loc>
+    <loc>/micro/lights-and-shadows/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/lights-and-shadows/</loc>
+    <loc>/posts/my-hugo-setup/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-hugo-setup/</loc>
+    <loc>/posts/moving-to-hugo/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/moving-to-hugo/</loc>
+    <loc>/micro/100-days-to-offload/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/100-days-to-offload/</loc>
+    <loc>/micro/crazy-brains/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/crazy-brains/</loc>
+    <loc>/micro/first-post/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/micro/first-post/</loc>
+    <loc>/tags/2019/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/2019/</loc>
+    <loc>/posts/2019-year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2019-year-in-review/</loc>
+    <loc>/tags/2018/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/2018/</loc>
+    <loc>/posts/2018-year-in-review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2018-year-in-review/</loc>
+    <loc>/tags/android/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/android/</loc>
+    <loc>/tags/dex/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/dex/</loc>
+    <loc>/posts/the-dreaded-65k-method-limit-on-android/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</loc>
+    <loc>/tags/project-fi/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/project-fi/</loc>
+    <loc>/tags/reviews/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/reviews/</loc>
+    <loc>/posts/two-months-with-project-fi/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/two-months-with-project-fi/</loc>
+    <loc>/tags/book/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/book/</loc>
+    <loc>/posts/book-review-alchemist/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/book-review-alchemist/</loc>
+    <loc>/tags/review/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/review/</loc>
+    <loc>/tags/2015/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/2015/</loc>
+    <loc>/posts/2015-lessons-learned/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2015-lessons-learned/</loc>
+    <loc>/tags/lessons/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/lessons/</loc>
+    <loc>/tags/macbook/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/macbook/</loc>
+    <loc>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</loc>
+    <loc>/tags/rants/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/rants/</loc>
+    <loc>/tags/app/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/app/</loc>
+    <loc>/about/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/tags/taskr/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/taskr/</loc>
+    <loc>/posts/taskr/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/taskr/</loc>
+    <loc>/posts/graduation/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/graduation/</loc>
+    <loc>/tags/graduation/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/graduation/</loc>
+    <loc>/tags/noise/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/noise/</loc>
+    <loc>/tags/weekly/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/weekly/</loc>
+    <loc>/posts/weekly-noise-16/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-16/</loc>
+    <loc>/posts/weekly-noise-15/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-15/</loc>
+    <loc>/posts/weekly-noise-14/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-14/</loc>
+    <loc>/posts/weekly-noise-13/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-13/</loc>
+    <loc>/posts/weekly-noise-12/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-12/</loc>
+    <loc>/posts/weekly-noise-11/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-11/</loc>
+    <loc>/posts/weekly-noise-10/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-10/</loc>
+    <loc>/posts/weekly-noise-9/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-9/</loc>
+    <loc>/posts/weekly-noise-8/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-8/</loc>
+    <loc>/tags/development/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/development/</loc>
+    <loc>/tags/environment/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/environment/</loc>
+    <loc>/posts/weekly-noise-7/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-7/</loc>
+    <loc>/posts/weekly-noise-6/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-6/</loc>
+    <loc>/posts/weekly-noise-5/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-5/</loc>
+    <loc>/posts/weekly-noise-4/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-4/</loc>
+    <loc>/tags/resume/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/resume/</loc>
+    <loc>/posts/weekly-noise-3/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-3/</loc>
+    <loc>/posts/weekly-noise-2/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-2/</loc>
+    <loc>/posts/my-theme-setup/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/my-theme-setup/</loc>
+    <loc>/tags/so-simple/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/so-simple/</loc>
+    <loc>/tags/theme/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/theme/</loc>
+    <loc>/posts/weekly-noise-1/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/weekly-noise-1/</loc>
+    <loc>/tags/hello/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hello/</loc>
+    <loc>/posts/hello-world/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/hello-world/</loc>
-    <lastmod>2024-11-13T22:52:05-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/world/</loc>
+    <loc>/tags/world/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url>
 </urlset>
