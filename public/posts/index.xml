@@ -2,18 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Rajath Ramakrishna</title>
-    <link>/posts/</link>
+    <link>//localhost:1313/posts/</link>
     <description>Recent content in Posts on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jan 2026 22:53:46 -0800</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-retro-journal: an emacs package for looking back through your journal</title>
+      <link>//localhost:1313/posts/title-about-vibecoding-an-emacs-package-for-journal-lookback/</link>
+      <pubDate>Mon, 26 Jan 2026 22:53:46 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/title-about-vibecoding-an-emacs-package-for-journal-lookback/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been journaling in org-mode since 2020. It&amp;rsquo;s a simple &lt;code&gt;journal.org&lt;/code&gt; file in &lt;code&gt;datetree&lt;/code&gt; format, where I add entries each day. One thing I never did is to go back and read what I had written. I really like the Memories feature in Google Photos where it shows what I was doing that day or around that day a year ago, 2 years ago, 3 years ago and so on. And I wanted a similar feature for my journal.&lt;/p&gt;
+&lt;p&gt;So, with some assistance from the LLM, I vibecoded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal&lt;/a&gt; that does exactly this. The package scans each year to find entries from the same or nearest date in previous years. It then presents these in an ephemeral buffer. I even added a few keyboard shortcuts that enable the user to go backward and forward through time one day at a time. Or the user can pick a specific date and view past entries for each year around that date. I wanted the level of detail to be just the headings so that I could go into any of them to read more. Plus, these org subtrees are &lt;em&gt;copied&lt;/em&gt; to the ephemeral buffer, so any accidental edits won&amp;rsquo;t affect the original file.&lt;/p&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like in action:
+&lt;img src=&#34;//localhost:1313/images/OrgRetroJournal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is invoked by calling the function &lt;code&gt;org-retro-journal-review&lt;/code&gt;, which can be bound to any key.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was a fun exercise. As mentioned earlier in this post, I co-developed it with LLM assistance. I&amp;rsquo;m not super proficient in Emacs Lisp to the point where I can write complex functions. Given enough time, I would have figured it out, but due to lack of time and LLMs being pretty good at writing code, I chose to use an LLM to assist me with this. The whole process took less than half an hour.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>org-retro-journal: an emacs package for looking back through your journal</title>
+      <link>//localhost:1313/posts/org-retro-journal/</link>
+      <pubDate>Mon, 26 Jan 2026 22:51:18 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/org-retro-journal/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been journaling in org-mode since 2020. It&amp;rsquo;s a simple &lt;code&gt;journal.org&lt;/code&gt; file in &lt;code&gt;datetree&lt;/code&gt; format, where I add entries each day. One thing I never did is to go back and read what I had written. I really like the Memories feature in Google Photos where it shows what I was doing that day or around that day a year ago, 2 years ago, 3 years ago and so on. And I wanted a similar feature for my journal.&lt;/p&gt;
+&lt;p&gt;So, with some assistance from the LLM, I vibecoded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal&lt;/a&gt; that does exactly this. The package scans each year to find entries from the same or nearest date in previous years. It then presents these in an ephemeral buffer. I even added a few keyboard shortcuts that enable the user to go backward and forward through time one day at a time. Or the user can pick a specific date and view past entries for each year around that date. I wanted the level of detail to be just the headings so that I could go into any of them to read more. Plus, these org subtrees are &lt;em&gt;copied&lt;/em&gt; to the ephemeral buffer, so any accidental edits won&amp;rsquo;t affect the original file.&lt;/p&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like in action:
+&lt;img src=&#34;//localhost:1313/images/OrgRetroJournal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is invoked by calling the function &lt;code&gt;org-retro-journal-review&lt;/code&gt;, which can be bound to any key.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was a fun exercise. As mentioned earlier in this post, I co-developed it with LLM assistance. I&amp;rsquo;m not super proficient in Emacs Lisp to the point where I can write complex functions. Given enough time, I would have figured it out, but due to lack of time and LLMs being pretty good at writing code, I chose to use an LLM to assist me with this. The whole process took less than half an hour.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>App Defaults - 2025 Edition</title>
-      <link>/posts/app-defaults-2025/</link>
+      <link>//localhost:1313/posts/app-defaults-2025/</link>
       <pubDate>Thu, 22 Jan 2026 12:16:10 -0800</pubDate>
       
-      <guid>/posts/app-defaults-2025/</guid>
+      <guid>//localhost:1313/posts/app-defaults-2025/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been seeing quite a lot of &lt;code&gt;/defaults&lt;/code&gt; posts where people post their defaults. The first post I found was from &lt;a href=&#34;https://www.neilmacy.co.uk/blog/app-defaults-2025&#34;&gt;Neil Macy&amp;rsquo;s blog&lt;/a&gt;. Most of the blog posts reference the podcast episode &lt;a href=&#34;https://listen.hemisphericviews.com/097&#34;&gt;Hemispheric Views 097 - Duel of the Defaults!&lt;/a&gt;, so I listened to the episode. Now, I have my own app defaults list and this one&amp;rsquo;s what I was using in 2025.&lt;/p&gt;
 &lt;p&gt;(You can find other people’s defaults &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;📬 Mail Client: web on desktop, &lt;a href=&#34;https://play.google.com/store/apps/details?id=ch.protonmail.android&#34;&gt;ProtonMail on Android&lt;/a&gt;&lt;br&gt;
@@ -49,18 +83,18 @@
     
     <item>
       <title>Add modeline indicators to Prodigy in Emacs</title>
-      <link>/posts/add-modeline-indicators-to-prodigy-in-emacs/</link>
+      <link>//localhost:1313/posts/add-modeline-indicators-to-prodigy-in-emacs/</link>
       <pubDate>Thu, 15 Jan 2026 15:04:00 -0800</pubDate>
       
-      <guid>/posts/add-modeline-indicators-to-prodigy-in-emacs/</guid>
+      <guid>//localhost:1313/posts/add-modeline-indicators-to-prodigy-in-emacs/</guid>
       <description>&lt;p&gt;I recently started using &lt;a href=&#34;https://github.com/rejeep/prodigy.el&#34;&gt;prodigy.el&lt;/a&gt; at work since I had to run a few services locally for development. I used to run them in my terminal in different tabs, but I thought of giving Prodigy a try and it worked great! I was able to not just run the services without having to look at the logs (unless I needed to) but also configure the status of each service based on certain text patterns in the logs. This way Prodigy would show if the service is Ready/Running/Stopped.&lt;/p&gt;
 &lt;p&gt;One thing missing in Prodigy is that it doesn&amp;rsquo;t show any modeline indicators. What I wanted was to be able to quickly find which services were running and which ones were stopped. This was going to be too much information to be displayed on the modeline, so I instead wanted just the number of services running vs stopped, and I wanted them to be color coded (green for running, blue for ready, yellow for stopped, etc.) And on hover, I wanted the respective service names to be displayed in the echo area.&lt;/p&gt;
 &lt;p&gt;I asked Gemini 3 Pro to generate functions and hooks with these exact requirements and it did a great job.&lt;/p&gt;
 &lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s the screenshot of mouse hover on services stopped
-&lt;img src=&#34;/images/ProdigyServicesStopped.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/ProdigyServicesStopped.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;And here&amp;rsquo;s the screenshot of mouse hover on services running
-&lt;img src=&#34;/images/ProdigyServicesRunning.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/ProdigyServicesRunning.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Like I mentioned above, the entire code was generated by an LLM (Gemini 3 Pro) and I didn&amp;rsquo;t have to tweak anything at all.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;;; 1. Define a variable to hold the modeline string&lt;/span&gt;
@@ -133,10 +167,10 @@
     
     <item>
       <title>A better Back to Indentation in Emacs</title>
-      <link>/posts/a-better-back-to-indentation-in-emacs/</link>
+      <link>//localhost:1313/posts/a-better-back-to-indentation-in-emacs/</link>
       <pubDate>Fri, 17 Jan 2025 16:23:00 -0800</pubDate>
       
-      <guid>/posts/a-better-back-to-indentation-in-emacs/</guid>
+      <guid>//localhost:1313/posts/a-better-back-to-indentation-in-emacs/</guid>
       <description>&lt;p&gt;When I&amp;rsquo;m on a line that is indented, I like to switch between going to the beginning of the line and the first non-whitespace charater. These have two different keybindings, &lt;code&gt;C-a&lt;/code&gt; and &lt;code&gt;M-m&lt;/code&gt; respectively. I wanted just one keybinding to switch between these two positions.&lt;/p&gt;
 &lt;p&gt;I tried searching if this already exists in Emacs and I couldn&amp;rsquo;t find it. So, I wrote a small function and bound it to &lt;code&gt;C-a&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/beginning-of-line&lt;/span&gt; ()
@@ -152,23 +186,53 @@
     
     <item>
       <title>My favorite YouTube update</title>
-      <link>/posts/my-favorite-youtube-update/</link>
+      <link>//localhost:1313/posts/my-favorite-youtube-update/</link>
       <pubDate>Sat, 05 Aug 2023 10:30:00 -0700</pubDate>
       
-      <guid>/posts/my-favorite-youtube-update/</guid>
+      <guid>//localhost:1313/posts/my-favorite-youtube-update/</guid>
       <description>&lt;p&gt;A few days ago I visited YouTube and saw this:
-&lt;img src=&#34;/images/YoutubeWatchHistory.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/YoutubeWatchHistory.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For many years, I turned off my YouTube watch history to avoid getting distracted by the recommendations that appeared on my homepage. As a result, my homepage was quite boring and contained only a few videos from my subscriptions and a few popular videos in general. Nothing was personalized. Although I still found myself clicking on a few of those videos every now and then, it had drastically reduced from when I had the watch history turned on.&lt;/p&gt;
 &lt;p&gt;Recently, YouTube updated its platform and now forces me to turn on the watch history in order to show any video recommendations at all. Surprisingly, this is my favorite update yet. Now when I visit YouTube, it&amp;rsquo;s always a blank screen and I can never get distracted or go down YouTube rabbit holes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
+      <title>Continuous Self-Improvement: Tracking Progress in 5 Key Areas</title>
+      <link>//localhost:1313/posts/continuous-self-improvement-tracking-progress-in-5-key-areas/</link>
+      <pubDate>Mon, 08 May 2023 22:26:26 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/continuous-self-improvement-tracking-progress-in-5-key-areas/</guid>
+      <description>&lt;p&gt;A few years ago, I identified 5 areas in my life that I wanted to keep a close eye on, so that whatever I did was in line with some sort of progress in these 5 spots. They are: &lt;strong&gt;Health&lt;/strong&gt;, &lt;strong&gt;Finance&lt;/strong&gt;, &lt;strong&gt;Career&lt;/strong&gt;, &lt;strong&gt;Relationships&lt;/strong&gt; and &lt;strong&gt;Personal Development&lt;/strong&gt;. These are the big themes I link all my tasks to. Whenever I think about how my life is going, these are the areas I look at to see which ones need some work and what I can do to make it better.&lt;/p&gt;
+&lt;p&gt;Everybody’s got different priorities, but over the past years, I settled on these 5 as my main areas that I wanted to concentrate on to live a happy and fulfilling life. How I ended up with these areas is by asking questions like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What brings me joy and fulfillment and also helps me grow as a person?&lt;/li&gt;
+&lt;li&gt;What areas should I invest my time and effort in that help me and the people around me live a good life?&lt;/li&gt;
+&lt;li&gt;What’s something I can do regularly that benefits me both in the short and long term?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-each-of-these-areas-are-important&#34;&gt;Why each of these areas are important&lt;/h2&gt;
+&lt;h3 id=&#34;health&#34;&gt;Health&lt;/h3&gt;
+&lt;p&gt;It’s critical to take care of our health because if that’s good then we can focus on other areas of our life. So this includes everything health related, like physical fitness, mental wellbeing, eating right and not drinking too much.&lt;/p&gt;
+&lt;h3 id=&#34;finance&#34;&gt;Finance&lt;/h3&gt;
+&lt;p&gt;It’s not only important to make enough money to live comfortably, but also to be smart with saving and investing. Doing that will yield results (literally) and it’s also good to be informed on how and where to invest to live stress-free.&lt;/p&gt;
+&lt;h3 id=&#34;career&#34;&gt;Career&lt;/h3&gt;
+&lt;p&gt;I love what I do mainly because I work with great people and every day I learn a lot. That makes my workday fulfilling and I’m always looking forward to Mondays.&lt;/p&gt;
+&lt;h3 id=&#34;relationships&#34;&gt;Relationships&lt;/h3&gt;
+&lt;p&gt;Hanging out with people you love makes your life very meaningful. Every activity you do with that person makes the experience that much better.&lt;/p&gt;
+&lt;h3 id=&#34;personal-development&#34;&gt;Personal Development&lt;/h3&gt;
+&lt;p&gt;Always be curious. The moment we link ideas together to form a better understanding of concepts is the best feeling ever. The more we learn the more we link ideas and that way the more we create new ideas.&lt;/p&gt;
+&lt;h2 id=&#34;tracking-progress&#34;&gt;Tracking Progress&lt;/h2&gt;
+&lt;p&gt;Since these are areas, they never end. It’s an ongoing investment of time and effort in each of these areas and there’s no final goal. Everything I do should map to one or more of these areas. They’re a constant reminder to me to keep myself in check and make sure I’m not slipping.&lt;/p&gt;
+&lt;p&gt;So, when it comes to &amp;ldquo;tracking progress&amp;rdquo;, it’s the smaller tasks (that map to these areas) that I track progress on. But the area itself as a whole, I can look back at a longer time frame, like a couple of years, and see how much I’ve improved in my physical and mental health, my career, my relationships, how I’ve spent the past few years, and how much I’ve learned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>My information overload stats</title>
-      <link>/posts/my-information-overload-stats/</link>
+      <link>//localhost:1313/posts/my-information-overload-stats/</link>
       <pubDate>Fri, 05 May 2023 20:49:00 -0700</pubDate>
       
-      <guid>/posts/my-information-overload-stats/</guid>
+      <guid>//localhost:1313/posts/my-information-overload-stats/</guid>
       <description>&lt;p&gt;I’m no stranger to consuming information on my phone, computer, iPad, etc. I consume them in various forms - text (with newsletters, RSS feeds, read it later services), audio (with podcasts) and video (YouTube). I quit social media several years ago and I’ve always felt good that I don’t spend hours and hours scrolling through my feed on websites like Facebook, Instagram, etc. And my YouTube subscriptions are most educational anyway.&lt;/p&gt;
 &lt;p&gt;Lately I’ve been feeling that even though the content I consume are all something constructive and something I can learn about, it’s been too much for me to handle. So, I’m making this post just to take a snapshot of what I call the Informational Overload Snapshot at this moment in time in order to understand how much of content I’m subscribed to, how much I’m actually reading/watching/listening to, how much value I’m getting out of all this.&lt;/p&gt;
 &lt;p&gt;So, here is my Information Overload Snapshot:&lt;/p&gt;
@@ -189,10 +253,10 @@
     
     <item>
       <title>Muscle memory is surprisingly malleable</title>
-      <link>/posts/muscle-memory-is-surprisingly-malleable/</link>
+      <link>//localhost:1313/posts/muscle-memory-is-surprisingly-malleable/</link>
       <pubDate>Tue, 14 Mar 2023 23:42:00 -0700</pubDate>
       
-      <guid>/posts/muscle-memory-is-surprisingly-malleable/</guid>
+      <guid>//localhost:1313/posts/muscle-memory-is-surprisingly-malleable/</guid>
       <description>&lt;p&gt;I recently read &lt;a href=&#34;https://www.reddit.com/r/HelixEditor/comments/11n9bag/is_it_worth_it/&#34;&gt;a reddit post on /r/HelixEditor&lt;/a&gt; where a user was asking if it was worth switching to Helix since they’d been a long time vim user. This is just one post, but there are many people who asked same or similar questions. This is a common question that I’ve seen asked in many subreddits and other communities. I’ve also faced this kind of a dilemma in the past myself.&lt;/p&gt;
 &lt;p&gt;The crux of the problem is that we use a tool for many years and develop a muscle memory. A new tool comes along that’s attractive enough for us to try it. We are then hesitant to switch to it because of the switching cost - the time and effort it takes to learn the new tool (and potentially unlearn, to some extent, what we previously learned), and the opportunity cost of not using the tool we’ve been most familiar with.&lt;/p&gt;
 &lt;p&gt;Let’s take vim and helix as examples, I’ve been a vim user for more than a decade and I’ve developed muscle memory to do several operations. This is emphasized by using vim plugins in other apps like web browsers, IDEs, text editors, etc. When I stumbled upon Helix, I was so intrigued by the selection-&amp;gt;action paradigm that I really wanted to give it a go knowing full well that it’s going to mess me up in two places during this transition - both Helix (because I’ll be hitting vim keybindings) and in vim (because I’ll be hitting Helix keybindings).&lt;/p&gt;
@@ -205,10 +269,10 @@
     
     <item>
       <title>Ditching Evil for Meow</title>
-      <link>/posts/ditching-evil-for-meow/</link>
+      <link>//localhost:1313/posts/ditching-evil-for-meow/</link>
       <pubDate>Sat, 25 Feb 2023 20:42:00 -0800</pubDate>
       
-      <guid>/posts/ditching-evil-for-meow/</guid>
+      <guid>//localhost:1313/posts/ditching-evil-for-meow/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been a vim user for as long as I can remember. I like vim so much that I try to incorporate vim keybindings wherever I can. Like, using &lt;a href=&#34;https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en&#34;&gt;Vimium extension&lt;/a&gt; in Firefox/Chrome, &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;&gt;vim extention in IntelliJ/VSCode&lt;/a&gt;, &lt;a href=&#34;https://github.com/emacs-evil/evil&#34;&gt;evil mode in Emacs&lt;/a&gt;, etc.&lt;/p&gt;
 &lt;p&gt;I recently &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;stumbled upon Helix Editor&lt;/a&gt; which made me rethink vim’s way of navigation. Helix was so much more intuitive for me in terms of selection-&amp;gt;action paradigm instead of vim’s action-&amp;gt;selection. I liked Helix so much that I started using it as an IDE. Even though I had good muscle memory of vim keybindings, I decided to spend some time and learn Helix’s keybindings.&lt;/p&gt;
 &lt;p&gt;As I started using Helix more and more, I wanted to have a consistent experience in the two text editors I use the most - Helix (for IDE) and Emacs (for organizing my life). So, I wanted to get rid of Evil on Emacs since it was confusing me quite a lot. So, I started looking for packages that resembled Helix way of navigation and &lt;a href=&#34;https://github.com/meow-edit/meow&#34;&gt;Meow&lt;/a&gt; is the one that closely matched it. I did try couple of packages like &lt;a href=&#34;https://github.com/jyp/boon&#34;&gt;boon&lt;/a&gt; and &lt;a href=&#34;http://xahlee.info/emacs/misc/xah-fly-keys.html&#34;&gt;xah-fly-keys&lt;/a&gt; and found Meow to be the closest to what I was looking for in terms of ease of use and customizability.&lt;/p&gt;
@@ -219,10 +283,10 @@
     
     <item>
       <title>StoicQuotes - My first Raycast extension</title>
-      <link>/posts/stoicquotes-my-first-raycast-extension/</link>
+      <link>//localhost:1313/posts/stoicquotes-my-first-raycast-extension/</link>
       <pubDate>Wed, 15 Feb 2023 00:38:00 -0800</pubDate>
       
-      <guid>/posts/stoicquotes-my-first-raycast-extension/</guid>
+      <guid>//localhost:1313/posts/stoicquotes-my-first-raycast-extension/</guid>
       <description>&lt;p&gt;I &lt;a href=&#34;https://rrajath.com/posts/raycast-my-new-favorite-macos-app&#34;&gt;previously wrote about Raycast&lt;/a&gt; and how it has replaced a lot of apps I use. One of the things I mentioned about Raycast is that the developer experience is excellent. This post briefly talks about my journey in creating &lt;a href=&#34;https://www.raycast.com/rrajath/stoicquotes&#34;&gt;StoicQuotes&lt;/a&gt;, a Raycast extension.&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 &lt;p&gt;I’ve been practicing Stoicism for many years and one of the things I do every now and then is I read a quote by a stoic philosopher like Marcus Aurelius, Epictetus or Seneca and reflect on that quote. Pretty much all stoic quotes by these three philosophers are timeless and apply to our daily lives, and reading one and reflecting on it helps me get out of my autopilot and put things in a new perspective.&lt;/p&gt;
@@ -245,9 +309,9 @@
 &lt;p&gt;I really appreciate the quality of documentation, the developer experience and support here. I wish more companies gave this kind of experience to developers. I want to make more extensions 🙂&lt;/p&gt;
 &lt;h2 id=&#34;stoicquotes-extension&#34;&gt;StoicQuotes Extension&lt;/h2&gt;
 &lt;p&gt;Now, for the extension itself. Here are couple of screenshots. The first one shows the extension in the list of suggestions Raycast provides. The second one shows what it looks like when the extension is invoked.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/RaycastScreenshot.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/RaycastScreenshot.png&#34; alt=&#34;&#34;&gt;
 You can see that the extension is part of the favorites. So, once I invoke Raycast using &lt;code&gt;Cmd+Space&lt;/code&gt;, I can access the extension by hitting &lt;code&gt;Cmd+2&lt;/code&gt; (since it’s second in the list). To make it even more streamlined, I hit &lt;code&gt;Cmd+Space&lt;/code&gt; and while I’m still holding &lt;code&gt;Cmd&lt;/code&gt;, I hit &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/stoicquotes-1.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/stoicquotes-1.png&#34; alt=&#34;&#34;&gt;
 Here, you see the extension shows just the quote and the author. Hitting &lt;code&gt;Enter&lt;/code&gt; will give you a new random quote. The extension also has the ability to copy the quote in both markdown and as plain text.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Developing this as an extension in Raycast seemed so perfect for me because it hit all 4 requirements I had (that I mentioned above) for getting a random stoic quote whenever I wanted without disrupting my workflow. With the extension installed, all I have to do is, invoke Raycast and invoke StoicQuotes (which can be marked as favorite for easy access), and I get a random quote. Hitting Esc will make the window go away and I’m back to whatever I was doing.&lt;/p&gt;
@@ -257,10 +321,10 @@ Here, you see the extension shows just the quote and the author. Hitting &lt;cod
     
     <item>
       <title>Constraint relaxation as a mental model</title>
-      <link>/posts/constraint-relaxation-as-a-mental-model/</link>
+      <link>//localhost:1313/posts/constraint-relaxation-as-a-mental-model/</link>
       <pubDate>Tue, 07 Feb 2023 22:19:00 -0800</pubDate>
       
-      <guid>/posts/constraint-relaxation-as-a-mental-model/</guid>
+      <guid>//localhost:1313/posts/constraint-relaxation-as-a-mental-model/</guid>
       <description>&lt;p&gt;Like my &lt;a href=&#34;http://localhost:1313/posts/every-day-is-a-knapsack-problem&#34;&gt;previous post about knapsack problem&lt;/a&gt;, constraint relaxation is another mental model I read about in book &lt;a href=&#34;https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365&#34;&gt;Algorithms to Live By&lt;/a&gt;. When I read it, I again felt the same way I did for the knapsack problem - it’s common and we do it all the time.&lt;/p&gt;
 &lt;p&gt;Constraint relaxation is when you encounter a problem that seems complex enough (think too many constraints) that you feel a little overwhelmed to tackle it head on. So, instead you decide to tackle a smaller/simpler version of the problem. Once you figure out how to do that, you add more and more complexities (or constraints) until you get to the original problem statement.&lt;/p&gt;
 &lt;p&gt;A simple example is when you’re trying to implement a feature or a business logic that is complex for which you have to learn something new, you usually implement a smaller/simpler version of it (thereby relaxing constraints) and then work your way forward.&lt;/p&gt;
@@ -270,10 +334,10 @@ Here, you see the extension shows just the quote and the author. Hitting &lt;cod
     
     <item>
       <title>Every day is a Knapsack problem</title>
-      <link>/posts/every-day-is-a-knapsack-problem/</link>
+      <link>//localhost:1313/posts/every-day-is-a-knapsack-problem/</link>
       <pubDate>Sun, 05 Feb 2023 10:32:00 -0800</pubDate>
       
-      <guid>/posts/every-day-is-a-knapsack-problem/</guid>
+      <guid>//localhost:1313/posts/every-day-is-a-knapsack-problem/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Knapsack_problem&#34;&gt;Knapsack problem&lt;/a&gt;, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc. When defined in an abstract sense, the problem is to select a set of items each with a certain weight and value from a larger set such that the total weight does not exceed the volume of a sack. The problem is to optimize for the highest value that can be obtained through different combinations of the items. This can be done via several algorithms like greedy, dynamic programming, etc.&lt;/p&gt;
 &lt;p&gt;This is such a common problem in everyday life that we encounter is almost on a daily basis and lot of times we don’t even realize it. We just don’t name it as a knapsack problem. For example, a rock band that has a 1-hour time slot to play a bunch of songs must decide how many songs can they fit in that slot in order to provide the best experience possible. The 1-hour slot is a knapsack. Each song has a certain weight (duration) and value (popularity/crowd favorite/something else). A band can have one or more albums and the total number of songs in their arsenal far exceeds the 1-hour limit. With each song having a different value, they must choose a small set of songs very wisely so that they give the audience the best experience possible. This is one of the examples from the book &lt;a href=&#34;https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365&#34;&gt;Algorithms to Live By&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The knapsack problem I deal with on a daily basis is one of prioritization of tasks. There are a lot of things I want to get done - tasks I have to do at work, chores I have to do at home, work on a personal project and other one-off tasks I want to accomplish all in one day. I generally experience &lt;a href=&#34;https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect&#34;&gt;Dunning-Kruger effect&lt;/a&gt; where I over-estimate how much I can get done in a day but this happens only towards the end of the day and it becomes more of a realization of poor planning. However, whenever I stop and think about the day as a Knapsack Problem, prioritization becomes much clearer. The number of available hours in a day is the limit (sack), each task (item) has a certain value (in terms of urgency, importance or what I get back in return) and there are more tasks than I can fit in one day. Visualizing each day as a knapsack problem helps put things in perspective that there’s only so much I can do in a day that I must make the most out of it.&lt;/p&gt;
@@ -283,13 +347,13 @@ Here, you see the extension shows just the quote and the author. Hitting &lt;cod
     
     <item>
       <title>Raycast - My new favorite MacOS app</title>
-      <link>/posts/raycast-my-new-favorite-macos-app/</link>
+      <link>//localhost:1313/posts/raycast-my-new-favorite-macos-app/</link>
       <pubDate>Thu, 02 Feb 2023 23:17:00 -0800</pubDate>
       
-      <guid>/posts/raycast-my-new-favorite-macos-app/</guid>
+      <guid>//localhost:1313/posts/raycast-my-new-favorite-macos-app/</guid>
       <description>&lt;p&gt;I’ve been an &lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; user for many many years and I’m also a Mega Supporter with a lifetime license. It provides so much value to me on a daily basis that it’s become one of the apps I install first when I set up a new laptop. I’ve used quite a few workflows an Alfred, I was using it as a clipboard manager, I had tons of dynamic snippets stored in them. I was doing everything with Alfred.&lt;/p&gt;
 &lt;p&gt;This was the case until recently. I stumbled upon &lt;a href=&#34;https://www.raycast.com/&#34;&gt;Raycast&lt;/a&gt; about a month ago and I absolutely fell in love with it. The look and feel of it itself blew me away from the get-go. And once I checked out their store and the thousands of plugins they had, I was even more intrigued. I started looking at how I can replace my Alfred setup with Raycast and what I realized was, I was not only able to recreate my Alfred setup, but also do much more.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;/images/RaycastScreenshot.png&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/RaycastScreenshot.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Raycast not only replaced Alfred, but also a bunch of other apps I used to depend on to be productive.
@@ -311,12 +375,12 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>The pointlessness of the Mac Dockbar</title>
-      <link>/posts/the-pointlessness-of-the-mac-dockbar/</link>
+      <link>//localhost:1313/posts/the-pointlessness-of-the-mac-dockbar/</link>
       <pubDate>Sat, 28 Jan 2023 20:59:00 -0800</pubDate>
       
-      <guid>/posts/the-pointlessness-of-the-mac-dockbar/</guid>
+      <guid>//localhost:1313/posts/the-pointlessness-of-the-mac-dockbar/</guid>
       <description>&lt;p&gt;One of the things that was initially unique to Mac was the dockbar. I remember the first time I used a Mac, I was quite fascinated by it. I liked the zoom-in effect as I hovered my mouse over each item on it.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/MacDockbar.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;A fresh install of MacOS (or OSX back in the day) comes with a persistent dockbar at the bottom taking up a good chunk of the screen real estate. So, even when you maximize any app, it won’t take up the full screen because of the dockbar sitting at the bottom..&lt;/p&gt;
@@ -331,10 +395,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>Switching between qwerty and colemak</title>
-      <link>/posts/switching-between-qwerty-and-colemak/</link>
+      <link>//localhost:1313/posts/switching-between-qwerty-and-colemak/</link>
       <pubDate>Wed, 25 Jan 2023 22:56:00 -0800</pubDate>
       
-      <guid>/posts/switching-between-qwerty-and-colemak/</guid>
+      <guid>//localhost:1313/posts/switching-between-qwerty-and-colemak/</guid>
       <description>&lt;p&gt;Early last year, I had some pain and discomfort in my wrists, so I decided to switch to a split keyboard. I went down an &lt;a href=&#34;https://reddit.com/r/ErgoMechKeyboards&#34;&gt;/r/ErgoMechKeyboards&lt;/a&gt; rabbit hole and ended up getting a &lt;a href=&#34;https://www.zsa.io/moonlander&#34;&gt;Moonlander Mark I&lt;/a&gt;. Around the same time, I also found that a lot of people use Colemak as the keyboard layout and that QWERTY is actually very inefficient. And down another rabbit hole I went.&lt;/p&gt;
 &lt;p&gt;After doing a lot more research, I decided to go all in with both split keyboard &lt;em&gt;and&lt;/em&gt; new layout at the same time. From what I read, it apparently helps with muscle memory when transition to split keyboard + the new layout is done at the same time. Also, I picked Colemak because, it was one of the most popular for all-round typing - both coding and general typing (in English). I didn’t want to try out a bunch of layouts before deciding on one since doing so was going impact my productivity at work.&lt;/p&gt;
 &lt;p&gt;Since I quickly wanted to ramp up and get better speeds with Colemak, I stopped using QWERTY completely. As my speeds improved, I was no longer able to type in QWERTY on my laptop keyboard. As I typed, I was hitting wrong keys all the time and I would immediately stop and get my split keyboard that was configured for Colemak. Now this became a little cumbersome since everywhere I went I had to take my keyboard with me.&lt;/p&gt;
@@ -344,10 +408,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>Make Helix use your workspace prettier config</title>
-      <link>/posts/make-helix-use-your-workspace-prettier-config/</link>
+      <link>//localhost:1313/posts/make-helix-use-your-workspace-prettier-config/</link>
       <pubDate>Mon, 09 Jan 2023 13:25:00 -0800</pubDate>
       
-      <guid>/posts/make-helix-use-your-workspace-prettier-config/</guid>
+      <guid>//localhost:1313/posts/make-helix-use-your-workspace-prettier-config/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;trying out Helix Editor&lt;/a&gt; recently and loving it. I wanted to see if it could be my primary IDE and one thing I wish it did was format the file on save. By this, I don’t just mean fixing indentation, but also applying eslint fixes and running prettier. And I wanted this formatting to be applied based on the rules defined for that package. For example, I was in a nodejs workspace with typescript files and a prettier config that had rules like &lt;code&gt;singleQuote&lt;/code&gt;, &lt;code&gt;trailingComma&lt;/code&gt;, etc.&lt;/p&gt;
 &lt;p&gt;I tried a few prettier configs on the web for Helix and &lt;a href=&#34;https://github.com/helix-editor/helix/wiki/External-binary-formatter-configuration#prettier&#34;&gt;none of them worked&lt;/a&gt;. This post is to document what &lt;em&gt;did&lt;/em&gt; work so that the next time I run into the same situation I don&amp;rsquo;t start from scratch and end up trying a bunch of things to no avail.&lt;/p&gt;
 &lt;p&gt;So, here&amp;rsquo;s what worked. I found this &lt;a href=&#34;https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3324876&#34;&gt;line of code as a comment on one of the GitHub issues&lt;/a&gt;:&lt;/p&gt;
@@ -358,10 +422,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>2022 - Year in Review</title>
-      <link>/posts/2022-year-in-review/</link>
+      <link>//localhost:1313/posts/2022-year-in-review/</link>
       <pubDate>Sun, 08 Jan 2023 18:23:00 -0800</pubDate>
       
-      <guid>/posts/2022-year-in-review/</guid>
+      <guid>//localhost:1313/posts/2022-year-in-review/</guid>
       <description>&lt;p&gt;I’ve been doing the &amp;ldquo;Year in Review&amp;rdquo; series for a few years now. At the end of every year, I take some time to think about what went well, what didn’t go well, any side quests I ventured into to get a perspective on how my life is going and what kind of changes it needs.&lt;/p&gt;
 &lt;h2 id=&#34;what-went-well&#34;&gt;What went well&lt;/h2&gt;
 &lt;h3 id=&#34;reading&#34;&gt;Reading&lt;/h3&gt;
@@ -408,10 +472,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>Clickbaits are here to stay</title>
-      <link>/posts/clickbaits-are-here-to-stay/</link>
+      <link>//localhost:1313/posts/clickbaits-are-here-to-stay/</link>
       <pubDate>Tue, 27 Dec 2022 22:43:00 -0800</pubDate>
       
-      <guid>/posts/clickbaits-are-here-to-stay/</guid>
+      <guid>//localhost:1313/posts/clickbaits-are-here-to-stay/</guid>
       <description>&lt;p&gt;More than a decade ago I came across BuzzFeed articles like &amp;ldquo;10 things you didn&amp;rsquo;t know about the Illuminati, number 7 will surprise you&amp;rdquo; for the first time. At the time, I didn&amp;rsquo;t even know they were called clickbait. This reminded me of the tabloids I saw near checkout lines in grocery stores. Every time I&amp;rsquo;d see one of those magazines, I used to think, &amp;ldquo;This is beyond ridiculous. Who reads this stuff?&amp;rdquo;. In my mind, I used to categorize tabloids as the lowest form of &amp;ldquo;news&amp;rdquo; and just a desperate attempt to get peoples&amp;rsquo; attention to buy those magazines, and in my opinion that&amp;rsquo;s still the case.&lt;/p&gt;
 &lt;p&gt;But when I started seeing more and more clickbaits online, I started becoming infuriated because now they were everywhere. I was seeing the equivalent of tabloid headlines in most of the websites I used to visit and it felt like there was no escaping them. I initially thought only sites like BuzzFeed and similar ones would be so desperate for attention and clicks, and real news sites wouldn&amp;rsquo;t need clickbaits.&lt;/p&gt;
 &lt;p&gt;I was wrong. I started seeing them even on websites like HackerNews or AndroidPolice. It was annoying me so much that I didn&amp;rsquo;t click those links on purpose, even though I knew it had information that I was looking for. It was my way of &amp;ldquo;vote with your clicks&amp;rdquo;. And then, it was all over YouTube too. The channels I subscribe to - Red Delta Project, Veritasium, etc. that have nothing to do with gossip or sensational news, but instead make educational content were also filled with titles that were very clickbait-y.&lt;/p&gt;
@@ -428,10 +492,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>Exploring Helix Editor</title>
-      <link>/posts/exploring-helix-editor/</link>
+      <link>//localhost:1313/posts/exploring-helix-editor/</link>
       <pubDate>Sun, 25 Dec 2022 23:10:00 -0800</pubDate>
       
-      <guid>/posts/exploring-helix-editor/</guid>
+      <guid>//localhost:1313/posts/exploring-helix-editor/</guid>
       <description>&lt;p&gt;A few weeks ago, my coworker was talking about &lt;a href=&#34;https://helix-editor.com&#34;&gt;Helix Editor&lt;/a&gt;. I&amp;rsquo;m generally fascinated by CLI tools, so I decided to check it out.&lt;/p&gt;
 &lt;p&gt;As soon as I tried it I was super impressed with how many features were packed in it. Tree-Sitter, Language Servers, multiple selections and many more. I have been struggling the past few months to get a good IDE experience set up on Emacs and every time I try, it falls short by just a little bit and I end up switching back to VS Code. I remember doing tons of different customizations, trying out several packages and their individual settings just so that all those packages play along together very well. But it only got me to about 90% of what I like. I&amp;rsquo;d run into all kinds of weird issues every now and then and it would take my focus away from the task at hand.&lt;/p&gt;
 &lt;p&gt;Helix on the other hand required almost zero config. Pretty much every single default it came with was intuitive. It supports so many languages, and with tree-sitter integration things are a lot smoother and faster while editing code. But the thing I was most impressed with was the speed. I&amp;rsquo;ve never seen that level of speed and responsiveness from any editor. Not Emacs, not VSCode, definitely not IntelliJ. I tried opening a few random projects and tried editing the code a little bit and the experience was awesome. Everything, from auto-complete to opening overlay menus, filtering files from a list of hundreds, even narrowing down commands from the command palette was very smooth.&lt;/p&gt;
@@ -443,10 +507,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>Colored Kindle Highlights</title>
-      <link>/posts/colored-kindle-highlights/</link>
+      <link>//localhost:1313/posts/colored-kindle-highlights/</link>
       <pubDate>Sat, 17 Dec 2022 18:29:00 -0800</pubDate>
       
-      <guid>/posts/colored-kindle-highlights/</guid>
+      <guid>//localhost:1313/posts/colored-kindle-highlights/</guid>
       <description>&lt;p&gt;A coworker of mine runs a bi-weekly tech book club where a bunch of people get together, read a couple of chapters of the ongoing tech book (like Clean Code) beforehand and discuss in the meeting how that can be applied in our existing codebase.&lt;/p&gt;
 &lt;p&gt;Since he runs the meeting while sharing his screen, as he goes through the pages of the chapter, he shows his highlights that he thinks are good talking points for the meeting.&lt;/p&gt;
 &lt;p&gt;I noticed that there were different colored highlights: blue, red and yellow. When asked about it, he mentioned that each color represents something:&lt;/p&gt;
@@ -461,10 +525,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>I enjoy doing boring, repetitive, mundane tasks</title>
-      <link>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</link>
+      <link>//localhost:1313/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</link>
       <pubDate>Fri, 11 Nov 2022 23:29:00 -0800</pubDate>
       
-      <guid>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</guid>
+      <guid>//localhost:1313/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</guid>
       <description>&lt;p&gt;The title of this post seems kinda oxymoronic. Enjoyment and boredom seem to be opposites, so to speak. If we&amp;rsquo;re bored, that means we&amp;rsquo;re not stimulated and that means we&amp;rsquo;re not enjoying whatever it is we&amp;rsquo;re doing (or not doing).&lt;/p&gt;
 &lt;p&gt;Most people I know hate doing mundane repetitive tasks or chores like cleaning, folding clothes, etc. I particularly like them. Not because I enjoy doing them. But because that&amp;rsquo;s where a lot of my thoughts and ideas form connections. I&amp;rsquo;ve had a lot of epiphanies and aha moments during these times.&lt;/p&gt;
 &lt;p&gt;For the longest time, I didn&amp;rsquo;t connect the dots of what motivated me to actually &lt;em&gt;do&lt;/em&gt; &amp;ldquo;boring and repetitive&amp;rdquo; chores. I just did them. And when there was a choice between who in the household wanted to do the boring repetitive task, I always stepped up. After a while, I started viewing that as a negative since I thought seeking to do such boring chores meant I rather prefer doing those tasks than doing something more creative and stimulating. And that somehow by doing so, I was underachieving.&lt;/p&gt;
@@ -483,10 +547,10 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     
     <item>
       <title>It depends…</title>
-      <link>/posts/it-depends/</link>
+      <link>//localhost:1313/posts/it-depends/</link>
       <pubDate>Sat, 01 Oct 2022 17:11:00 -0700</pubDate>
       
-      <guid>/posts/it-depends/</guid>
+      <guid>//localhost:1313/posts/it-depends/</guid>
       <description>&lt;p&gt;Last year I went to physical therapy because I had severe lower back pain. It turned out the pain was mostly because of bad posture. As I was visiting the physical therapy place regularly, I started describing to the therapist how I sit on the couch, how I sit at a table and what my overall posture is during these times.&lt;/p&gt;
 &lt;p&gt;I would ask questions like &amp;ldquo;I sit with my back straight at my desk, and for my legs I use a soft foot stool. Does that help with the posture&amp;rdquo;. And he&amp;rsquo;d say, &amp;ldquo;Well, it depends&amp;hellip;&amp;rdquo;
 Then I would ask a question like, &amp;ldquo;I sometimes sit cross-legged on the sofa and I find that to be very comfortable. Would this affect my back in the long run?&amp;rdquo;. He&amp;rsquo;d again say, &amp;ldquo;Well, it depends&amp;hellip;&amp;rdquo;&lt;/p&gt;
@@ -499,10 +563,10 @@ Then I would ask a question like, &amp;ldquo;I sometimes sit cross-legged on the
     
     <item>
       <title>My beorg to blog workflow</title>
-      <link>/posts/my-beorg-to-blog-workflow/</link>
+      <link>//localhost:1313/posts/my-beorg-to-blog-workflow/</link>
       <pubDate>Mon, 05 Sep 2022 22:56:00 -0700</pubDate>
       
-      <guid>/posts/my-beorg-to-blog-workflow/</guid>
+      <guid>//localhost:1313/posts/my-beorg-to-blog-workflow/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;underline&#34;&gt;Note&lt;/span&gt;: Most part of this blog post was written using the workflow described below.&lt;/p&gt;
 &lt;p&gt;Alright. This needs some explaining and prerequisites.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m a heavy emacs user. I use it for a ton of things, one of them is to maintain and update my blog, which is a static site generated by &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. There is already a great package called &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; which helps with blogging maintenance and workflows for Hugo-generated blogs.&lt;/p&gt;
@@ -522,7 +586,7 @@ Then I would ask a question like, &amp;ldquo;I sometimes sit cross-legged on the
 &lt;p&gt;Here are some of the code snippets that are used for different part of the workflow.&lt;/p&gt;
 &lt;h3 id=&#34;beorg-capture&#34;&gt;Beorg capture&lt;/h3&gt;
 &lt;p&gt;Below is the screenshot. The subtree can be configured in any way one sees fit.
-&lt;a href=&#34;/images/beorg_blog_post_template.png&#34;&gt;&lt;img src=&#34;/images/beorg_blog_post_template.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;//localhost:1313/images/beorg_blog_post_template.png&#34;&gt;&lt;img src=&#34;//localhost:1313/images/beorg_blog_post_template.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;generating-hugo-post-filename&#34;&gt;Generating Hugo post filename&lt;/h3&gt;
 &lt;p&gt;This is a code snippet that is required for generating the filename for the blog post. This function parses the post title and creates a filename that ends with a &amp;lsquo;.md&amp;rsquo; extension.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/extract-hugo-post-file-name&lt;/span&gt; ()
@@ -598,10 +662,10 @@ Found the code in a &lt;a href=&#34;https://stackoverflow.com/a/39652226&#34;&gt
     
     <item>
       <title>Write emails from bottom to top</title>
-      <link>/posts/write-emails-from-bottom-to-top/</link>
+      <link>//localhost:1313/posts/write-emails-from-bottom-to-top/</link>
       <pubDate>Sun, 14 Aug 2022 19:06:00 -0700</pubDate>
       
-      <guid>/posts/write-emails-from-bottom-to-top/</guid>
+      <guid>//localhost:1313/posts/write-emails-from-bottom-to-top/</guid>
       <description>&lt;p&gt;In the years I&amp;rsquo;ve composed emails, I was initially finding it a little hard to go through the top-down steps of adding people in the To field, CC field and coming up with the subject line. There were two problems with this workflow:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It broke my flow for composing an email&lt;/strong&gt;
 I&amp;rsquo;d have a vague idea of how to express my thoughts into words and that flow was broken by filling out these fields.
@@ -619,10 +683,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>Don&#39;t break the chain - hard mode</title>
-      <link>/posts/dont-break-the-chain-hard-mode/</link>
+      <link>//localhost:1313/posts/dont-break-the-chain-hard-mode/</link>
       <pubDate>Mon, 24 Jan 2022 22:45:00 -0800</pubDate>
       
-      <guid>/posts/dont-break-the-chain-hard-mode/</guid>
+      <guid>//localhost:1313/posts/dont-break-the-chain-hard-mode/</guid>
       <description>&lt;p&gt;The basic concept of &lt;a href=&#34;http://dontbreakthechain.com&#34;&gt;Don&amp;rsquo;t Break The Chain&lt;/a&gt; is to do an activity every day so as to &amp;ldquo;not break the chain&amp;rdquo;. This is a method that enforces consistency. This is helpful to make habits stick, provide visual feedback on the progress on a daily basis and motivates us to keep going.&lt;/p&gt;
 &lt;p&gt;I came up with a slight modification to this method which I call &amp;ldquo;Don&amp;rsquo;t Break the Chain - hard mode&amp;rdquo;. This is how it works:&lt;/p&gt;
 &lt;ol&gt;
@@ -638,10 +702,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>Replacing knee-jerk reactions with new learnings</title>
-      <link>/posts/replacing-knee-jerk-reactions-with-new-learnings/</link>
+      <link>//localhost:1313/posts/replacing-knee-jerk-reactions-with-new-learnings/</link>
       <pubDate>Sun, 23 Jan 2022 21:58:00 -0800</pubDate>
       
-      <guid>/posts/replacing-knee-jerk-reactions-with-new-learnings/</guid>
+      <guid>//localhost:1313/posts/replacing-knee-jerk-reactions-with-new-learnings/</guid>
       <description>&lt;p&gt;Often times we come across a blog post, a portion of a book, a podcast, an interview, etc where an expert in a field is explaining something that is very counter-intuitive to us. This happens mostly because we have some strongly held beliefs about how the world works and those beliefs are challenged. This used to happen to me while I was growing up and my first reaction to this was usually, &amp;ldquo;That doesn&amp;rsquo;t make sense. He&amp;rsquo;s clearly wrong, because of &amp;lt;insert vaguely recollected poorly understood never researched supposed fact/anecdote here&amp;gt;&amp;rdquo;. It didn&amp;rsquo;t help me in any way. Some times it made me feel better about myself, but the net outcome of consuming that resource was zero at best, if not negative.&lt;/p&gt;
 &lt;p&gt;As I grew up, I started realizing and asking myself - &amp;ldquo;am I really challenging someone who has a PhD in this subject they&amp;rsquo;re discussing and has spent countless hours thinking about the topic where I&amp;rsquo;m going in to this with nothing more than a hunch on a subject I know nothing about?&amp;rdquo; It&amp;rsquo;s definitely possible that I&amp;rsquo;m right and they&amp;rsquo;re wrong, but it&amp;rsquo;s also highly unlikely.&lt;/p&gt;
 &lt;p&gt;Once I realized this I stopped having such knee-jerk reactions when I saw something I didn&amp;rsquo;t agree with initially. My first reaction now is always, &amp;ldquo;That&amp;rsquo;s interesting and doesn&amp;rsquo;t conform with my beliefs. What am I missing?&amp;rdquo; I prefer to err on the side of me being wrong and learning something from it and updating my beliefs rather than doubling down on something I was already believing in without confirming the validity of it.&lt;/p&gt;
@@ -651,10 +715,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>2021 - Year in Review</title>
-      <link>/posts/2021-year-in-review/</link>
+      <link>//localhost:1313/posts/2021-year-in-review/</link>
       <pubDate>Sun, 16 Jan 2022 11:32:00 -0800</pubDate>
       
-      <guid>/posts/2021-year-in-review/</guid>
+      <guid>//localhost:1313/posts/2021-year-in-review/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been doing this &amp;ldquo;Year in Review&amp;rdquo; for some time now and it helps me put things in perspective as to what I spent more time on, what I enjoyed, where I fell behind, etc. It&amp;rsquo;s a great exercise to do regularly and check in with yourself. So, here are the usual sections - what went well, what didn&amp;rsquo;t go well, side quests and lessons learned.&lt;/p&gt;
 &lt;h2 id=&#34;what-went-well&#34;&gt;What went well&lt;/h2&gt;
 &lt;h3 id=&#34;deleted-whatsapp&#34;&gt;Deleted WhatsApp&lt;/h3&gt;
@@ -687,10 +751,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>Using literate configuration for all text-based configs</title>
-      <link>/posts/using-literate-configuration-for-all-text-based-configs/</link>
+      <link>//localhost:1313/posts/using-literate-configuration-for-all-text-based-configs/</link>
       <pubDate>Fri, 17 Sep 2021 21:22:00 -0700</pubDate>
       
-      <guid>/posts/using-literate-configuration-for-all-text-based-configs/</guid>
+      <guid>//localhost:1313/posts/using-literate-configuration-for-all-text-based-configs/</guid>
       <description>&lt;p&gt;Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&amp;rsquo;s even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.&lt;/p&gt;
 &lt;p&gt;So what can we do? What we &lt;em&gt;can&lt;/em&gt; do is change that config to a literate configuration.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-literate-configuration&#34;&gt;What is Literate Configuration&lt;/h2&gt;
@@ -723,10 +787,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>My experience with Emacs so far</title>
-      <link>/posts/my-experience-with-emacs-so-far/</link>
+      <link>//localhost:1313/posts/my-experience-with-emacs-so-far/</link>
       <pubDate>Sat, 11 Sep 2021 21:48:00 -0700</pubDate>
       
-      <guid>/posts/my-experience-with-emacs-so-far/</guid>
+      <guid>//localhost:1313/posts/my-experience-with-emacs-so-far/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been a vim user for about 15 years and loved every aspect of it. I&amp;rsquo;m nowhere close to the vim wizards I&amp;rsquo;ve seen on YouTube nor some of my coworkers who spend most part of their day writing shell scripts in vim. But among my friends and my team, I was considered a power-user. I used a lot of plugins to get things done much easily, I had my shortcuts that my friends found fascinated by and some of them were kind of amazed that I would do a code walkthrough jumping from function to function and file to file using just vim where most of them were going to their IDEs to do that.&lt;/p&gt;
 &lt;p&gt;But that&amp;rsquo;s about it. My vim usage was just for making quick edits to code (larger edits meant opening up an IDE), editing shell scripts and viewing files quickly. I had to use a different tool for managing my tasks, journaling, saving links, etc.&lt;/p&gt;
 &lt;h2 id=&#34;using-notion&#34;&gt;Using Notion&lt;/h2&gt;
@@ -754,7 +818,7 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;I now use it as a file manager, terminal, taking notes, organizing my life, journaling, git client, a fully functional IDE with code completions and such, manage my work calendar, quick file edits, viewing and querying json files and blogging. This very post was written in Emacs and published using &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; - a package used for exporting org files to markdown files that Hugo understands.&lt;/p&gt;
 &lt;h2 id=&#34;obligatory-xkcd-comic-about-emacs&#34;&gt;Obligatory XKCD comic about emacs&lt;/h2&gt;
 &lt;p&gt;Now that I&amp;rsquo;ve said all this about emacs, I &lt;em&gt;have&lt;/em&gt; to use the obligatory xkcd comic about emacs:&lt;/p&gt;
-&lt;figure&gt;&lt;a href=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;/a&gt;
+&lt;figure&gt;&lt;a href=&#34;//localhost:1313/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;//localhost:1313/images/xkcd_emacs.png&#34;&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
@@ -764,10 +828,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>OrgMode Tips and Tricks</title>
-      <link>/posts/orgmode-tips-tricks/</link>
+      <link>//localhost:1313/posts/orgmode-tips-tricks/</link>
       <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
       
-      <guid>/posts/orgmode-tips-tricks/</guid>
+      <guid>//localhost:1313/posts/orgmode-tips-tricks/</guid>
       <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
 &lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -779,10 +843,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>On Analysis Paralysis</title>
-      <link>/posts/on-analysis-paralysis/</link>
+      <link>//localhost:1313/posts/on-analysis-paralysis/</link>
       <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
       
-      <guid>/posts/on-analysis-paralysis/</guid>
+      <guid>//localhost:1313/posts/on-analysis-paralysis/</guid>
       <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
 &lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
 &lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
@@ -793,10 +857,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>WhatsApp 0:1 Signal</title>
-      <link>/posts/whatsapp-privacy-policy-signal/</link>
+      <link>//localhost:1313/posts/whatsapp-privacy-policy-signal/</link>
       <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
       
-      <guid>/posts/whatsapp-privacy-policy-signal/</guid>
+      <guid>//localhost:1313/posts/whatsapp-privacy-policy-signal/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I&amp;rsquo;d uninstall it because I didn&amp;rsquo;t really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn&amp;rsquo;t have a feature to filter texts by keyword made me not use it as an SMS app either.&lt;/p&gt;
 &lt;h1 id=&#34;the-problem-with-new-platforms&#34;&gt;The problem with new platforms&lt;/h1&gt;
 &lt;p&gt;The main problem with newer platforms is the user base. If all your friends and family are not on the new platform (social media or messenger), then you really can&amp;rsquo;t use it. That&amp;rsquo;s what happened with me on Signal. It was a herculean task for me to convince people who cared very little about privacy to make them switch to Signal. The thing is, it ends up being a huge task for them too. They also have to convince their contacts to switch to Signal or else they&amp;rsquo;ll experience the same silence of having no one to talk to on that app. Some people are okay with using multiple messaging apps and I know a lot of people that don&amp;rsquo;t. I personally don&amp;rsquo;t enjoy it.&lt;/p&gt;
@@ -811,11 +875,11 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
 &lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:50%&#34; src=&#34;//localhost:1313/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
     &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;//localhost:1313/images/data-collection-messaging-apps.jpeg&#34;/&gt;
     &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
@@ -826,10 +890,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>Ideas Need Sufficient Baketime</title>
-      <link>/posts/ideas-need-sufficient-baketime/</link>
+      <link>//localhost:1313/posts/ideas-need-sufficient-baketime/</link>
       <pubDate>Tue, 05 Jan 2021 17:10:14 -0800</pubDate>
       
-      <guid>/posts/ideas-need-sufficient-baketime/</guid>
+      <guid>//localhost:1313/posts/ideas-need-sufficient-baketime/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve always been curious about learning new things. I&amp;rsquo;ve always consumed new information with great enthusiasm. I&amp;rsquo;d read book after book, blog post after blog post and listen to lot of podcasts and audiobooks. What ended up happening was I&amp;rsquo;d never really reflect on what I&amp;rsquo;ve read. So, after some time I&amp;rsquo;d have no recollection of the contents of any book. I used to be under the impression that the more I read, the more I learn and I was checking books off my list. Then I thought reading should really be about grasping the essence instead of trying to remember the nitty gritty details the author talks about in any book. All of this led to me passively consume information without giving any time for myself to reflect on what I&amp;rsquo;ve read.&lt;/p&gt;
 &lt;h1 id=&#34;dont-passively-consume-information&#34;&gt;Don&amp;rsquo;t passively consume information&lt;/h1&gt;
 &lt;p&gt;This is the mistake I made while I used to read a lot of books. When I get a book recommendation via one of the many sources - friends, blogposts, podcasts, goodreads, etc., I&amp;rsquo;d keep adding them to my to-read list on Goodreads. Then, I&amp;rsquo;d either get the audiobook or I&amp;rsquo;d get the Kindle ebook. And, I&amp;rsquo;d just read them one after another. I&amp;rsquo;d thoroughly enjoy reading them and while I&amp;rsquo;m doing that I&amp;rsquo;d feel like I&amp;rsquo;m learning something.&lt;/p&gt;
@@ -852,10 +916,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>Exporting Google Photos</title>
-      <link>/posts/exporting-google-photos/</link>
+      <link>//localhost:1313/posts/exporting-google-photos/</link>
       <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
       
-      <guid>/posts/exporting-google-photos/</guid>
+      <guid>//localhost:1313/posts/exporting-google-photos/</guid>
       <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
 &lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
 &lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
@@ -864,10 +928,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>2020 - Year in Review</title>
-      <link>/posts/2020-year-in-review/</link>
+      <link>//localhost:1313/posts/2020-year-in-review/</link>
       <pubDate>Fri, 01 Jan 2021 20:30:59 -0800</pubDate>
       
-      <guid>/posts/2020-year-in-review/</guid>
+      <guid>//localhost:1313/posts/2020-year-in-review/</guid>
       <description>&lt;p&gt;2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year. We&amp;rsquo;re still resilient and stand strong even though we experience some of the most horrific events we&amp;rsquo;re thrown into. I&amp;rsquo;m grateful for being privileged enough in terms of health, career, etc. This year hasn&amp;rsquo;t been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.&lt;/p&gt;
 &lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
 &lt;h2 id=&#34;self-hosting&#34;&gt;Self hosting&lt;/h2&gt;
@@ -900,10 +964,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>OrgMode Smart Archive</title>
-      <link>/posts/org-mode-smart-archive/</link>
+      <link>//localhost:1313/posts/org-mode-smart-archive/</link>
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
-      <guid>/posts/org-mode-smart-archive/</guid>
+      <guid>//localhost:1313/posts/org-mode-smart-archive/</guid>
       <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
@@ -943,10 +1007,10 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
     
     <item>
       <title>My Hugo Setup Part 3</title>
-      <link>/posts/my-hugo-setup-part-3/</link>
+      <link>//localhost:1313/posts/my-hugo-setup-part-3/</link>
       <pubDate>Wed, 08 Jul 2020 21:03:07 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup-part-3/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup-part-3/</guid>
       <description>&lt;p&gt;This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.&lt;/p&gt;
 &lt;p&gt;Also, this post is part of a &amp;ldquo;series&amp;rdquo; and explains about how to setup &amp;ldquo;series&amp;rdquo;. This is so meta!&lt;/p&gt;
 &lt;h2 id=&#34;what-is-series&#34;&gt;What is Series?&lt;/h2&gt;
@@ -1016,10 +1080,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>My Hugo Setup Part 2</title>
-      <link>/posts/my-hugo-setup-part-2/</link>
+      <link>//localhost:1313/posts/my-hugo-setup-part-2/</link>
       <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup-part-2/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup-part-2/</guid>
       <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
 &lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
 &lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
@@ -1037,10 +1101,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>My Hugo Setup</title>
-      <link>/posts/my-hugo-setup/</link>
+      <link>//localhost:1313/posts/my-hugo-setup/</link>
       <pubDate>Mon, 29 Jun 2020 22:32:42 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup/</guid>
       <description>&lt;p&gt;I recently moved my blog to Hugo and &lt;a href=&#34;https://rrajath.com/posts/moving-to-hugo/&#34;&gt;wrote a brief post about it&lt;/a&gt;. This post explains how I selected a theme and how I made the modifications I needed.&lt;/p&gt;
 &lt;p&gt;I needed a minimal theme for my blog and after searching a bit, I found &lt;a href=&#34;https://themes.gohugo.io/ezhil/&#34;&gt;ezhil&lt;/a&gt;. This checked most of my boxes:&lt;/p&gt;
 &lt;ul&gt;
@@ -1092,10 +1156,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>Moving to Hugo</title>
-      <link>/posts/moving-to-hugo/</link>
+      <link>//localhost:1313/posts/moving-to-hugo/</link>
       <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
       
-      <guid>/posts/moving-to-hugo/</guid>
+      <guid>//localhost:1313/posts/moving-to-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; as a static site generator ever since I created this blog, which was in 2013. Before that, I had &lt;a href=&#34;https://rrajath.com/posts/weekly-noise-1&#34;&gt;tried few other blogging platforms&lt;/a&gt;. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&amp;rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.&lt;/p&gt;
 &lt;p&gt;On the other hand, in the last few months I have been tinkering with few Raspberry Pis and started self-hosting few things. I&amp;rsquo;m not done self-hosting everything I wanted, so there will be more playing around and more learnings that come out of it. This gives me a good opportunity to write about what I learned during the process so that people (including myself) can benefit from it.&lt;/p&gt;
 &lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
@@ -1106,10 +1170,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>2019 in Review</title>
-      <link>/posts/2019-year-in-review/</link>
+      <link>//localhost:1313/posts/2019-year-in-review/</link>
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-year-in-review/</guid>
+      <guid>//localhost:1313/posts/2019-year-in-review/</guid>
       <description>&lt;p&gt;Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went. This time I categorized my activities and personal growth into 3 sections - things I did more of, things I did less of, things I explored. Let&amp;rsquo;s begin!&lt;/p&gt;
 &lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
 &lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
@@ -1155,10 +1219,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>2018 in Review</title>
-      <link>/posts/2018-year-in-review/</link>
+      <link>//localhost:1313/posts/2018-year-in-review/</link>
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2018-year-in-review/</guid>
+      <guid>//localhost:1313/posts/2018-year-in-review/</guid>
       <description>&lt;p&gt;2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments. I have been following James Clear and Tim Ferris for a long time now and &lt;a href=&#34;https://jamesclear.com/2018-annual-review&#34;&gt;their posts&lt;/a&gt; about &lt;a href=&#34;https://tim.blog/2018/12/28/past-year-review/&#34;&gt;past year review&lt;/a&gt; have been the inspiration behind this blog post.&lt;/p&gt;
 &lt;p&gt;I don&amp;rsquo;t like setting goals, but rather invest my time in building habits, as I feel they&amp;rsquo;re more sustainable and long term rather than having an end point that brings me a lot of anxiety while approaching the due date. I like small incremental progress on a daily basis than few days of powering through a task that ends up half-baked. Having said that, I do like to identify few areas I want to focus on to at least head in a general direction to form a habit.&lt;/p&gt;
 &lt;p&gt;Here are some of the goals (or habits) I had planned for 2018:&lt;/p&gt;
@@ -1238,10 +1302,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>The Dreaded 65k Method Limit on Android</title>
-      <link>/posts/the-dreaded-65k-method-limit-on-android/</link>
+      <link>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
+      <guid>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
 &lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536
@@ -1269,10 +1333,10 @@ compile &#39;com.google.android.gms:play-services-location:8.4.0&#39;
     
     <item>
       <title>Two Months With Project Fi</title>
-      <link>/posts/two-months-with-project-fi/</link>
+      <link>//localhost:1313/posts/two-months-with-project-fi/</link>
       <pubDate>Sat, 16 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/two-months-with-project-fi/</guid>
+      <guid>//localhost:1313/posts/two-months-with-project-fi/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been 2 months since I started using Project Fi on my Nexus 6P and I thought I&amp;rsquo;ll write my review about it.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-project-fi&#34;&gt;What is Project Fi&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://fi.google.com/about/&#34;&gt;Project Fi&lt;/a&gt; is a mobile phone carrier offered by Google and it&amp;rsquo;s a prepaid service (at least for now). It uses 2 cellular networks - Sprint and T-Mobile with switching between the two depending on which network has better connection. It also features Wi-Fi calling so when you&amp;rsquo;re at home or work or at a place where there is good Wi-Fi connectivity calls can be made through Wi-Fi. Currently &lt;a href=&#34;https://fi.google.com/about/faq/#supported-devices-1&#34;&gt;only Nexus 5X, 6 and 6P are supported&lt;/a&gt;. Signing up for it is a simple process. You &lt;a href=&#34;https://fi.google.com/signup&#34;&gt;request an invite&lt;/a&gt; and within few days you&amp;rsquo;ll receive the nano sim card. When you sign up for it, you have to provide your details like home address, billing address, credit card details and your mobile phone number (for mobile number portability). This can be done later too, but if you do all this before you get the sim card, then the transition is instant. You just use the new sim card and you&amp;rsquo;re good to go. Once you make the switch to Project Fi, your current prepaid number will be paused. If
@@ -1286,10 +1350,10 @@ another SIM card and share your temporary number with your friends when you&amp;
 phone, nothing. I wake up and it&amp;rsquo;s gone, no data. I tried turning it off and on again, switching to airplane mode and back, switching off and on the international roaming, and also turning off the phone and turning it on again. Nothing worked. I called up customer service and they asked me to do everything I already did and it didn&amp;rsquo;t help. They weren&amp;rsquo;t able to figure it out either. It just didn&amp;rsquo;t work until I came back to US. I could still make and receive calls though. The biggest problem was none of the messages anybody sent to me on WhatsApp or Hangouts reached me and they couldn&amp;rsquo;t call me since mine was an international number and it would cost them about 8-10 times more than a regular local call. I also couldn&amp;rsquo;t use Uber/Maps, which sucked.&lt;/p&gt;
 &lt;h2 id=&#34;other-hiccups&#34;&gt;Other hiccups?&lt;/h2&gt;
 &lt;p&gt;I didn&amp;rsquo;t really have any other problems with Project Fi. Call quality is great, plans are cheap and customizable and no issues with data (at least in the US). But sometimes my phone searches for network when enter my apartment lobby and also sometimes after hanging up. I added a screenshot of that below. It&amp;rsquo;s no biggie, but it never happened to me with my previous carrier.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/project-fi-network-search.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/project-fi-network-search.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;a-sweet-surprise&#34;&gt;A sweet surprise&lt;/h2&gt;
 &lt;p&gt;When I came back from India, a package was waiting for me. A package sent by Google. And it was a LEGO kit to create a phone stand or docking station or other fun things. I had &lt;a href=&#34;http://www.androidpolice.com/2015/11/25/googles-project-fi-sending-out-awesome-lego-kits-to-some-subscribers/&#34;&gt;read on AndroidPolice&lt;/a&gt; that Google was giving away Lego kits to some subscribers of Project Fi. I never expected I&amp;rsquo;d get it. So I opened it and built my own docking station. Check it out ;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/project-fi-lego-kit.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/project-fi-lego-kit.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;I like it. I like the plan and the idea of refunding for unused data, I liked the smooth transition from existing carrier to Project Fi, I like the beautiful app they have to manage accounts, track data usage, view bills and past statements and do so much more and I love the LEGO kit :D I&amp;rsquo;ll stick to it until something stops working unexpectedly (like how my data stopped working for no reason when I was in India). I hope they enable higher data speeds outside US sometime soon.&lt;/p&gt;
 </description>
@@ -1297,10 +1361,10 @@ phone, nothing. I wake up and it&amp;rsquo;s gone, no data. I tried turning it o
     
     <item>
       <title>Book Review: Alchemist</title>
-      <link>/posts/book-review-alchemist/</link>
+      <link>//localhost:1313/posts/book-review-alchemist/</link>
       <pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/book-review-alchemist/</guid>
+      <guid>//localhost:1313/posts/book-review-alchemist/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/865.The_Alchemist&#34;&gt;Alchemist&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/566.Paulo_Coelho&#34;&gt;Paulo Coelho&lt;/a&gt; is the first book I read in 2016. This book had been in my to-read list for quite a while now and I thought I&amp;rsquo;ll give it a read. Also since it&amp;rsquo;s a short book I felt I can get through the whole book in few hours.&lt;/p&gt;
 &lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;The book talks about one boy&amp;rsquo;s journey in finding a hidden treasure which he sees in a recurrent dream. His pursuit of finding the treasure and how he goes against all odds in search of it is what makes this book an interesting read.&lt;/p&gt;
@@ -1319,10 +1383,10 @@ what we forget is that the journey &lt;em&gt;is&lt;/em&gt; the reward.&lt;/p&gt;
     
     <item>
       <title>2015 - Lessons Learned</title>
-      <link>/posts/2015-lessons-learned/</link>
+      <link>//localhost:1313/posts/2015-lessons-learned/</link>
       <pubDate>Sat, 02 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2015-lessons-learned/</guid>
+      <guid>//localhost:1313/posts/2015-lessons-learned/</guid>
       <description>&lt;p&gt;I saw a couple of posts about what people did in 2015 (&lt;a href=&#34;https://medium.com/@vanschneider/my-2015-the-year-of-change-e90c71a50a1e#.lxzac07mb&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://blog.fogus.me/2015/12/29/the-best-things-and-stuff-of-2015/&#34;&gt;this&lt;/a&gt;) that inspired me to write my own. While both posts go in good detail about what they accomplished, my post kind of does the opposite. Mine is more about me reflecting on what I had planned to do, what I did and what I didn&amp;rsquo;t do, and lessons learned during that. And
 new year is a good time to look back on how the past one year went; how productive/lazy you were, how committed/easy going you were.&lt;/p&gt;
 &lt;p&gt;At the start of the year, I wrote down some goals for myself. I called it goals instead of resolutions (like I used to before) to make it sound serious (after all the goal-setting we do at our workplace). And to be honest it worked, to an extent. Couple of goals, I really crushed it and I&amp;rsquo;m happy about it, but few others, meh. Most importantly when I look at the whole of 2015 I&amp;rsquo;m surprised to see how I functioned. I was keeping myself busy for the most part doing something and learning
@@ -1385,20 +1449,20 @@ know exactly how far away you are from your goal and you can work towards it.&lt
     
     <item>
       <title>Macbook users must swap Caps Lock and Ctrl Keys. Seriously!</title>
-      <link>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</link>
+      <link>//localhost:1313/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</link>
       <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
+      <guid>//localhost:1313/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
       <description>&lt;p&gt;I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide. But geniuses at Apple decided to use that key as the function key thus making us twist our wrists more so that our pinky can reach the control key. It&amp;rsquo;s so damn uncomfortable to do that all the time. But thankfully, Mac OSX has the feature to switch modifier keys. You can basically make any modifier key (Ctrl, Shift, Alt, Caps Lock) to behave as any other modifier key. And we use Ctrl more than Caps Lock; mainly programmers. Moreover I&amp;rsquo;ve seen so many people holding Shift to type out phrases in caps where they could have used Caps Lock key once and comfortably typed out the phrase (without holding Shift the whole time). So to fix all this and type comfortably, just swap Caps Lock and Ctrl and live in peace.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Taskr - the simplest task management app</title>
-      <link>/posts/taskr/</link>
+      <link>//localhost:1313/posts/taskr/</link>
       <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/posts/taskr/</guid>
+      <guid>//localhost:1313/posts/taskr/</guid>
       <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
 &lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
 the user.&lt;/p&gt;
@@ -1438,9 +1502,9 @@ I used a singleton to have a single copy of the task list which will be availabl
 &lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
 &lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
 &lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
  
-&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
 I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
 &lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
@@ -1449,10 +1513,10 @@ I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
     
     <item>
       <title>Graduated :)</title>
-      <link>/posts/graduation/</link>
+      <link>//localhost:1313/posts/graduation/</link>
       <pubDate>Sat, 10 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/graduation/</guid>
+      <guid>//localhost:1313/posts/graduation/</guid>
       <description>&lt;p&gt;Today I graduated with Masters in Computer Science from University of Illinois at Chicago. It&amp;rsquo;s been about two years since I came to this country and I had some really nice experiences working with my project mates, doing my internship, attending meetups and hackathons, spending sleepless nights working on projects and assignments while surviving on pizza, and sometimes coffee. Two years went by really fast. It feels like just yesterday I landed here. Done with college and now
 I&amp;rsquo;m going into a much more challenging phase of my life where I get to learn and innovate everyday. Will try my best to keep working on my hobby projects as and when I get time.&lt;/p&gt;
 </description>
@@ -1460,10 +1524,10 @@ I&amp;rsquo;m going into a much more challenging phase of my life where I get to
     
     <item>
       <title>Weekly Noise #16 - Wrap up and future enhancements</title>
-      <link>/posts/weekly-noise-16/</link>
+      <link>//localhost:1313/posts/weekly-noise-16/</link>
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-16/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-16/</guid>
       <description>&lt;p&gt;All in all, this project was an extremely interesting one. We got to learn a lot from this project, especially being new to Android development.&lt;/p&gt;
 &lt;p&gt;In conclusion, this project demonstrates a car navigation system as an Android app that uses one of the localization techniques, namely, WiFi Fingerprinting to navigate a car in a restricted indoor space. Due to poor visibility of satellites inside an indoor structure, fingerprints from the available access points can be used for navigation. Although this method of navigating cars inside indoor spaces are basically smartphone apps that add nothing to the existing infrastructure, the
 downside of this approach is that one has to not only depend on the availability of routers during the offline/online phase, but also keep track of the addition or deletion of routers between offline and online phases.&lt;/p&gt;
@@ -1477,10 +1541,10 @@ downside of this approach is that one has to not only depend on the availability
     
     <item>
       <title>Weekly Noise #15 - Experimental Results</title>
-      <link>/posts/weekly-noise-15/</link>
+      <link>//localhost:1313/posts/weekly-noise-15/</link>
       <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-15/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-15/</guid>
       <description>&lt;p&gt;Two phones were used as part of testing – LG Nexus 4 and HTC One. Logging was done multiple times during the day, between 11am and 5pm. One floor was considered to test the accuracy of the algorithm. A total of 28 feature points were collected on one floor. About 150 scans were performed on each feature point and about 750 records were inserted into the database. With the above-mentioned algorithm and localization approach, an accuracy of at least 10m was obtained. We noticed that HTC One
 did not record signal strengths less than - 90 and hence we had to tweak the code for data collection to make it uniform with the other phones.&lt;/p&gt;
 &lt;h3 id=&#34;challenges-faced&#34;&gt;Challenges faced&lt;/h3&gt;
@@ -1499,10 +1563,10 @@ did not record signal strengths less than - 90 and hence we had to tweak the cod
     
     <item>
       <title>Weekly Noise #14 - Navigation and Voice Alerts</title>
-      <link>/posts/weekly-noise-14/</link>
+      <link>//localhost:1313/posts/weekly-noise-14/</link>
       <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-14/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-14/</guid>
       <description>&lt;p&gt;This week we concentrated on Navigation and Voice Alerts. Calculation of the route path is quite easy and it&amp;rsquo;s a one-time task, the results of which will be used repetitively for navigation. Navigation in itself is quite complicated since it involves detecting the location of the user and then directing him accordingly. So the whole process banks on the accuracy of the current location of the user. Any mistake in the location of the user will result in displaying the directions too early or
 too late thus leading to a bad user experience. Hence this needs efficient calibration in terms of number of times the search for the location happens, the number of navigation cells to be considered for search and the like.&lt;/p&gt;
 &lt;p&gt;We have used the current navigation cell and the next two cells along the navigation path during testing and fine tuning and they ended up giving good results. What we employed was to detect intersection points in the route digraph and alert the user when he reaches the intersection point. Thus in the search for the next probable position of the car along the navigation path, if the returned grid coordinate is one of the intersection points, the alert is displayed to the user asking him
@@ -1513,13 +1577,13 @@ to make a left turn or a right turn accordingly. Similarly, if the destination i
     
     <item>
       <title>Weekly Noise #13 - Routing Algorithm</title>
-      <link>/posts/weekly-noise-13/</link>
+      <link>//localhost:1313/posts/weekly-noise-13/</link>
       <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-13/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-13/</guid>
       <description>&lt;p&gt;This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them. Doing this helps us in finding out the best way to navigate to any parking slot. Most parking structures have uni-directional paths. That is, cars can go only in one direction. They pretty much don&amp;rsquo;t have a choice in terms of choosing different ways to get to the destination parking slot. We used this
 to our advantage in our routing algorithm. The directed graph that we created had nodes as the intersections and edges as the navigation paths in which cars can move. Below is a good illustration of how we visualized our routing algorithm.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/routing-algorithm.png&#34; alt=&#34;Routing Algorithm&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/routing-algorithm.png&#34; alt=&#34;Routing Algorithm&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you see in the figure, N, S, E, W, NE, SW refers to the direction in which a car can move upon reaching that intersection point. The edges have a fixed value so that it would be easy to calculate distances. The arrows shown in red are part of the navigation path. From the start point to the destination the path is along the checkpoints - N, W, W, SW and E. And the distances along the path are calculated accordingly. The starting point is fixed since the app starts when the car enters
 the lot. Once the user selects a parking slot, the route is calculated using the routing algorithm mentioned above. This should be giving the user a step by step navigation and voice alerts as and when he turns.&lt;/p&gt;
 </description>
@@ -1527,10 +1591,10 @@ the lot. Once the user selects a parking slot, the route is calculated using the
     
     <item>
       <title>Weekly Noise #12 - Geofencing</title>
-      <link>/posts/weekly-noise-12/</link>
+      <link>//localhost:1313/posts/weekly-noise-12/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-12/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-12/</guid>
       <description>&lt;p&gt;Geofencing is a concept wherein a fence is created around a particular area and any action can be performed once a mobile device enters this fence. Google detects when the mobile device enters this fence and allows the developer to invoke any activity or service. So the way it works is that it expects an x,y coordinate and a radius parameter. The radius parameter creates a circular fence around the co-ordinates.&lt;/p&gt;
 &lt;p&gt;We have used this concept in our project in order to detect if the user is entering the parking structure. If so, we invoke our application and set the starting point as the entrance of the parking structure and present the user with the list of available parking slots to choose from. Once the user chooses the parking slot, the app calculates the route and starts navigating.&lt;/p&gt;
 </description>
@@ -1538,23 +1602,23 @@ the lot. Once the user selects a parking slot, the route is calculated using the
     
     <item>
       <title>Weekly Noise #11 - Online Phase</title>
-      <link>/posts/weekly-noise-11/</link>
+      <link>//localhost:1313/posts/weekly-noise-11/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-11/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-11/</guid>
       <description>&lt;p&gt;The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching
 the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user&amp;rsquo;s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/position-prediction.png&#34; alt=&#34;Position Prediction&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/position-prediction.png&#34; alt=&#34;Position Prediction&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see in the image, the green cells are the next 3 predicted cells on the navigation path, the blue cells are rest of the cells and the orange cells are the ramps in the middle of the parking that takes you to the next level of the parking structure. The worst case is when the search results yield nothing thus not changing the position of the car on the map. If the search results do yield something, the car moves forward.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Weekly Noise #10 - Offline Phase Complete</title>
-      <link>/posts/weekly-noise-10/</link>
+      <link>//localhost:1313/posts/weekly-noise-10/</link>
       <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-10/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-10/</guid>
       <description>&lt;p&gt;In order to bulk load the parking cell data, I chose to use a JSON file as it is simpler to edit cell information (if need be). I wrote a Python script to generate the JSON file with parking cell information. The JSON file is an array of parking cells wherein each element in that array has the grid co-ordinates. With this information, I will be able to bulk insert information about all parking cells into the database. A simple button on the Intro Activity takes care of this task.&lt;/p&gt;
 &lt;p&gt;Since each navigation cell has a parking cell on either side, the navigation cell id for those parking cells must be updated. The DataSource file has all the relevant methods to do these operations.&lt;/p&gt;
 &lt;p&gt;Also, the colored cell issue still persists and I&amp;rsquo;m almost on the verge of giving up in order to not waste any more time on this. I am instead thinking of reducing the height of the cells in the grid view to make it non-scrollable.&lt;/p&gt;
@@ -1570,10 +1634,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #9 - Managing Database</title>
-      <link>/posts/weekly-noise-9/</link>
+      <link>//localhost:1313/posts/weekly-noise-9/</link>
       <pubDate>Sat, 15 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-9/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-9/</guid>
       <description>&lt;p&gt;After last week&amp;rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Created an activity to manage database: This activity is a drop down of table names with buttons to delete both the auto-increment sequences and the data from selected table. This becomes easier for testing so that pretty much all database related tasks can be handled on the fly.&lt;/li&gt;
@@ -1592,10 +1656,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #8 - Database Schema</title>
-      <link>/posts/weekly-noise-8/</link>
+      <link>//localhost:1313/posts/weekly-noise-8/</link>
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-8/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-8/</guid>
       <description>&lt;p&gt;As per the design, we created database schemas, tables and other relevant classes:&lt;/p&gt;
 &lt;p&gt;Database:&lt;/p&gt;
 &lt;ul&gt;
@@ -1622,10 +1686,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #7 - My Development Environment</title>
-      <link>/posts/weekly-noise-7/</link>
+      <link>//localhost:1313/posts/weekly-noise-7/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-7/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-7/</guid>
       <description>&lt;p&gt;Before I go to the details about the working of the project, I would like to explain my Development Environment - the tools I use and why I use them.&lt;/p&gt;
 &lt;h2 id=&#34;ide-intellij-idea-13&#34;&gt;IDE: IntelliJ IDEA 13&lt;/h2&gt;
 &lt;p&gt;I am a huge fan of IntelliJ IDEA since I got my hands on it during my internship. This JetBrains team is pure genius and have put some serious thought while creating the IDE. It is so much better than Eclipse in terms of features, speed and performance. It also has Eclipse shortcuts which makes the transition from Eclipse a lot smoother. It has an awesome set of plugins, which are easy to load and install. It also has its own versioning system wherein you can dig up files from local history and revert to any previous version or just include part of the changes. There are plenty of good features to talk about and I&amp;rsquo;m sure any developer will fall in love with this IDE once s/he starts using it.&lt;/p&gt;
@@ -1640,10 +1704,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #6 - Design</title>
-      <link>/posts/weekly-noise-6/</link>
+      <link>//localhost:1313/posts/weekly-noise-6/</link>
       <pubDate>Sat, 22 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-6/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-6/</guid>
       <description>&lt;h2 id=&#34;parkassist&#34;&gt;ParkAssist&lt;/h2&gt;
 &lt;p&gt;In my previous post I gave a brief overview about the project that I was working on and its problem statement. After much research about how WiFi localization works and everything that we need to know about it, we started working on the design. Our approach uses WiFi localization, accelerometer and gyroscope for navigating the car. By the way, the name of the app is called ParkAssist. The project will up on GitHub and will have regular commits for the next couple of months.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-a-wifi-fingerprint&#34;&gt;What is a WiFi fingerprint?&lt;/h2&gt;
@@ -1658,7 +1722,7 @@ the current and the next 2 cells along the navigation path. If the database sear
 &lt;/ul&gt;
 &lt;p&gt;In the offline phase, each cell along the navigation path is associated with a particular fingerprint and these fingerprints are recorded and stored in a database. The database will be used in future during the online phase in order to track the location of the user.&lt;/p&gt;
 &lt;p&gt;AS SHOWN IN THE FIGURE BELOW, the grid is divided into cells. ParkCells are the parking slots and NavCells are the cells along the navigation path. The offline phase is only about storing fingerprints at each navigation cell into a database.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/grid-illustration.png&#34; alt=&#34;Grid Illustration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/grid-illustration.png&#34; alt=&#34;Grid Illustration&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In the online phase, as the car enters the lot, the application is activated using GeoFencing technique. Once the application is activated, the user is shown the parking lot grid where he can choose a parking slot. When the user selects a parking slot, the neighboring navigation cell is selected as the destination point. We know the start point of the car since it is the entrance of the parking lot. We also continuously track the movement of the car using accelerometer and gyroscope. This technique combined with fingerprint matching will give an accurate location of the car and the car is routed from the start point to the destination point. This becomes a simple routing problem on a grid with predefined navigation path.&lt;/p&gt;
 &lt;h2 id=&#34;my-development-environment&#34;&gt;My Development Environment&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;IDE&lt;/strong&gt;: IntelliJ IDEA 13.0[Insert Link]&lt;br&gt;
@@ -1679,10 +1743,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #5 - My Masters Project</title>
-      <link>/posts/weekly-noise-5/</link>
+      <link>//localhost:1313/posts/weekly-noise-5/</link>
       <pubDate>Sat, 15 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-5/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-5/</guid>
       <description>&lt;p&gt;I would like to give a glimpse of what my Masters Project is all about and what I will be working on in the next couple of months. The project involves spatial databases, navigation and a ton of Android programming.&lt;/p&gt;
 &lt;h2 id=&#34;parking-in-restricted-spaces&#34;&gt;Parking in Restricted Spaces&lt;/h2&gt;
 &lt;p&gt;The idea is to develop a Car Navigation System that enables a user to drive around a parking lot and navigate him to the parking slot of his choice without using battery intensive sensors like GPS.&lt;/p&gt;
@@ -1699,20 +1763,20 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #4 - Hibernation</title>
-      <link>/posts/weekly-noise-4/</link>
+      <link>//localhost:1313/posts/weekly-noise-4/</link>
       <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-4/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-4/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been quite a while since I last updated my blog. I was busy with exams and then vacations. I went back home (Bangalore, India) after about 1.5 years to enjoy a warm winter break as I was missing the terrible polar vortex that hit Chicago for couple of weeks in December. I couldn&amp;rsquo;t get to work on any of my hobby projects since I had to spend time with family and friends. The one month went by really fast and before I knew it I was back walking on the freezing streets of Chicago again. I got busy with doing literature survey for my Masters Project and had to read lot of papers to deeply understand the problem statement. The project is about developing a Car Navigation System inside a parking lot. I will be talking more about the project in my next Weekly Noise post. But for now, it&amp;rsquo;s glad to be back :)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Weekly Noise #3 - New Domain</title>
-      <link>/posts/weekly-noise-3/</link>
+      <link>//localhost:1313/posts/weekly-noise-3/</link>
       <pubDate>Sun, 24 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-3/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-3/</guid>
       <description>&lt;p&gt;As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator. So it doesn&amp;rsquo;t calculate such things and insert them at run time. I changed the formatting of the description of a post to appear beside the tags and the &amp;ldquo;time to read&amp;rdquo; must be added manually after running a simple &lt;code&gt;wc -w&lt;/code&gt; command on the .md file. Once I finish writing a post, I run the above command and insert it manually. Besides that, I also purchased a domain from &lt;a href=&#34;http://www.namecheap.com&#34;&gt;NameCheap&lt;/a&gt; and made it point to the blog. I added a write up about one of the projects - Tweet Sentiment Classifier - that I developed during my Data Mining course. I also added a new page to hold my Resume.&lt;/p&gt;
 &lt;p&gt;I have one of my finals coming up right after Thanksgiving, so I&amp;rsquo;ll be busy with that. However, since one of the projects involves Android development, I&amp;rsquo;m planning to develop some sample apps as a quick recap into Android development. So target for next week would be:&lt;/p&gt;
 &lt;ul&gt;
@@ -1724,11 +1788,11 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #2 - Theme Enhancements</title>
-      <link>/posts/weekly-noise-2/</link>
+      <link>//localhost:1313/posts/weekly-noise-2/</link>
       <pubDate>Sun, 17 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-2/</guid>
-      <description>&lt;p&gt;Last week I worked on the theme to modify few things which I have explained in the &lt;a href=&#34;/my-theme-setup/&#34;&gt;My Theme Setup&lt;/a&gt; post. I added a Projects link in the Navbar at the top which I will be filling up with my hobby projects sometime soon. I was held up with a class project in one of the courses which ate up most of my time. But I did finish what I had planned to finish. I&amp;rsquo;ve also got my finals approaching in less than a month so my updates may not be significant. That being said, here are some tasks for next week:&lt;/p&gt;
+      <guid>//localhost:1313/posts/weekly-noise-2/</guid>
+      <description>&lt;p&gt;Last week I worked on the theme to modify few things which I have explained in the &lt;a href=&#34;//localhost:1313/my-theme-setup/&#34;&gt;My Theme Setup&lt;/a&gt; post. I added a Projects link in the Navbar at the top which I will be filling up with my hobby projects sometime soon. I was held up with a class project in one of the courses which ate up most of my time. But I did finish what I had planned to finish. I&amp;rsquo;ve also got my finals approaching in less than a month so my updates may not be significant. That being said, here are some tasks for next week:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Integrate Medium-style &amp;ldquo;time it takes to read the post&amp;rdquo; (I don&amp;rsquo;t know what it&amp;rsquo;s called) feature into posts.&lt;/li&gt;
 &lt;li&gt;Write about one of my hobby projects.&lt;/li&gt;
@@ -1739,10 +1803,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>My Theme Setup</title>
-      <link>/posts/my-theme-setup/</link>
+      <link>//localhost:1313/posts/my-theme-setup/</link>
       <pubDate>Thu, 14 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/my-theme-setup/</guid>
+      <guid>//localhost:1313/posts/my-theme-setup/</guid>
       <description>&lt;p&gt;First of all, kudos to &lt;a href=&#34;https://twitter.com/mmistakes&#34;&gt;@mmistakes&lt;/a&gt; for coming up with such an elegant theme called &lt;a href=&#34;http://mmistakes.github.io/so-simple-theme/&#34;&gt;&lt;strong&gt;So Simple&lt;/strong&gt;&lt;/a&gt;. Everything looks perfect and every component is placed where it&amp;rsquo;s supposed to be. I didn&amp;rsquo;t really have much to change except for few images and links here and there. It took me some time (along with my coursework) to setup this theme with my customizations on it. Following are the changes I made on this theme:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Removed site logo (the big circle head) that appears at the top of every post and restricted it to pages alone, so as not to make it redundant.&lt;/li&gt;
@@ -1757,10 +1821,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Weekly Noise #1 - Moving to GitHub Pages</title>
-      <link>/posts/weekly-noise-1/</link>
+      <link>//localhost:1313/posts/weekly-noise-1/</link>
       <pubDate>Sat, 09 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/weekly-noise-1/</guid>
+      <guid>//localhost:1313/posts/weekly-noise-1/</guid>
       <description>&lt;p&gt;To set the context, Weekly Noise series is where I talk about what I accomplished during the week (like working on my personal projects among other things) and also set the goals for next week. So this will be a weekly iteration of my progress in the projects I work on.&lt;/p&gt;
 &lt;p&gt;So to start off with the Weekly Noise series, I would share an update on what happened in the last one month. Here&amp;rsquo;s my story on hopping between different blogging platforms in the quest to find the right one (for me).&lt;/p&gt;
 &lt;p&gt;The story so far:&lt;/p&gt;
@@ -1800,10 +1864,10 @@ the current and the next 2 cells along the navigation path. If the database sear
     
     <item>
       <title>Hello World</title>
-      <link>/posts/hello-world/</link>
+      <link>//localhost:1313/posts/hello-world/</link>
       <pubDate>Fri, 08 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/hello-world/</guid>
+      <guid>//localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;After being lazy as a sloth for a “really long” time, I finally pushed myself to create a blog where I can write/share about projects I work on in my free time and also about the technologies/tools that I encounter every now and then. I was basically inspired by &lt;a href=&#34;http://mdswanson.com/blog/2010/10/24/weekly-noise.html&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;http://mdswanson.com/&#34;&gt;Matt Swanson&lt;/a&gt; since I face a similar situation while working on my side projects, wherein I work on many projects but none of them see completion. I was also drawn towards &lt;a href=&#34;http://nathanleclaire.com/blog/2013/10/16/commit-every-day&#34;&gt;this blog post&lt;/a&gt; by &lt;a href=&#34;http://nathanleclaire.com&#34;&gt;Nathan LeClaire&lt;/a&gt; about committing code every day and blogging about it every week which is kinda similar to what Matt says. In Matt&amp;rsquo;s own words,&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The basic idea is to set aside time each weekend to plan out what project you are going to work on during the coming week. Then, after the week is over, you reflect on what progress you made with a blog post and then write out next week’s plan. Rinse and repeat.&lt;/p&gt;&lt;/blockquote&gt;

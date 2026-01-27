@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dex on Rajath Ramakrishna</title>
-    <link>/tags/dex/</link>
+    <link>//localhost:1313/tags/dex/</link>
     <description>Recent content in Dex on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/dex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/dex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Dreaded 65k Method Limit on Android</title>
-      <link>/posts/the-dreaded-65k-method-limit-on-android/</link>
+      <link>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
+      <guid>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
 &lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536

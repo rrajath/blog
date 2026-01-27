@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo-Setup on Rajath Ramakrishna</title>
-    <link>/series/hugo-setup/</link>
+    <link>//localhost:1313/series/hugo-setup/</link>
     <description>Recent content in Hugo-Setup on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 08 Jul 2020 21:03:07 -0700</lastBuildDate><atom:link href="/series/hugo-setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jul 2020 21:03:07 -0700</lastBuildDate><atom:link href="//localhost:1313/series/hugo-setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Hugo Setup Part 3</title>
-      <link>/posts/my-hugo-setup-part-3/</link>
+      <link>//localhost:1313/posts/my-hugo-setup-part-3/</link>
       <pubDate>Wed, 08 Jul 2020 21:03:07 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup-part-3/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup-part-3/</guid>
       <description>&lt;p&gt;This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.&lt;/p&gt;
 &lt;p&gt;Also, this post is part of a &amp;ldquo;series&amp;rdquo; and explains about how to setup &amp;ldquo;series&amp;rdquo;. This is so meta!&lt;/p&gt;
 &lt;h2 id=&#34;what-is-series&#34;&gt;What is Series?&lt;/h2&gt;
@@ -83,10 +83,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>My Hugo Setup Part 2</title>
-      <link>/posts/my-hugo-setup-part-2/</link>
+      <link>//localhost:1313/posts/my-hugo-setup-part-2/</link>
       <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup-part-2/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup-part-2/</guid>
       <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
 &lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
 &lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
@@ -104,10 +104,10 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
     
     <item>
       <title>My Hugo Setup</title>
-      <link>/posts/my-hugo-setup/</link>
+      <link>//localhost:1313/posts/my-hugo-setup/</link>
       <pubDate>Mon, 29 Jun 2020 22:32:42 -0700</pubDate>
       
-      <guid>/posts/my-hugo-setup/</guid>
+      <guid>//localhost:1313/posts/my-hugo-setup/</guid>
       <description>&lt;p&gt;I recently moved my blog to Hugo and &lt;a href=&#34;https://rrajath.com/posts/moving-to-hugo/&#34;&gt;wrote a brief post about it&lt;/a&gt;. This post explains how I selected a theme and how I made the modifications I needed.&lt;/p&gt;
 &lt;p&gt;I needed a minimal theme for my blog and after searching a bit, I found &lt;a href=&#34;https://themes.gohugo.io/ezhil/&#34;&gt;ezhil&lt;/a&gt;. This checked most of my boxes:&lt;/p&gt;
 &lt;ul&gt;

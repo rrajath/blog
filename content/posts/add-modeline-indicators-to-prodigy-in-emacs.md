@@ -2,7 +2,7 @@
 title = "Add modeline indicators to Prodigy in Emacs"
 author = ["Rajath Ramakrishna"]
 date = 2026-01-15T15:04:00-08:00
-lastmod = 2026-01-16T10:44:10-08:00
+lastmod = 2026-01-26T22:01:36-08:00
 tags = ["vibecoding", "emacs"]
 draft = false
 +++

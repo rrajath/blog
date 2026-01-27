@@ -2,26 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on Rajath Ramakrishna</title>
-    <link>/tags/emacs/</link>
+    <link>//localhost:1313/tags/emacs/</link>
     <description>Recent content in Emacs on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 15:04:00 -0800</lastBuildDate><atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jan 2026 22:53:46 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-retro-journal: an emacs package for looking back through your journal</title>
+      <link>//localhost:1313/posts/title-about-vibecoding-an-emacs-package-for-journal-lookback/</link>
+      <pubDate>Mon, 26 Jan 2026 22:53:46 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/title-about-vibecoding-an-emacs-package-for-journal-lookback/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been journaling in org-mode since 2020. It&amp;rsquo;s a simple &lt;code&gt;journal.org&lt;/code&gt; file in &lt;code&gt;datetree&lt;/code&gt; format, where I add entries each day. One thing I never did is to go back and read what I had written. I really like the Memories feature in Google Photos where it shows what I was doing that day or around that day a year ago, 2 years ago, 3 years ago and so on. And I wanted a similar feature for my journal.&lt;/p&gt;
+&lt;p&gt;So, with some assistance from the LLM, I vibecoded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal&lt;/a&gt; that does exactly this. The package scans each year to find entries from the same or nearest date in previous years. It then presents these in an ephemeral buffer. I even added a few keyboard shortcuts that enable the user to go backward and forward through time one day at a time. Or the user can pick a specific date and view past entries for each year around that date. I wanted the level of detail to be just the headings so that I could go into any of them to read more. Plus, these org subtrees are &lt;em&gt;copied&lt;/em&gt; to the ephemeral buffer, so any accidental edits won&amp;rsquo;t affect the original file.&lt;/p&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like in action:
+&lt;img src=&#34;//localhost:1313/images/OrgRetroJournal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is invoked by calling the function &lt;code&gt;org-retro-journal-review&lt;/code&gt;, which can be bound to any key.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was a fun exercise. As mentioned earlier in this post, I co-developed it with LLM assistance. I&amp;rsquo;m not super proficient in Emacs Lisp to the point where I can write complex functions. Given enough time, I would have figured it out, but due to lack of time and LLMs being pretty good at writing code, I chose to use an LLM to assist me with this. The whole process took less than half an hour.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>org-retro-journal: an emacs package for looking back through your journal</title>
+      <link>//localhost:1313/posts/org-retro-journal/</link>
+      <pubDate>Mon, 26 Jan 2026 22:51:18 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/org-retro-journal/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been journaling in org-mode since 2020. It&amp;rsquo;s a simple &lt;code&gt;journal.org&lt;/code&gt; file in &lt;code&gt;datetree&lt;/code&gt; format, where I add entries each day. One thing I never did is to go back and read what I had written. I really like the Memories feature in Google Photos where it shows what I was doing that day or around that day a year ago, 2 years ago, 3 years ago and so on. And I wanted a similar feature for my journal.&lt;/p&gt;
+&lt;p&gt;So, with some assistance from the LLM, I vibecoded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal&lt;/a&gt; that does exactly this. The package scans each year to find entries from the same or nearest date in previous years. It then presents these in an ephemeral buffer. I even added a few keyboard shortcuts that enable the user to go backward and forward through time one day at a time. Or the user can pick a specific date and view past entries for each year around that date. I wanted the level of detail to be just the headings so that I could go into any of them to read more. Plus, these org subtrees are &lt;em&gt;copied&lt;/em&gt; to the ephemeral buffer, so any accidental edits won&amp;rsquo;t affect the original file.&lt;/p&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like in action:
+&lt;img src=&#34;//localhost:1313/images/OrgRetroJournal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is invoked by calling the function &lt;code&gt;org-retro-journal-review&lt;/code&gt;, which can be bound to any key.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was a fun exercise. As mentioned earlier in this post, I co-developed it with LLM assistance. I&amp;rsquo;m not super proficient in Emacs Lisp to the point where I can write complex functions. Given enough time, I would have figured it out, but due to lack of time and LLMs being pretty good at writing code, I chose to use an LLM to assist me with this. The whole process took less than half an hour.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Add modeline indicators to Prodigy in Emacs</title>
-      <link>/posts/add-modeline-indicators-to-prodigy-in-emacs/</link>
+      <link>//localhost:1313/posts/add-modeline-indicators-to-prodigy-in-emacs/</link>
       <pubDate>Thu, 15 Jan 2026 15:04:00 -0800</pubDate>
       
-      <guid>/posts/add-modeline-indicators-to-prodigy-in-emacs/</guid>
+      <guid>//localhost:1313/posts/add-modeline-indicators-to-prodigy-in-emacs/</guid>
       <description>&lt;p&gt;I recently started using &lt;a href=&#34;https://github.com/rejeep/prodigy.el&#34;&gt;prodigy.el&lt;/a&gt; at work since I had to run a few services locally for development. I used to run them in my terminal in different tabs, but I thought of giving Prodigy a try and it worked great! I was able to not just run the services without having to look at the logs (unless I needed to) but also configure the status of each service based on certain text patterns in the logs. This way Prodigy would show if the service is Ready/Running/Stopped.&lt;/p&gt;
 &lt;p&gt;One thing missing in Prodigy is that it doesn&amp;rsquo;t show any modeline indicators. What I wanted was to be able to quickly find which services were running and which ones were stopped. This was going to be too much information to be displayed on the modeline, so I instead wanted just the number of services running vs stopped, and I wanted them to be color coded (green for running, blue for ready, yellow for stopped, etc.) And on hover, I wanted the respective service names to be displayed in the echo area.&lt;/p&gt;
 &lt;p&gt;I asked Gemini 3 Pro to generate functions and hooks with these exact requirements and it did a great job.&lt;/p&gt;
 &lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s the screenshot of mouse hover on services stopped
-&lt;img src=&#34;/images/ProdigyServicesStopped.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/ProdigyServicesStopped.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;And here&amp;rsquo;s the screenshot of mouse hover on services running
-&lt;img src=&#34;/images/ProdigyServicesRunning.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/ProdigyServicesRunning.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Like I mentioned above, the entire code was generated by an LLM (Gemini 3 Pro) and I didn&amp;rsquo;t have to tweak anything at all.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;;; 1. Define a variable to hold the modeline string&lt;/span&gt;
@@ -94,10 +128,10 @@
     
     <item>
       <title>OrgMode Tips and Tricks</title>
-      <link>/posts/orgmode-tips-tricks/</link>
+      <link>//localhost:1313/posts/orgmode-tips-tricks/</link>
       <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
       
-      <guid>/posts/orgmode-tips-tricks/</guid>
+      <guid>//localhost:1313/posts/orgmode-tips-tricks/</guid>
       <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
 &lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -109,10 +143,10 @@
     
     <item>
       <title>OrgMode Smart Archive</title>
-      <link>/posts/org-mode-smart-archive/</link>
+      <link>//localhost:1313/posts/org-mode-smart-archive/</link>
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
-      <guid>/posts/org-mode-smart-archive/</guid>
+      <guid>//localhost:1313/posts/org-mode-smart-archive/</guid>
       <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks

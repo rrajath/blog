@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Rajath Ramakrishna</title>
-    <link>/tags/android/</link>
+    <link>//localhost:1313/tags/android/</link>
     <description>Recent content in Android on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Dreaded 65k Method Limit on Android</title>
-      <link>/posts/the-dreaded-65k-method-limit-on-android/</link>
+      <link>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
+      <guid>//localhost:1313/posts/the-dreaded-65k-method-limit-on-android/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
 &lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536
@@ -41,10 +41,10 @@ compile &#39;com.google.android.gms:play-services-location:8.4.0&#39;
     
     <item>
       <title>Taskr - the simplest task management app</title>
-      <link>/posts/taskr/</link>
+      <link>//localhost:1313/posts/taskr/</link>
       <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/posts/taskr/</guid>
+      <guid>//localhost:1313/posts/taskr/</guid>
       <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
 &lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
 the user.&lt;/p&gt;
@@ -84,9 +84,9 @@ I used a singleton to have a single copy of the task list which will be availabl
 &lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
 &lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
 &lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
  
-&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
 I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
 &lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
