@@ -1,0 +1,105 @@
+body {
+	color: #ddd;
+	background-color: #000;
+}
+
+::-moz-selection {
+    background: #666;
+    text-shadow: none
+}
+
+::selection {
+    background: #666;
+    text-shadow: none
+}
+
+hr {
+    border-color: #333;
+}
+
+blockquote {
+	border-color: #ddd;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #ddd;
+}
+
+a,a:hover {
+	color: #ff7979;
+	text-decoration: none;
+}
+
+.site-description a,
+.site-description a:hover {
+	color: #ddd;
+	text-decoration: underline;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+.underline {
+		text-decoration: underline;
+}
+
+.post-tags .tags a {
+    border: 1px solid #ddd;
+	color: #ddd;
+}
+
+.site-title a {
+	color: #ddd;
+	text-decoration: none !important;
+}
+
+.header nav,
+.footer {
+	border-color: #333;
+}
+
+.highlight {
+	background-color: #333;
+}
+
+table th {
+	background-color: #333;
+}
+
+table th, table td {
+    padding: 10px 20px;
+    border: 1px solid #666;
+}
+
+code {
+		display: inline-block;
+		color: darkseagreen;
+}
+
+/* Pagefind Dark Mode Overrides */
+:root {
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #111111; 
+    --pagefind-ui-border: #333333;
+}
+
+/* Force white text in search input when dark mode is active */
+.pagefind-ui__search-input {
+    color: #ffffff !important; 
+}
+
+/* Dark background for the results drawer */
+.pagefind-ui__drawer {
+    background-color: #000000 !important;
+    color: #eeeeee !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0, 1) !important;
+}
+
+/* Dark tags */
+.pagefind-ui__result-tag {
+    color: #ffffff !important;
+    background-color: #222222 !important;
+    border: 1px solid #444444 !important;
+}
