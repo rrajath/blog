@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 08:06:41 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jan 2026 09:23:54 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expander - an Android app for text expansion</title>
+      <link>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</link>
+      <pubDate>Fri, 30 Jan 2026 09:23:54 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</guid>
+      <description>&lt;p&gt;I use text expansion a lot for the words or phrases that I frequently use. This works well on Gboard, the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in Orgzly. There weren&amp;rsquo;t good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I&amp;rsquo;m all for paying money for good apps, but a monthly subscription for a text expansion app didn&amp;rsquo;t make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.&lt;/p&gt;
+&lt;p&gt;With assistance from Claude Code, I built an Android app called Expander that does exactly what I need. Nothing more, nothing less. No ads, no tracking, lightweight. Modern Material 3 UI. Once the snippet is configured, typing it in any app and hitting space would replace the text that was typed with the full snippet. I also added the feature to export and import snippets into a JSON file. That really comes in handy while changing phones.&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Here are some screenshots of the list page and the settings page.&lt;/p&gt;
+&lt;p&gt;&amp;lt;Screenshot 1&amp;gt;
+&amp;lt;Screenshot 2&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;And here&amp;rsquo;s a demo on how it works.&lt;/p&gt;
+&lt;p&gt;&amp;lt;Demo&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I mostly used Claude Code for this and I was really impressed by how good it actually is. This would have taken me weeks to learn Kotlin, learn the Android app framework, the latest architecture and design guidelines and implement it. With Claude Code, the whole thing was done in a couple of hours. Even to the point where debug and release APKs get generated on every code push.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moving from GitHub Pages to Cloudflare Pages</title>
+      <link>//localhost:1313/posts/moving-from-github-pages-to-cloudflare-pages/</link>
+      <pubDate>Wed, 28 Jan 2026 08:06:41 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/moving-from-github-pages-to-cloudflare-pages/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using Hugo since 2020 and as part of the setup, according to the docs, I had to create two repositories. One which I called &lt;a href=&#34;https://github.com/rrajath/blog/&#34;&gt;blog&lt;/a&gt; for the &lt;code&gt;.md&lt;/code&gt; files, and another called &lt;a href=&#34;https://github.com/rrajath/rrajath.github.io&#34;&gt;rrajath.github.io&lt;/a&gt; for the generated HTML files. This led me to a workflow where I write a blog post, commit the file and push it to the &lt;code&gt;blog&lt;/code&gt; repo. I then run a script that executes the &lt;code&gt;hugo&lt;/code&gt; command generate HTML files. This script also copied the output to the &lt;code&gt;rrajath.github.io&lt;/code&gt; directory, committed those changes and then pushed them to the remote.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t think much back then because I had a script which did all the work. But lately I wanted to find a way to create or update posts from my phone and while investigating ways to do that, I wondered if I could create a GitHub Actions that does this for me. After which I wondered why I even need two repos. I explored alternatives and found &lt;a href=&#34;https://pages.cloudflare.com/&#34;&gt;Cloudflare Pages&lt;/a&gt; to be a great choice because of two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I only need one repo and the build command in Cloudflare pages could be configured to run the &lt;code&gt;hugo&lt;/code&gt; command to generate the HTML files as well as run the &lt;code&gt;pagefind&lt;/code&gt; index command for updating the search index.&lt;/li&gt;
+&lt;li&gt;I can create a new blog post, send it as a PR, and view it as a draft before publishing the post.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All of this needed just one repo and I really didn&amp;rsquo;t have to deal with GitHub pages, two repositories, scripts, etc. This really streamlined my blogging workflow and simplified a lot of things.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Week Notes - 26-04</title>
       <link>//localhost:1313/posts/week-notes-26-04/</link>
@@ -557,7 +593,7 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
     <item>
       <title>Make Helix use your workspace prettier config</title>
       <link>//localhost:1313/posts/make-helix-use-your-workspace-prettier-config/</link>
-      <pubDate>Mon, 09 Jan 2023 13:25:00 -0800</pubDate>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 -0800</pubDate>
       
       <guid>//localhost:1313/posts/make-helix-use-your-workspace-prettier-config/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;trying out Helix Editor&lt;/a&gt; recently and loving it. I wanted to see if it could be my primary IDE and one thing I wish it did was format the file on save. By this, I don’t just mean fixing indentation, but also applying eslint fixes and running prettier. And I wanted this formatting to be applied based on the rules defined for that package. For example, I was in a nodejs workspace with typescript files and a prettier config that had rules like &lt;code&gt;singleQuote&lt;/code&gt;, &lt;code&gt;trailingComma&lt;/code&gt;, etc.&lt;/p&gt;

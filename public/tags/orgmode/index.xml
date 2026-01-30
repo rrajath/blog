@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orgmode on Rajath Ramakrishna</title>
-    <link>/tags/orgmode/</link>
+    <link>//localhost:1313/tags/orgmode/</link>
     <description>Recent content in Orgmode on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 04 Aug 2021 11:10:00 -0700</lastBuildDate><atom:link href="/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Aug 2021 11:10:00 -0700</lastBuildDate><atom:link href="//localhost:1313/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OrgMode Tips and Tricks</title>
-      <link>/posts/orgmode-tips-tricks/</link>
+      <link>//localhost:1313/posts/orgmode-tips-tricks/</link>
       <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
       
-      <guid>/posts/orgmode-tips-tricks/</guid>
+      <guid>//localhost:1313/posts/orgmode-tips-tricks/</guid>
       <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
 &lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>OrgMode Smart Archive</title>
-      <link>/posts/org-mode-smart-archive/</link>
+      <link>//localhost:1313/posts/org-mode-smart-archive/</link>
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
-      <guid>/posts/org-mode-smart-archive/</guid>
+      <guid>//localhost:1313/posts/org-mode-smart-archive/</guid>
       <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks

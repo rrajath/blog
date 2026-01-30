@@ -61,7 +61,7 @@ rssLimit = 20
 
 # Front matter configs
 [frontmatter]
-    date = ["date", "publishDate", "lastmod"]
+    date = ["publishDate", "date", "lastmod"]
     lastmod = [":fileModTime", "lastmod", "date", "publishDate"]
 
 # Main menu which appears below site header.
