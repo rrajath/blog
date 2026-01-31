@@ -3,6 +3,7 @@ title = "Expander - an Android app for text expansion"
 author = ["Rajath Ramakrishna"]
 lastmod = 2026-01-31T09:23:54-08:00
 draft = false
+tags = ["vibecoding", "android"]
 +++
 
 I use text expansion a lot for the words or phrases that I frequently use. This works well on [Gboard](https://support.google.com/gboard), the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in [Orgzly](https://orgzly.com/). There weren't good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I'm all for paying money for good apps, but a monthly subscription for a text expansion app didn't make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.
