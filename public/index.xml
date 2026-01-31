@@ -7,24 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 30 Jan 2026 09:23:54 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jan 2026 09:23:54 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expander - an Android app for text expansion</title>
       <link>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</link>
-      <pubDate>Fri, 30 Jan 2026 09:23:54 -0800</pubDate>
+      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
       
       <guid>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</guid>
-      <description>&lt;p&gt;I use text expansion a lot for the words or phrases that I frequently use. This works well on Gboard, the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in Orgzly. There weren&amp;rsquo;t good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I&amp;rsquo;m all for paying money for good apps, but a monthly subscription for a text expansion app didn&amp;rsquo;t make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.&lt;/p&gt;
-&lt;p&gt;With assistance from Claude Code, I built an Android app called Expander that does exactly what I need. Nothing more, nothing less. No ads, no tracking, lightweight. Modern Material 3 UI. Once the snippet is configured, typing it in any app and hitting space would replace the text that was typed with the full snippet. I also added the feature to export and import snippets into a JSON file. That really comes in handy while changing phones.&lt;/p&gt;
+      <description>&lt;p&gt;I use text expansion a lot for the words or phrases that I frequently use. This works well on &lt;a href=&#34;https://support.google.com/gboard&#34;&gt;Gboard&lt;/a&gt;, the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in &lt;a href=&#34;https://orgzly.com/&#34;&gt;Orgzly&lt;/a&gt;. There weren&amp;rsquo;t good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I&amp;rsquo;m all for paying money for good apps, but a monthly subscription for a text expansion app didn&amp;rsquo;t make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.&lt;/p&gt;
+&lt;p&gt;With assistance from &lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Claude Code&lt;/a&gt;, I built an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt; that does exactly what I need. Nothing more, nothing less. No ads, no tracking, lightweight. Modern &lt;a href=&#34;https://m3.material.io/&#34;&gt;Material 3 UI&lt;/a&gt;. Once the snippet is configured, typing it in any app and hitting space would replace the text that was typed with the full snippet. I also added the feature to export and import snippets into a JSON file. That really comes in handy while changing phones.&lt;/p&gt;
 &lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Here are some screenshots of the list page and the settings page.&lt;/p&gt;
-&lt;p&gt;&amp;lt;Screenshot 1&amp;gt;
-&amp;lt;Screenshot 2&amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
-&lt;p&gt;And here&amp;rsquo;s a demo on how it works.&lt;/p&gt;
-&lt;p&gt;&amp;lt;Demo&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/expander-screenshot-3.png&#34; width=&#34;400&#34; height=&#34;800&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;List Page&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/expander-screenshot-2.png&#34; width=&#34;400&#34; height=&#34;800&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;Settings Page&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;I mostly used Claude Code for this and I was really impressed by how good it actually is. This would have taken me weeks to learn Kotlin, learn the Android app framework, the latest architecture and design guidelines and implement it. With Claude Code, the whole thing was done in a couple of hours. Even to the point where debug and release APKs get generated on every code push.&lt;/p&gt;
+&lt;p&gt;I mostly used Claude Code for this and I was really impressed by how good it actually is. This would have taken me weeks to learn &lt;a href=&#34;https://kotlinlang.org/&#34;&gt;Kotlin&lt;/a&gt;, learn the Android app framework, the latest architecture and design guidelines and implement it. With Claude Code, the whole thing was done in a couple of hours. Even to the point where debug and release APKs get generated on every code push.&lt;/p&gt;
 </description>
     </item>
     
