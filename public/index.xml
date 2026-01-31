@@ -34,6 +34,18 @@
     </item>
     
     <item>
+      <title>OpenClaw adventures </title>
+      <link>//localhost:1313/posts/openclaw-adventures-/</link>
+      <pubDate>Fri, 30 Jan 2026 09:04:37 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-adventures-/</guid>
+      <description>&lt;p&gt;Like many people over the last few days, I was curious to try Clawdbot/Moltbot/OpenClaw. I didn&amp;rsquo;t rush to buy a Mac mini. I instead installed it on a raspberry pi that didn&amp;rsquo;t have anything important on it and it didn&amp;rsquo;t have access to other devices.&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;I was mind blown by not just what it could do, but also how easy it was to configure it, all of which happened by just interacting with it. This is still experimental and I will be documenting how it can improve my life, if at all. So some of the future posts will explain some use cases that ended up working for me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Moving from GitHub Pages to Cloudflare Pages</title>
       <link>//localhost:1313/posts/moving-from-github-pages-to-cloudflare-pages/</link>
       <pubDate>Wed, 28 Jan 2026 08:06:41 -0800</pubDate>
