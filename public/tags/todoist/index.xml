@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todoist on Rajath Ramakrishna</title>
+    <link>//localhost:1313/tags/todoist/</link>
+    <description>Recent content in Todoist on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 01 Feb 2026 07:32:14 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/todoist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw use case: research assistant with Todoist</title>
+      <link>//localhost:1313/posts/openclaw-use-case-research-assistant-with-todoist/</link>
+      <pubDate>Sun, 01 Feb 2026 07:32:14 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-use-case-research-assistant-with-todoist/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been trying to use OpenClaw to automate some of the tasks I do.&lt;/p&gt;
+&lt;p&gt;OpenClaw is great for acting as a research assistant and I configured it to do the research for some of the tasks I have in my Todoist. Whenever I think of capturing a task, I do it in Todoist and get to it later.&lt;/p&gt;
+&lt;p&gt;To automate research tasks like comparing headphones, or summarizing a the comment thread of a HackerNews post, I asked the bot to create a cron job every 4 hours and do the research.&lt;/p&gt;
+&lt;p&gt;Now every 6 hours it checks Todoist and looks for tasks with the label &lt;code&gt;ellie&lt;/code&gt; (the name of my bot) and picks up the task. It does all the research and puts what it finds in a markdown file in a specific directory. It also adds additional metadata, if any, at the end of the file. Once it does all that, it notifies me on Discord with a brief summary of what it did.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
