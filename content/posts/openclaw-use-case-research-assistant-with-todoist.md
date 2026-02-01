@@ -11,4 +11,6 @@ OpenClaw is great for acting as a research assistant and I configured it to do t
 
 To automate research tasks like comparing headphones, or summarizing a the comment thread of a HackerNews post, I asked the bot to create a cron job every 4 hours and do the research.
 
-Now every 6 hours it checks Todoist and looks for tasks with the label `ellie` (the name of my bot) and picks up the task. It does all the research and puts what it finds in a markdown file in a specific directory. It also adds additional metadata, if any, at the end of the file. Once it does all that, it notifies me on Discord with a brief summary of what it did. 
+Now every 6 hours it checks Todoist and looks for tasks with the label `ellie` (the name of my bot) and picks up the task. It does all the research and puts what it finds in a markdown file in a specific directory. It also adds additional metadata, if any, at the end of the file. Once it does all that, it notifies me on Discord with a brief summary of what it did.
+
+With this, my Todoist workflow hasn't changed at all. I still add tasks to Todoist, except I add a label to some of the tasks. The rest is handled by OpenClaw cron job. Once it notifies me on Discord about the task completion, I can ask it to mark the task as complete in Todoist, and it does that for me.
