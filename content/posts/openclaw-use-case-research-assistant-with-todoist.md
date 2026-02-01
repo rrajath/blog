@@ -1,8 +1,8 @@
 ---
 title: "OpenClaw use case: research assistant with Todoist"
 date: 2026-02-01T07:32:14-08:00
-draft: true
-tags: []
+draft: false
+tags: ["openclaw", "todoist", "workflows"]
 ---
 
 I've been trying to use OpenClaw to automate some of the tasks I do. 
