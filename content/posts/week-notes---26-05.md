@@ -18,3 +18,6 @@ I installed OpenClaw on my Raspberry Pi and created some automations. It acts as
 ## Blog posts I wrote 
 - [org-retro-journal: an emacs package for looking back through your journal](https://rrajath.com/posts/org-retro-journal)
 - [Moving from GitHub Pages to Cloudflare Pages](https://rrajath.com/posts/moving-from-github-pages-to-cloudflare-pages)
+- [OpenClaw adventures](https://rrajath.com/posts/openclaw-adventures)
+- [Expander - an Android app for text expansion](https://rrajath.com/posts/expander-an-android-app-for-text-expansion)
+- [OpenClaw use case: research assistant with Todoist](https://rrajath.com/posts/openclaw-use-case-research-assistant-with-todoist/)
