@@ -1,7 +1,7 @@
 ---
 title: "Week Notes - 26-05"
 date: 2026-02-01T16:23:19-08:00
-draft: true
+draft: false
 tags: ["weeknotes"]
 ---
 
