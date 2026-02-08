@@ -2,6 +2,7 @@
 title = "Week Notes - 26-06"
 author = ["Rajath Ramakrishna"]
 lastmod = 2026-02-09T15:09:44-08:00
+publishDate = 2026-02-09T15:09:44-08:00
 draft = true
 tags = ["weeknotes"]
 +++
@@ -26,3 +27,8 @@ Worked on an Android app that I'm calling Bloggo which is to write markdown file
 ## Misc {#misc}
 
 I didn't get much reading done. I was kinda caught up with perfecting my set up with OpenClaw and Tailscale.
+
+## Blog posts I wrote
+
+- [OpenClaw use case: add groceries to Todoist](https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist)
+- [OpenClaw use case: improvement to Todoist grocery helper](https://rrajath.com/posts/openclaw-use-case-improvement-to-todoist-grocery-helper)
