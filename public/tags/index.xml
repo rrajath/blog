@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 27 Jan 2026 08:05:17 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 16:23:19 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weeknotes</title>
       <link>//localhost:1313/tags/weeknotes/</link>
-      <pubDate>Tue, 27 Jan 2026 08:05:17 -0800</pubDate>
+      <pubDate>Sun, 01 Feb 2026 16:23:19 -0800</pubDate>
       
       <guid>//localhost:1313/tags/weeknotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openclaw</title>
+      <link>//localhost:1313/tags/openclaw/</link>
+      <pubDate>Sun, 01 Feb 2026 07:32:14 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/openclaw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Todoist</title>
+      <link>//localhost:1313/tags/todoist/</link>
+      <pubDate>Sun, 01 Feb 2026 07:32:14 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/todoist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workflows</title>
+      <link>//localhost:1313/tags/workflows/</link>
+      <pubDate>Sun, 01 Feb 2026 07:32:14 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/workflows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>//localhost:1313/tags/android/</link>
+      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vibecoding</title>
+      <link>//localhost:1313/tags/vibecoding/</link>
+      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/vibecoding/</guid>
       <description></description>
     </item>
     
@@ -23,15 +68,6 @@
       <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
       
       <guid>//localhost:1313/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vibecoding</title>
-      <link>//localhost:1313/tags/vibecoding/</link>
-      <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
-      
-      <guid>//localhost:1313/tags/vibecoding/</guid>
       <description></description>
     </item>
     
@@ -221,15 +257,6 @@
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/tags/2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>//localhost:1313/tags/android/</link>
-      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     

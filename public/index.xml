@@ -7,7 +7,60 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 01 Feb 2026 07:32:14 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Feb 2026 13:57:30 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw use case: improvement to Todoist grocery helper</title>
+      <link>//localhost:1313/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/</link>
+      <pubDate>Sun, 08 Feb 2026 13:57:30 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist&#34;&gt;recently wrote about&lt;/a&gt; how I used &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; to add groceries to my &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; Shopping List project which is where I maintain my grocery list. I made an enhancement to this workflow which does the following. For each item I add:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenClaw checks if the item is unlabeled (I use QFC as my default grocery store, so unlabeled ones means I have to buy them at QFC)&lt;/li&gt;
+&lt;li&gt;If it has a label, it adds that item to the Shopping List project with that label&lt;/li&gt;
+&lt;li&gt;If it doesn&amp;rsquo;t, then OpenClaw uses browser control and goes to the QFC website&lt;/li&gt;
+&lt;li&gt;It then finds deals for that item (if any)&lt;/li&gt;
+&lt;li&gt;It clips those coupons and adds them to my card&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, all I have to do is say &amp;ldquo;add eggs&amp;rdquo; in my messaging app and the bot will both add the item to Todoist as well as add coupons to my card (if it finds them).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenClaw use case: add groceries to Todoist</title>
+      <link>//localhost:1313/posts/openclaw-use-case-add-groceries-to-todoist/</link>
+      <pubDate>Sat, 07 Feb 2026 13:25:08 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-use-case-add-groceries-to-todoist/</guid>
+      <description>&lt;p&gt;I use &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; as my shopping list for groceries. I have a Shopping List project in my Todoist where items can have labels like &lt;code&gt;wholefoods&lt;/code&gt;, &lt;code&gt;costco&lt;/code&gt;, etc. My workflow to add items to the Shopping List project was to open the Todoist&amp;rsquo;s Add Task shortcut on my Pixel, type the item, optionally add a label, then add the item to the Shopping List project. If I had to add multiple items, I had to do this for each item. Optionally I could open Todoist, go to the project and then add it there. But still there was good amount of friction. What I really wanted was to just add stuff and have it go to the right place.&lt;/p&gt;
+&lt;p&gt;Since I had already linked my Todoist account to &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt;, I asked it to add groceries to the Shopping List project. And I don&amp;rsquo;t have to add items individually, I don&amp;rsquo;t have to move them to a specific project. All I have to do is, open the chat (Discord) and say something like &amp;ldquo;add eggs, milk and bread&amp;rdquo;. That&amp;rsquo;s it. OpenClaw adds them as separate items in the Shopping List project. I can optionally mention &amp;ldquo;add the label costco&amp;rdquo; to add that label to all items. Or to specific items. Because it&amp;rsquo;s LLM, I can use natural language and it would understand what I mean and do the task.&lt;/p&gt;
+&lt;p&gt;This has improved my workflow a lot. The fact that I can add either one or multiple items without giving it any more context and have it appear on my Todoist is great!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week Notes - 26-05</title>
+      <link>//localhost:1313/posts/week-notes---26-05/</link>
+      <pubDate>Sun, 01 Feb 2026 16:23:19 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes---26-05/</guid>
+      <description>&lt;p&gt;It was quite an interesting and productive week. Here are some of the things I did:&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;I vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt;. It&amp;rsquo;s a text expansion app that works for both static and dynamic snippets (like date, time, day, with custom formats).&lt;/p&gt;
+&lt;p&gt;I also vibe-coded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal.el&lt;/a&gt; which is like Memories in Google Photos but for journaling. You can look back at what you did that exact day or the nearest date each year across your journal.&lt;/p&gt;
+&lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
+&lt;p&gt;I installed &lt;a href=&#34;https://openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt; on my Raspberry Pi and created some automations. It acts as a research assistant where it scans my todoist tasks every few hours and does the research, outputting the analysis to a markdown file and letting me know on discord that it completed the task (along with a short summary of what it did)&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/org-retro-journal&#34;&gt;org-retro-journal: an emacs package for looking back through your journal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/moving-from-github-pages-to-cloudflare-pages&#34;&gt;Moving from GitHub Pages to Cloudflare Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-adventures&#34;&gt;OpenClaw adventures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/expander-an-android-app-for-text-expansion&#34;&gt;Expander - an Android app for text expansion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-research-assistant-with-todoist/&#34;&gt;OpenClaw use case: research assistant with Todoist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>OpenClaw use case: research assistant with Todoist</title>
       <link>//localhost:1313/posts/openclaw-use-case-research-assistant-with-todoist/</link>

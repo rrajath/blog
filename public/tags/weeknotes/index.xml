@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 27 Jan 2026 08:05:17 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 16:23:19 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Notes - 26-05</title>
+      <link>//localhost:1313/posts/week-notes---26-05/</link>
+      <pubDate>Sun, 01 Feb 2026 16:23:19 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes---26-05/</guid>
+      <description>&lt;p&gt;It was quite an interesting and productive week. Here are some of the things I did:&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;I vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt;. It&amp;rsquo;s a text expansion app that works for both static and dynamic snippets (like date, time, day, with custom formats).&lt;/p&gt;
+&lt;p&gt;I also vibe-coded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal.el&lt;/a&gt; which is like Memories in Google Photos but for journaling. You can look back at what you did that exact day or the nearest date each year across your journal.&lt;/p&gt;
+&lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
+&lt;p&gt;I installed &lt;a href=&#34;https://openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt; on my Raspberry Pi and created some automations. It acts as a research assistant where it scans my todoist tasks every few hours and does the research, outputting the analysis to a markdown file and letting me know on discord that it completed the task (along with a short summary of what it did)&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/org-retro-journal&#34;&gt;org-retro-journal: an emacs package for looking back through your journal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/moving-from-github-pages-to-cloudflare-pages&#34;&gt;Moving from GitHub Pages to Cloudflare Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-adventures&#34;&gt;OpenClaw adventures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/expander-an-android-app-for-text-expansion&#34;&gt;Expander - an Android app for text expansion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-research-assistant-with-todoist/&#34;&gt;OpenClaw use case: research assistant with Todoist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Week Notes - 26-04</title>
       <link>//localhost:1313/posts/week-notes-26-04/</link>
