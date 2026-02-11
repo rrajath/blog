@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 01 Feb 2026 07:32:14 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Feb 2026 13:57:30 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw use case: improvement to Todoist grocery helper</title>
+      <link>//localhost:1313/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/</link>
+      <pubDate>Sun, 08 Feb 2026 13:57:30 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist&#34;&gt;recently wrote about&lt;/a&gt; how I used &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; to add groceries to my &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; Shopping List project which is where I maintain my grocery list. I made an enhancement to this workflow which does the following. For each item I add:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenClaw checks if the item is unlabeled (I use QFC as my default grocery store, so unlabeled ones means I have to buy them at QFC)&lt;/li&gt;
+&lt;li&gt;If it has a label, it adds that item to the Shopping List project with that label&lt;/li&gt;
+&lt;li&gt;If it doesn&amp;rsquo;t, then OpenClaw uses browser control and goes to the QFC website&lt;/li&gt;
+&lt;li&gt;It then finds deals for that item (if any)&lt;/li&gt;
+&lt;li&gt;It clips those coupons and adds them to my card&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, all I have to do is say &amp;ldquo;add eggs&amp;rdquo; in my messaging app and the bot will both add the item to Todoist as well as add coupons to my card (if it finds them).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenClaw use case: add groceries to Todoist</title>
+      <link>//localhost:1313/posts/openclaw-use-case-add-groceries-to-todoist/</link>
+      <pubDate>Sat, 07 Feb 2026 13:25:08 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/openclaw-use-case-add-groceries-to-todoist/</guid>
+      <description>&lt;p&gt;I use &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; as my shopping list for groceries. I have a Shopping List project in my Todoist where items can have labels like &lt;code&gt;wholefoods&lt;/code&gt;, &lt;code&gt;costco&lt;/code&gt;, etc. My workflow to add items to the Shopping List project was to open the Todoist&amp;rsquo;s Add Task shortcut on my Pixel, type the item, optionally add a label, then add the item to the Shopping List project. If I had to add multiple items, I had to do this for each item. Optionally I could open Todoist, go to the project and then add it there. But still there was good amount of friction. What I really wanted was to just add stuff and have it go to the right place.&lt;/p&gt;
+&lt;p&gt;Since I had already linked my Todoist account to &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt;, I asked it to add groceries to the Shopping List project. And I don&amp;rsquo;t have to add items individually, I don&amp;rsquo;t have to move them to a specific project. All I have to do is, open the chat (Discord) and say something like &amp;ldquo;add eggs, milk and bread&amp;rdquo;. That&amp;rsquo;s it. OpenClaw adds them as separate items in the Shopping List project. I can optionally mention &amp;ldquo;add the label costco&amp;rdquo; to add that label to all items. Or to specific items. Because it&amp;rsquo;s LLM, I can use natural language and it would understand what I mean and do the task.&lt;/p&gt;
+&lt;p&gt;This has improved my workflow a lot. The fact that I can add either one or multiple items without giving it any more context and have it appear on my Todoist is great!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>OpenClaw use case: research assistant with Todoist</title>
       <link>//localhost:1313/posts/openclaw-use-case-research-assistant-with-todoist/</link>

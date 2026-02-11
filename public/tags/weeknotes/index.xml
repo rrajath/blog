@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 01 Feb 2026 16:23:19 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Feb 2026 15:09:44 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Notes - 26-06</title>
+      <link>//localhost:1313/posts/week-notes-26-06/</link>
+      <pubDate>Mon, 09 Feb 2026 15:09:44 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-26-06/</guid>
+      <description>&lt;p&gt;Last week I was quite busy with work, but I did play around with &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; a bit more.&lt;/p&gt;
+&lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
+&lt;p&gt;I installed &lt;a href=&#34;https://tailscale.com&#34;&gt;Tailscale&lt;/a&gt; on all my devices. I&amp;rsquo;ll be writing a blog post about it soon. The setup was way easier than I thought it would be.&lt;/p&gt;
+&lt;p&gt;I augmented my &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; grocery helper workflow on OpenClaw to make it check for deals/coupons on QFC as it adds each item to my Todoist.&lt;/p&gt;
+&lt;p&gt;OpenClaw by default uses Raspberry Pi as its coding agent and when I asked it to build a couple of web apps, it did an okay job. I had to prompt it a bunch of times to fix some minor UI bugs and it really struggled with it. So, I used &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;claude-code&lt;/a&gt; to rewrite one of the web apps and make enhancements (and fix bugs) in the other web app. I also made sure to use the frontend-design plugin to get a polished and professional looking UI. It did an awesome job and I was really happy with the result.&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;Worked on an Android app that I&amp;rsquo;m calling Bloggo which is to write markdown files from the phone and push it to GitHub. This is mainly to blog on the go and not have to depend on a laptop and run git commands in order to post something to Hugo (or a similar static site generator). I&amp;rsquo;ll be writing a more detailed blog post about this soon.&lt;/p&gt;
+&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
+&lt;p&gt;I didn&amp;rsquo;t get much reading done. I was kinda caught up with perfecting my set up with OpenClaw and Tailscale.&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist&#34;&gt;OpenClaw use case: add groceries to Todoist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-improvement-to-todoist-grocery-helper&#34;&gt;OpenClaw use case: improvement to Todoist grocery helper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Week Notes - 26-05</title>
       <link>//localhost:1313/posts/week-notes---26-05/</link>
