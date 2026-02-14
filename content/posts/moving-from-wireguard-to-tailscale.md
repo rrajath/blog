@@ -1,11 +1,11 @@
 ---
 title: "Moving from Wireguard to Tailscale"
 date: 2026-02-12T19:34:22-08:00
-draft: true
-tags: []
+draft: false
+tags: ["wireguard", "tailscale"]
 ---
 
-Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard. I finally got some time and inclination to try Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone. 
+Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard because either the Wireguard docker (which used to be hosted on the Raspberry Pi) would not be running (because the Pi may have been turned off), or I would have old VPN profiles lying around that would not connect. With a bit of free time and a newfound inclination, I finally dove into Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone. 
 
 ## Features I liked 
 - One of the features of Tailscale that I really liked is that it's peer to peer mesh network (built on Wireguard). I can specifically access one device and not the whole network.
@@ -16,3 +16,6 @@ Ever since I heard about Tailscale and what it could do, I was always curious to
 
 ## Caveat 
 One caveat I found about using Tailscale on my Pixel is that I had set my DNS server to be dns.adguard.com. When I connected to Tailscale, I had to change this since it conflicted with Tailscale.
+
+## Conclusion
+For anyone thinking of trying Tailscale, I highly recommend setting it up. It was such an easy install and I can set it and forget it, and not worry about opening a port on the router, or having a docker container up and running or having up to date profiles always available. I can have more security (Tailscale SSH, auto rotating keys, ACLs, etc) without the overhead of managing anything.

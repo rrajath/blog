@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 09 Feb 2026 15:09:44 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week Notes - 26-06</title>
-      <link>//localhost:1313/posts/week-notes-26-06/</link>
+      <link>//localhost:1313/posts/week-notes---26-06/</link>
       <pubDate>Mon, 09 Feb 2026 15:09:44 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/week-notes-26-06/</guid>
+      <guid>//localhost:1313/posts/week-notes---26-06/</guid>
       <description>&lt;p&gt;Last week I was quite busy with work, but I did play around with &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; a bit more.&lt;/p&gt;
 &lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
 &lt;p&gt;I installed &lt;a href=&#34;https://tailscale.com&#34;&gt;Tailscale&lt;/a&gt; on all my devices. I&amp;rsquo;ll be writing a blog post about it soon. The setup was way easier than I thought it would be.&lt;/p&gt;

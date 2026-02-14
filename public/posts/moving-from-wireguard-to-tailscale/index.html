@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta name="generator" content="Hugo 0.151.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet"> 
@@ -15,16 +14,22 @@
     <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rajath Ramakrishna  </title><link rel="icon" type="image/png" href=icons/favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml" title="Rajath Ramakrishna" />
-	<meta property="og:url" content="//localhost:1313/">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Moving from Wireguard to Tailscale - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="//localhost:1313/posts/moving-from-wireguard-to-tailscale/">
   <meta property="og:site_name" content="Rajath Ramakrishna">
-  <meta property="og:title" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Moving from Wireguard to Tailscale">
+  <meta property="og:description" content="Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard because either the Wireguard docker (which used to be hosted on the Raspberry Pi) would not be running (because the Pi may have been turned off), or I would have old VPN profiles lying around that would not connect. With a bit of free time and a newfound inclination, I finally dove into Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-12T19:34:22-08:00">
+    <meta property="article:modified_time" content="2026-02-13T18:36:16-08:00">
+    <meta property="article:tag" content="Wireguard">
+    <meta property="article:tag" content="Tailscale">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Rajath Ramakrishna">
+  <meta name="twitter:title" content="Moving from Wireguard to Tailscale">
+  <meta name="twitter:description" content="Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard because either the Wireguard docker (which used to be hosted on the Raspberry Pi) would not be running (because the Pi may have been turned off), or I would have old VPN profiles lying around that would not connect. With a bit of free time and a newfound inclination, I finally dove into Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="//localhost:1313/css/normalize.css" />
@@ -33,12 +38,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script src="//localhost:1313/js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml" title="Rajath Ramakrishna" />
-	<link rel="alternate" type="application/json" href="//localhost:1313/index.json" title="Rajath Ramakrishna" />
 	</head>
 
-	<body>
-		<div class="container wrapper">
+
+<body>
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
 			<div class="header">
   <base href="//localhost:1313/">
   <h1 class="site-title"><a href="//localhost:1313/">Rajath Ramakrishna</a></h1>
@@ -212,106 +217,50 @@
 </div>
 
 
-			
-
-			<div class="recent-posts section">
-				<h2 class="section-header">
-					Recent posts
-				</h2>
-				<div class="posts">
-					
-					
-					
-					<div class="post">
-						<div class="meta">Jan 5, 2020</div>
-						<a class="title u-url" href="/posts/2019-year-in-review/"><font size="+2">2019 in Review</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Jan 24, 2019</div>
-						<a class="title u-url" href="/posts/2018-year-in-review/"><font size="+2">2018 in Review</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Mar 9, 2016</div>
-						<a class="title u-url" href="/posts/the-dreaded-65k-method-limit-on-android/"><font size="+2">The Dreaded 65k Method Limit on Android</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Jan 16, 2016</div>
-						<a class="title u-url" href="/posts/two-months-with-project-fi/"><font size="+2">Two Months With Project Fi</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Jan 9, 2016</div>
-						<a class="title u-url" href="/posts/book-review-alchemist/"><font size="+2">Book Review: Alchemist</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Jan 2, 2016</div>
-						<a class="title u-url" href="/posts/2015-lessons-learned/"><font size="+2">2015 - Lessons Learned</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Mar 14, 2015</div>
-						<a class="title u-url" href="/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/"><font size="+2">Macbook users must swap Caps Lock and Ctrl Keys. Seriously!</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">Jan 7, 2015</div>
-						<a class="title u-url" href="/posts/taskr/"><font size="+2">Taskr - the simplest task management app</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">May 10, 2014</div>
-						<a class="title u-url" href="/posts/graduation/"><font size="+2">Graduated :)</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					<div class="post">
-						<div class="meta">May 3, 2014</div>
-						<a class="title u-url" href="/posts/weekly-noise-16/"><font size="+2">Weekly Noise #16 - Wrap up and future enhancements</font></a> 
-						<div>
-						</div>
-					</div>
-					
-					
-
-<ul class="pagination">
-	<li class="page-item page-prev">
-	
-    <a href="/page/5/" class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev page</span></a>
-	
-	</li>
-	<li class="page-item page-next">
-	
-    <a href="/page/7/" class="page-link" aria-label="Next"><span aria-hidden="true">Next page →</span></a>
-	
-	</li>
-</ul>
-
-
-				</div>
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Moving from Wireguard to Tailscale</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="//localhost:1313/posts/moving-from-wireguard-to-tailscale/"><time class="dt-published" data-pagefind-meta="date">Feb 12, 2026</time></a> | 2
+					min read</div>
 			</div>
-		</div>
-		<div class="footer wrapper">
+
+			<div class="markdown">
+				
+				<p>Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard because either the Wireguard docker (which used to be hosted on the Raspberry Pi) would not be running (because the Pi may have been turned off), or I would have old VPN profiles lying around that would not connect. With a bit of free time and a newfound inclination, I finally dove into Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone.</p>
+<h2 id="features-i-liked">Features I liked</h2>
+<ul>
+<li>One of the features of Tailscale that I really liked is that it&rsquo;s peer to peer mesh network (built on Wireguard). I can specifically access one device and not the whole network.</li>
+<li>It also has something called a MagicDNS where the underlying IP could change, but the MagicDNS hostname it generates and gives you remains the same. So, you can use that for as long as you want and it still connects.</li>
+<li>The connection is super easy. You just toggle it on your phone and you can immediately access any device on the tailnet, assuming both devices are online and allowed by access control lists.</li>
+<li>One of the security features is Tailscale SSH, where you can enable SSHing to your host only through Tailscale. This is really secure. Tailscale SSH does not require an SSH key exchange. The authentication happens via Wireguard and identity verification.</li>
+<li>The Taildrop feature makes it extremely convenient to transfer files back and forth between devices. I&rsquo;m loving it.</li>
+</ul>
+<h2 id="caveat">Caveat</h2>
+<p>One caveat I found about using Tailscale on my Pixel is that I had set my DNS server to be dns.adguard.com. When I connected to Tailscale, I had to change this since it conflicted with Tailscale.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>For anyone thinking of trying Tailscale, I highly recommend setting it up. It was such an easy install and I can set it and forget it, and not worry about opening a port on the router, or having a docker container up and running or having up to date profiles always available. I can have more security (Tailscale SSH, auto rotating keys, ACLs, etc) without the overhead of managing anything.</p>
+
+				
+			</div>
+
+			<div class="post-tags">
+				
+				
+				<nav class="nav tags">
+					<ul class="flat">
+						
+						<li><a class="p-category" href="/tags/wireguard">wireguard</a></li>
+						
+						<li><a class="p-category" href="/tags/tailscale">tailscale</a></li>
+						
+					</ul>
+				</nav>
+				
+				
+			</div>
+			</div>
+	</article>
+	<div class="footer wrapper">
 	<nav class="nav">
 		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
 			Built with <a href="https://gohugo.io">Hugo</a> | Follow me on <a rel="me" href="https://social.lol/@rrajath">Mastodon</a></div>
@@ -329,5 +278,6 @@
 	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
 </p>
 
-	</body>
+</body>
+
 </html>

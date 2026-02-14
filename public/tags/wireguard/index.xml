@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wireguard on Rajath Ramakrishna</title>
+    <link>//localhost:1313/tags/wireguard/</link>
+    <description>Recent content in Wireguard on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Thu, 12 Feb 2026 19:34:22 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/wireguard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving from Wireguard to Tailscale</title>
+      <link>//localhost:1313/posts/moving-from-wireguard-to-tailscale/</link>
+      <pubDate>Thu, 12 Feb 2026 19:34:22 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/moving-from-wireguard-to-tailscale/</guid>
+      <description>&lt;p&gt;Ever since I heard about Tailscale and what it could do, I was always curious to try. I previously used Wireguard as my VPN to connect to my home network. But for some reason or another, in the rare instances where I wanted to access a device on my home network from outside, I found it hard because either the Wireguard docker (which used to be hosted on the Raspberry Pi) would not be running (because the Pi may have been turned off), or I would have old VPN profiles lying around that would not connect. With a bit of free time and a newfound inclination, I finally dove into Tailscale and I was really impressed with both the setup and the usage. This post is about what I liked about it and something I found that conflicts with the setup on my phone.&lt;/p&gt;
+&lt;h2 id=&#34;features-i-liked&#34;&gt;Features I liked&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;One of the features of Tailscale that I really liked is that it&amp;rsquo;s peer to peer mesh network (built on Wireguard). I can specifically access one device and not the whole network.&lt;/li&gt;
+&lt;li&gt;It also has something called a MagicDNS where the underlying IP could change, but the MagicDNS hostname it generates and gives you remains the same. So, you can use that for as long as you want and it still connects.&lt;/li&gt;
+&lt;li&gt;The connection is super easy. You just toggle it on your phone and you can immediately access any device on the tailnet, assuming both devices are online and allowed by access control lists.&lt;/li&gt;
+&lt;li&gt;One of the security features is Tailscale SSH, where you can enable SSHing to your host only through Tailscale. This is really secure. Tailscale SSH does not require an SSH key exchange. The authentication happens via Wireguard and identity verification.&lt;/li&gt;
+&lt;li&gt;The Taildrop feature makes it extremely convenient to transfer files back and forth between devices. I&amp;rsquo;m loving it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;caveat&#34;&gt;Caveat&lt;/h2&gt;
+&lt;p&gt;One caveat I found about using Tailscale on my Pixel is that I had set my DNS server to be dns.adguard.com. When I connected to Tailscale, I had to change this since it conflicted with Tailscale.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;For anyone thinking of trying Tailscale, I highly recommend setting it up. It was such an easy install and I can set it and forget it, and not worry about opening a port on the router, or having a docker container up and running or having up to date profiles always available. I can have more security (Tailscale SSH, auto rotating keys, ACLs, etc) without the overhead of managing anything.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
