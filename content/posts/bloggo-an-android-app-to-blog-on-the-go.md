@@ -5,7 +5,7 @@ lastmod = 2026-02-20T00:02:46-08:00
 draft = true
 +++
 
-This website ([rrajath.com](https://rrajath.com)) is built using a static site generator ([Hugo](https://gohugo.io)). I specifically like static site generators for the control, simplicity and the lack of need for deploying on a host and maintaining it. I can write blog posts in markdown format and push it to a github repo and they get built and deployed either via GitHub Pages, Cloudflare Pages, Netlify or other similar solutions. For free!
+This website ([rrajath.com](https://rrajath.com)) is built using a static site generator ([Hugo](https://gohugo.io)). I specifically like static site generators for the control, simplicity and the lack of need for deploying on a host and maintaining it. I can write blog posts in markdown format and push it to a github repo and they get built and deployed either via [GitHub Pages](https://docs.github.com/en/pages), [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://www.netlify.com) or other similar solutions. For free!
 
 I like the fact that the posts are in GitHub because of a couple of reasons:
 
@@ -46,3 +46,9 @@ The app does pretty much what I need. Although, I may add a few features like:
 
 -   making it easier to add links: for example, selecting a text should give me a popup and I should be able to add a link there instead of having to go through the Android keyboard to find characters like `[`, `]`, `(`, `)`  to format a link in markdown.
 -   add pages: like the about page, now page or any other pages, instead of restricting the app to just blog posts.
+
+## What's with the name, by the way?
+
+A couple of reasons:
+1. It's a contraction of Blog on the Go
+2. It's kind of a play on words on Hugo, which is the static site generator I use. Like, Blog and Hugo

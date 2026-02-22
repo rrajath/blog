@@ -7,18 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 09 Feb 2026 15:09:44 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Feb 2026 13:26:11 -0800</lastBuildDate><atom:link href="//localhost:1313/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Notes - 26-07</title>
+      <link>//localhost:1313/posts/week-notes-26-07/</link>
+      <pubDate>Mon, 16 Feb 2026 13:26:11 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-26-07/</guid>
+      <description>&lt;p&gt;Last week I was contemplating more and more about how I can reduce my phone usage. I noticed I was on my phone quite a lot and needed a break. I was mostly browsing Reddit, HackerNews and Lobsters. I needed a way to reduce this usage and be still, where I don&amp;rsquo;t feel the need to reach for my phone. It&amp;rsquo;s still a work in progress. I need to get back into reading, I&amp;rsquo;ve taken quite a long break from it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been listening to a lot of &lt;a href=&#34;https://open.spotify.com/artist/5tkITWzssc9z9hu7ZEOCXz?si=Z1bspdd9RrO-0F0EBHUtVA&#34;&gt;Goose&lt;/a&gt; and &lt;a href=&#34;https://youtu.be/ZjfBeKfZlRg&#34;&gt;their&lt;/a&gt; &lt;a href=&#34;https://youtu.be/MiP9OmMHOK0&#34;&gt;live&lt;/a&gt; &lt;a href=&#34;https://youtu.be/YmV1TF4y2BE&#34;&gt;shows&lt;/a&gt;. I&amp;rsquo;m obsessed.&lt;/p&gt;
+&lt;p&gt;Also, I baked a cake for my wife for Valentine&amp;rsquo;s Day.&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/moving-from-wireguard-to-tailscale&#34;&gt;Moving from Wireguard to Tailscale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Week Notes - 26-06</title>
-      <link>//localhost:1313/posts/week-notes---26-06/</link>
+      <link>//localhost:1313/posts/week-notes-26-06/</link>
       <pubDate>Mon, 09 Feb 2026 15:09:44 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/week-notes---26-06/</guid>
+      <guid>//localhost:1313/posts/week-notes-26-06/</guid>
       <description>&lt;p&gt;Last week I was quite busy with work, but I did play around with &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; a bit more.&lt;/p&gt;
 &lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
 &lt;p&gt;I installed &lt;a href=&#34;https://tailscale.com&#34;&gt;Tailscale&lt;/a&gt; on all my devices. I&amp;rsquo;ll be writing a blog post about it soon. The setup was way easier than I thought it would be.&lt;/p&gt;
 &lt;p&gt;I augmented my &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; grocery helper workflow on OpenClaw to make it check for deals/coupons on QFC as it adds each item to my Todoist.&lt;/p&gt;
-&lt;p&gt;OpenClaw by default uses Raspberry Pi as its coding agent and when I asked it to build a couple of web apps, it did an okay job. I had to prompt it a bunch of times to fix some minor UI bugs and it really struggled with it. So, I used &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;claude-code&lt;/a&gt; to rewrite one of the web apps and make enhancements (and fix bugs) in the other web app. I also made sure to use the frontend-design plugin to get a polished and professional looking UI. It did an awesome job and I was really happy with the result.&lt;/p&gt;
+&lt;p&gt;OpenClaw by default uses &lt;a href=&#34;https://lucumr.pocoo.org/2026/1/31/pi&#34;&gt;Pi&lt;/a&gt; as its coding agent and when I asked it to build a couple of web apps, it did an okay job. I had to prompt it a bunch of times to fix some minor UI bugs and it really struggled with it. So, I used &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;claude-code&lt;/a&gt; to rewrite one of the web apps and make enhancements (and fix bugs) in the other web app. I also made sure to use the frontend-design plugin to get a polished and professional looking UI. It did an awesome job and I was really happy with the result.&lt;/p&gt;
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 &lt;p&gt;Worked on an Android app that I&amp;rsquo;m calling Bloggo which is to write markdown files from the phone and push it to GitHub. This is mainly to blog on the go and not have to depend on a laptop and run git commands in order to post something to Hugo (or a similar static site generator). I&amp;rsquo;ll be writing a more detailed blog post about this soon.&lt;/p&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
@@ -33,10 +49,10 @@
     
     <item>
       <title>Week Notes - 26-05</title>
-      <link>//localhost:1313/posts/week-notes---26-05/</link>
+      <link>//localhost:1313/posts/week-notes-26-05/</link>
       <pubDate>Sun, 01 Feb 2026 16:23:19 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/week-notes---26-05/</guid>
+      <guid>//localhost:1313/posts/week-notes-26-05/</guid>
       <description>&lt;p&gt;It was quite an interesting and productive week. Here are some of the things I did:&lt;/p&gt;
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 &lt;p&gt;I vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt;. It&amp;rsquo;s a text expansion app that works for both static and dynamic snippets (like date, time, day, with custom formats).&lt;/p&gt;

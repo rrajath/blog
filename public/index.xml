@@ -7,7 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 12 Feb 2026 19:34:22 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Feb 2026 00:02:46 -0800</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bloggo: an android app to blog on the go</title>
+      <link>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</link>
+      <pubDate>Fri, 20 Feb 2026 00:02:46 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</guid>
+      <description>&lt;p&gt;This website (&lt;a href=&#34;https://rrajath.com&#34;&gt;rrajath.com&lt;/a&gt;) is built using a static site generator (&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;). I specifically like static site generators for the control, simplicity and the lack of need for deploying on a host and maintaining it. I can write blog posts in markdown format and push it to a github repo and they get built and deployed either via &lt;a href=&#34;https://docs.github.com/en/pages&#34;&gt;GitHub Pages&lt;/a&gt;, &lt;a href=&#34;https://pages.cloudflare.com&#34;&gt;Cloudflare Pages&lt;/a&gt;, &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; or other similar solutions. For free!&lt;/p&gt;
+&lt;p&gt;I like the fact that the posts are in GitHub because of a couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It aligns with my other workflows of committing code to GitHub. Writing, committing and pushing are second nature to me and my muscle memory helps me do it really fast. Since most of the time I&amp;rsquo;m either in emacs or terminal, this workflow is very seamless.&lt;/li&gt;
+&lt;li&gt;The entire website including the HTML partials, JS, CSS, etc. are out in the open to see for anybody.&lt;/li&gt;
+&lt;li&gt;Any posts or pages I change go through commits and they have a commit history. I (or anyone) can go back and see the previous versions of those pages.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This very setup became a kind of friction for me because whenever I had to post something, I had to be on my laptop to commit the changes and push to GitHub. This was not always feasible because I would not be near my personal laptop most of the time. I did play around with writing posts in my notes app on my phone (Orgzly) and later transferring them to the GitHub repo (via ox-hugo on emacs). But that workflow was a little clunky as well. It was the closest I came to having a seamless workflow.&lt;/p&gt;
+&lt;p&gt;What I really needed was an app on my phone that I could write blog posts in, preview the markdown files and push to GitHub - all from my phone. This was not available and I ended up vibecoding one a couple of weeks ago. It&amp;rsquo;s simple and does the job well. It&amp;rsquo;s exactly what I need; nothing more, nothing less. The app basically needs a GitHub Personal Access Token in order to be able to push files to the repo. It also needs the name of the repo, the name of the branch and the folder where the files get pushed. You can also configure the frontmatter that gets added to every post so that you don&amp;rsquo;t have to add them manually. That&amp;rsquo;s pretty much it.&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Here are some screenshots:
+&amp;lt;main page screenshot&amp;gt;
+&amp;lt;blog post page screenshot&amp;gt;
+&amp;lt;blog post preview screenshot&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-the-app-works&#34;&gt;How the app works&lt;/h2&gt;
+&lt;p&gt;The main page shows all the posts that are in the remote and published. There are two sections - one for published posts and one for unpublished. The unpublished posts are the ones that are started on the phone and are in draft mode. The blog post page shows a simple text editor to write down content. The preview button at the top switches between editor mode and markdown preview mode to show how the post looks. Hitting back button on the blog post page would auto-save the file.&lt;/p&gt;
+&lt;p&gt;The title of the post updates the frontmatter accordingly (by setting the value for the &lt;code&gt;title&lt;/code&gt; attribute). And the filename gets generated from the title of the post with appropriate changes to make the slug short and not have any special or repeated characters. The Publish to GitHub button does literally that. It pushes the file to GitHub.&lt;/p&gt;
+&lt;p&gt;The app is extensible-ish since all it cares about is where to push the files. So, it doesn&amp;rsquo;t really matter if you&amp;rsquo;re using Hugo as your static site generator. You can use Jekyll, Zola or any other SSG.&lt;/p&gt;
+&lt;h2 id=&#34;my-workflow&#34;&gt;My Workflow&lt;/h2&gt;
+&lt;p&gt;Now, my workflow has changed. I write my blog posts directly in this app. And I may take multiple sittings to write a blog post. I can always preview what I wrote to see if the formatting looks good. Once I&amp;rsquo;m ready, I just hit a button and the blog gets published. I&amp;rsquo;ve written a lot more blog posts this year because of this improvement. I love the fact that the lack of friction is really making me write more.&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;The app does pretty much what I need. Although, I may add a few features like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;making it easier to add links: for example, selecting a text should give me a popup and I should be able to add a link there instead of having to go through the Android keyboard to find characters like &lt;code&gt;[&lt;/code&gt;, &lt;code&gt;]&lt;/code&gt;, &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;  to format a link in markdown.&lt;/li&gt;
+&lt;li&gt;add pages: like the about page, now page or any other pages, instead of restricting the app to just blog posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;whats-with-the-name-by-the-way&#34;&gt;What&amp;rsquo;s with the name, by the way?&lt;/h2&gt;
+&lt;p&gt;A couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It&amp;rsquo;s a contraction of Blog on the Go&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s kind of a play on words on Hugo, which is the static site generator I use. Like, Blog and Hugo&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week Notes - 26-07</title>
+      <link>//localhost:1313/posts/week-notes-26-07/</link>
+      <pubDate>Mon, 16 Feb 2026 13:26:11 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-26-07/</guid>
+      <description>&lt;p&gt;Last week I was contemplating more and more about how I can reduce my phone usage. I noticed I was on my phone quite a lot and needed a break. I was mostly browsing Reddit, HackerNews and Lobsters. I needed a way to reduce this usage and be still, where I don&amp;rsquo;t feel the need to reach for my phone. It&amp;rsquo;s still a work in progress. I need to get back into reading, I&amp;rsquo;ve taken quite a long break from it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been listening to a lot of &lt;a href=&#34;https://open.spotify.com/artist/5tkITWzssc9z9hu7ZEOCXz?si=Z1bspdd9RrO-0F0EBHUtVA&#34;&gt;Goose&lt;/a&gt; and &lt;a href=&#34;https://youtu.be/ZjfBeKfZlRg&#34;&gt;their&lt;/a&gt; &lt;a href=&#34;https://youtu.be/MiP9OmMHOK0&#34;&gt;live&lt;/a&gt; &lt;a href=&#34;https://youtu.be/YmV1TF4y2BE&#34;&gt;shows&lt;/a&gt;. I&amp;rsquo;m obsessed.&lt;/p&gt;
+&lt;p&gt;Also, I baked a cake for my wife for Valentine&amp;rsquo;s Day.&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/moving-from-wireguard-to-tailscale&#34;&gt;Moving from Wireguard to Tailscale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Moving from Wireguard to Tailscale</title>
       <link>//localhost:1313/posts/moving-from-wireguard-to-tailscale/</link>
@@ -32,15 +89,15 @@
     
     <item>
       <title>Week Notes - 26-06</title>
-      <link>//localhost:1313/posts/week-notes---26-06/</link>
+      <link>//localhost:1313/posts/week-notes-26-06/</link>
       <pubDate>Mon, 09 Feb 2026 15:09:44 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/week-notes---26-06/</guid>
+      <guid>//localhost:1313/posts/week-notes-26-06/</guid>
       <description>&lt;p&gt;Last week I was quite busy with work, but I did play around with &lt;a href=&#34;https://openclaw.io&#34;&gt;OpenClaw&lt;/a&gt; a bit more.&lt;/p&gt;
 &lt;h2 id=&#34;explorations&#34;&gt;Explorations&lt;/h2&gt;
 &lt;p&gt;I installed &lt;a href=&#34;https://tailscale.com&#34;&gt;Tailscale&lt;/a&gt; on all my devices. I&amp;rsquo;ll be writing a blog post about it soon. The setup was way easier than I thought it would be.&lt;/p&gt;
 &lt;p&gt;I augmented my &lt;a href=&#34;https://todoist.com&#34;&gt;Todoist&lt;/a&gt; grocery helper workflow on OpenClaw to make it check for deals/coupons on QFC as it adds each item to my Todoist.&lt;/p&gt;
-&lt;p&gt;OpenClaw by default uses Raspberry Pi as its coding agent and when I asked it to build a couple of web apps, it did an okay job. I had to prompt it a bunch of times to fix some minor UI bugs and it really struggled with it. So, I used &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;claude-code&lt;/a&gt; to rewrite one of the web apps and make enhancements (and fix bugs) in the other web app. I also made sure to use the frontend-design plugin to get a polished and professional looking UI. It did an awesome job and I was really happy with the result.&lt;/p&gt;
+&lt;p&gt;OpenClaw by default uses &lt;a href=&#34;https://lucumr.pocoo.org/2026/1/31/pi&#34;&gt;Pi&lt;/a&gt; as its coding agent and when I asked it to build a couple of web apps, it did an okay job. I had to prompt it a bunch of times to fix some minor UI bugs and it really struggled with it. So, I used &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;claude-code&lt;/a&gt; to rewrite one of the web apps and make enhancements (and fix bugs) in the other web app. I also made sure to use the frontend-design plugin to get a polished and professional looking UI. It did an awesome job and I was really happy with the result.&lt;/p&gt;
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 &lt;p&gt;Worked on an Android app that I&amp;rsquo;m calling Bloggo which is to write markdown files from the phone and push it to GitHub. This is mainly to blog on the go and not have to depend on a laptop and run git commands in order to post something to Hugo (or a similar static site generator). I&amp;rsquo;ll be writing a more detailed blog post about this soon.&lt;/p&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
@@ -85,10 +142,10 @@
     
     <item>
       <title>Week Notes - 26-05</title>
-      <link>//localhost:1313/posts/week-notes---26-05/</link>
+      <link>//localhost:1313/posts/week-notes-26-05/</link>
       <pubDate>Sun, 01 Feb 2026 16:23:19 -0800</pubDate>
       
-      <guid>//localhost:1313/posts/week-notes---26-05/</guid>
+      <guid>//localhost:1313/posts/week-notes-26-05/</guid>
       <description>&lt;p&gt;It was quite an interesting and productive week. Here are some of the things I did:&lt;/p&gt;
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 &lt;p&gt;I vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt;. It&amp;rsquo;s a text expansion app that works for both static and dynamic snippets (like date, time, day, with custom formats).&lt;/p&gt;
