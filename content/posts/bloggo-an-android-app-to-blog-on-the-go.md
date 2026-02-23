@@ -2,7 +2,7 @@
 title = "Bloggo: an android app to blog on the go"
 author = ["Rajath Ramakrishna"]
 lastmod = 2026-02-20T00:02:46-08:00
-draft = true
+draft = false
 +++
 
 This website is built using a static site generator ([Hugo](https://gohugo.io)) and hosted on [Cloudflare Pages](https://pages.cloudflare.com). I specifically like static site generators for the control, simplicity and the lack of need to deploy and maintain it on a host. I can write blog posts in Markdown format and push it to a GitHub repo and they get built and deployed.
@@ -21,13 +21,13 @@ What I really needed was an app in which I could write blog posts, preview the m
 ## Screenshots {#screenshots}
 
 Here are some screenshots:
-<main page screenshot>
+![Bloggo main page showing published and draft posts](/images/bloggo-main-screenshot.png)
 Main page showing published and draft posts 
-<blog post page screenshot>
+![Bloggo blog post page showing the front matter and the blog content](/images/bloggo-post-edit-screenshot.png)
 Blog post page showing the front matter and the blog content
-<blog post preview screenshot>
+![Bloggo blog preview page showing the Markdown preview](/images/bloggo-preview-screenshot.png)
 Blog preview page showing the Markdown preview 
-<settings page screenshot>
+![Bloggo settings page with fields for GitHub PAT, repo name, branch name, etc.](/images/bloggo-settings-screenshot.png)
 Settings page with fields for GitHub PAT, repo name, branch name, etc. 
 
 
