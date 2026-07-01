@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week-Notes on Rajath Ramakrishna</title>
+    <link>//localhost:1313/tags/week-notes/</link>
+    <description>Recent content in Week-Notes on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 08:51:11 -0700</lastBuildDate><atom:link href="//localhost:1313/tags/week-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Notes - 2026-26</title>
+      <link>//localhost:1313/posts/week-notes-2026-26/</link>
+      <pubDate>Mon, 22 Jun 2026 08:51:11 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-2026-26/</guid>
+      <description>&lt;p&gt;The last several weeks have been busy. Ever since I got laid off, I thought I&amp;rsquo;d have more time. And in some ways, I do. But with a little one at home, my hands are almost always full. Besides caring for and playing with the little one, I&amp;rsquo;m trying to balance chores, prepping for interviews, and working out, I&amp;rsquo;m also trying to vibecode mobile and web apps on the side to preserve my sanity.&lt;/p&gt;
+&lt;h2 id=&#34;fable-5-adventures&#34;&gt;Fable 5 adventures&lt;/h2&gt;
+&lt;p&gt;Fable 5 was available for 3 days and I was already a day late into the game. I was reading some of the hype around it and I thought of giving it a try. I was blown away by what it could do.&lt;/p&gt;
+&lt;h3 id=&#34;cull-android-app&#34;&gt;Cull (android app)&lt;/h3&gt;
+&lt;p&gt;I built a huge feature for my photo culling app where I can now keep track of the photos I&amp;rsquo;ve processed and the ones I haven&amp;rsquo;t. I also added gestures (I love gestures) and it excelled at that in one shot. I had previously tried adding them via 3 different models and they all failed miserably. I also asked it to identify and fix all of the performance issues and optimize the app as much as possible so that it efficient and feels buttery smooth to use. It did an awesome job&lt;/p&gt;
+&lt;h3 id=&#34;grove-android-app&#34;&gt;Grove (android app)&lt;/h3&gt;
+&lt;p&gt;I built a &lt;a href=&#34;http://github.com/rrajath/grove&#34;&gt;new app called Grove&lt;/a&gt; using Fable 5 that was supposed to be a replacement for the note taking app I used on my Android phone called Orgzly Revived. That app is awesome, except for some very specific features that I really wanted. So, I thought I&amp;rsquo;ll build the app from the ground up and Fable 5 did an amazing job with it.&lt;/p&gt;
+&lt;h2 id=&#34;other-chores&#34;&gt;Other chores&lt;/h2&gt;
+&lt;p&gt;Been putting off chores for a while and wanted to get some of it done. I go through phases of making a lot of progress completing my to-do list items, and just days of inactivity and not making any progress.&lt;/p&gt;
+&lt;p&gt;Overall it was a good week. I&amp;rsquo;m very happy with how the apps turned out and I&amp;rsquo;ve been testing them and using them a lot. I&amp;rsquo;ve also been adding small features and bug fixes. I&amp;rsquo;ll find some time to write blog posts about these apps, what they do, how I built them, and what problems I ran into.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
