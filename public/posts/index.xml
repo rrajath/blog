@@ -7,39 +7,75 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 20 Feb 2026 00:02:46 -0800</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jun 2026 22:36:23 -0700</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing around with LLMs and coding agents</title>
+      <link>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</link>
+      <pubDate>Tue, 30 Jun 2026 22:36:23 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been vibecoding a bunch of mobile and web apps lately. I haven&amp;rsquo;t had the chance to sit and write blog posts about it. I will be writing some blog posts on each app I vibecoded, my thoughts on it, what I ran into with each one and how opinions about vibecoding are being shaped.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been an interesting exercise and I&amp;rsquo;ve been having conflicting thoughts about vibecoding itself and also some mixed emotions about the apps I build. I&amp;rsquo;m curious to see how this plays out in the next few weeks/months.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week Notes - 26-19</title>
+      <link>//localhost:1313/posts/week-notes-26-19/</link>
+      <pubDate>Sun, 10 May 2026 10:14:23 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-26-19/</guid>
+      <description>&lt;h1 id=&#34;layoff&#34;&gt;Layoff&lt;/h1&gt;
+&lt;p&gt;This was an interesting week. I got laid off. I was laid off from my previous job early last year because the company shut down. I spent about 5+ months looking for jobs and got a few offers. Now about 7 months into my new job I got laid off again. Now I need to start the search all over again.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m getting some time to spend with family now that I&amp;rsquo;m not working, but looking for a job in this job market is challenging. Especially since a lot of companies are laying people off and investing more in AI than humans. It&amp;rsquo;ll be interesting to see how this plays out.&lt;/p&gt;
+&lt;h1 id=&#34;side-projects&#34;&gt;Side Projects&lt;/h1&gt;
+&lt;p&gt;Made some updates to an android app I&amp;rsquo;m working on to cull photos. I&amp;rsquo;ll be writing a blog post soon.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bloggo: an android app to blog on the go</title>
       <link>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</link>
       <pubDate>Fri, 20 Feb 2026 00:02:46 -0800</pubDate>
       
       <guid>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</guid>
-      <description>&lt;p&gt;This website (&lt;a href=&#34;https://rrajath.com&#34;&gt;rrajath.com&lt;/a&gt;) is built using a static site generator (&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;). I specifically like static site generators for the control, simplicity and the lack of need for deploying on a host and maintaining it. I can write blog posts in markdown format and push it to a github repo and they get built and deployed either via GitHub Pages, Cloudflare Pages, Netlify or other similar solutions. For free!&lt;/p&gt;
-&lt;p&gt;I like the fact that the posts are in GitHub because of a couple of reasons:&lt;/p&gt;
+      <description>&lt;p&gt;This website is built using a static site generator (&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;) and hosted on &lt;a href=&#34;https://pages.cloudflare.com&#34;&gt;Cloudflare Pages&lt;/a&gt;. I specifically like static site generators for the control, simplicity and the lack of need to deploy and maintain it on a host. I can write blog posts in Markdown format and push it to a GitHub repo and they get built and deployed.&lt;/p&gt;
+&lt;p&gt;I like the fact that the posts are on GitHub because of a couple of reasons:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;It aligns with my other workflows of committing code to GitHub. Writing, committing and pushing are second nature to me and my muscle memory helps me do it really fast. Since most of the time I&amp;rsquo;m either in emacs or terminal, this workflow is very seamless.&lt;/li&gt;
+&lt;li&gt;It aligns with my other workflows of committing code to GitHub. Writing, committing and pushing are second nature to me and my muscle memory helps me do it really fast. Since most of the time I&amp;rsquo;m either in Emacs or the terminal, this workflow is seamless.&lt;/li&gt;
 &lt;li&gt;The entire website including the HTML partials, JS, CSS, etc. are out in the open to see for anybody.&lt;/li&gt;
 &lt;li&gt;Any posts or pages I change go through commits and they have a commit history. I (or anyone) can go back and see the previous versions of those pages.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This very setup became a kind of friction for me because whenever I had to post something, I had to be on my laptop to commit the changes and push to GitHub. This was not always feasible because I would not be near my personal laptop most of the time. I did play around with writing posts in my notes app on my phone (Orgzly) and later transferring them to the GitHub repo (via ox-hugo on emacs). But that workflow was a little clunky as well. It was the closest I came to having a seamless workflow.&lt;/p&gt;
-&lt;p&gt;What I really needed was an app on my phone that I could write blog posts in, preview the markdown files and push to GitHub - all from my phone. This was not available and I ended up vibecoding one a couple of weeks ago. It&amp;rsquo;s simple and does the job well. It&amp;rsquo;s exactly what I need; nothing more, nothing less. The app basically needs a GitHub Personal Access Token in order to be able to push files to the repo. It also needs the name of the repo, the name of the branch and the folder where the files get pushed. You can also configure the frontmatter that gets added to every post so that you don&amp;rsquo;t have to add them manually. That&amp;rsquo;s pretty much it.&lt;/p&gt;
+&lt;p&gt;This very setup became a source of friction for me. Whenever I had to post something, I had to be on my laptop to commit the changes and push to GitHub. This was not always feasible because I often wasn&amp;rsquo;t near my personal laptop. I did play around with writing posts in my notes app on my phone (Orgzly) and later transferring them to the GitHub repo (via ox-hugo on Emacs), but that workflow was a little clunky as well. It was the closest I came to having a seamless workflow.&lt;/p&gt;
+&lt;p&gt;What I really needed was an app in which I could write blog posts, preview the markdown files and push to GitHub - all from my phone. To solve this, I &lt;del&gt;built&lt;/del&gt; vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/hugowriter&#34;&gt;Bloggo&lt;/a&gt; that lets me blog from my phone. It&amp;rsquo;s simple and does the job well. It&amp;rsquo;s exactly what I need; nothing more, nothing less. The app needs a GitHub Personal Access Token in order to be able to push files to the repo. It also needs the name of the repo, the name of the branch, and the folder where the files get pushed. You can also configure the frontmatter that gets added to every post so that you don&amp;rsquo;t have to add them manually. That&amp;rsquo;s pretty much it.&lt;/p&gt;
 &lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Here are some screenshots:
-&amp;lt;main page screenshot&amp;gt;
-&amp;lt;blog post page screenshot&amp;gt;
-&amp;lt;blog post preview screenshot&amp;gt;&lt;/p&gt;
+&lt;img src=&#34;//localhost:1313/images/bloggo-main-screenshot.png&#34; alt=&#34;Bloggo main page showing published and draft posts&#34;&gt;
+Main page showing published and draft posts
+&lt;img src=&#34;//localhost:1313/images/bloggo-post-edit-screenshot.png&#34; alt=&#34;Bloggo blog post page showing the front matter and the blog content&#34;&gt;
+Blog post page showing the front matter and the blog content
+&lt;img src=&#34;//localhost:1313/images/bloggo-preview-screenshot.png&#34; alt=&#34;Bloggo blog preview page showing the Markdown preview&#34;&gt;
+Blog preview page showing the Markdown preview
+&lt;img src=&#34;//localhost:1313/images/bloggo-settings-screenshot.png&#34; alt=&#34;Bloggo settings page with fields for GitHub PAT, repo name, branch name, etc.&#34;&gt;
+Settings page with fields for GitHub PAT, repo name, branch name, etc.&lt;/p&gt;
 &lt;h2 id=&#34;how-the-app-works&#34;&gt;How the app works&lt;/h2&gt;
-&lt;p&gt;The main page shows all the posts that are in the remote and published. There are two sections - one for published posts and one for unpublished. The unpublished posts are the ones that are started on the phone and are in draft mode. The blog post page shows a simple text editor to write down content. The preview button at the top switches between editor mode and markdown preview mode to show how the post looks. Hitting back button on the blog post page would auto-save the file.&lt;/p&gt;
-&lt;p&gt;The title of the post updates the frontmatter accordingly (by setting the value for the &lt;code&gt;title&lt;/code&gt; attribute). And the filename gets generated from the title of the post with appropriate changes to make the slug short and not have any special or repeated characters. The Publish to GitHub button does literally that. It pushes the file to GitHub.&lt;/p&gt;
-&lt;p&gt;The app is extensible-ish since all it cares about is where to push the files. So, it doesn&amp;rsquo;t really matter if you&amp;rsquo;re using Hugo as your static site generator. You can use Jekyll, Zola or any other SSG.&lt;/p&gt;
+&lt;p&gt;The main page shows all the posts that are in the remote repo and published. There are two sections - one for published posts and one for unpublished. The unpublished posts are the ones that are started on the phone and are in draft mode. The blog post page shows a simple text editor to write down content. The preview button at the top switches between editor mode and markdown preview mode to show how the post looks. Hitting back button on the blog post page auto-saves the file.&lt;/p&gt;
+&lt;p&gt;The title of the post updates the frontmatter accordingly (by setting the value for the &lt;code&gt;title&lt;/code&gt; attribute). And the filename gets generated from the title of the post with appropriate changes to make the slug short and not have any special or repeated characters. The Publish to GitHub button commits and pushes the post to the configured repo and branch.&lt;/p&gt;
+&lt;p&gt;The app is loosely extensible since all it cares about is where to push the files. So, it doesn&amp;rsquo;t really matter if you&amp;rsquo;re using Hugo as your static site generator. You can use Jekyll, Zola or any other SSG.&lt;/p&gt;
 &lt;h2 id=&#34;my-workflow&#34;&gt;My Workflow&lt;/h2&gt;
-&lt;p&gt;Now, my workflow has changed. I write my blog posts directly in this app. And I may take multiple sittings to write a blog post. I can always preview what I wrote to see if the formatting looks good. Once I&amp;rsquo;m ready, I just hit a button and the blog gets published. I&amp;rsquo;ve written a lot more blog posts this year because of this improvement. I love the fact that the lack of friction is really making me write more.&lt;/p&gt;
+&lt;p&gt;Now, my workflow has changed. I write my blog posts directly in this app. I can always preview what I wrote to see if the formatting looks good. Once I&amp;rsquo;m ready, I just hit a button and the blog gets published. I&amp;rsquo;ve written a lot more blog posts this year because of this improvement.&lt;/p&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
 &lt;p&gt;The app does pretty much what I need. Although, I may add a few features like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;making it easier to add links: for example, selecting a text should give me a popup and I should be able to add a link there instead of having to go through the Android keyboard to find characters like &lt;code&gt;[&lt;/code&gt;, &lt;code&gt;]&lt;/code&gt;, &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;  to format a link in markdown.&lt;/li&gt;
+&lt;li&gt;making it easier to add links: for example, selecting a text should give me a popup and I should be able to add a link there instead of having to go through the Android keyboard to find characters like &lt;code&gt;[&lt;/code&gt;, &lt;code&gt;]&lt;/code&gt;, &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;  to format a link in Markdown.&lt;/li&gt;
 &lt;li&gt;add pages: like the about page, now page or any other pages, instead of restricting the app to just blog posts.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;whats-with-the-name-by-the-way&#34;&gt;What&amp;rsquo;s with the name, by the way?&lt;/h2&gt;
+&lt;p&gt;A couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It&amp;rsquo;s a contraction of Blog on the Go&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s kind of a play on words on Hugo, which is the static site generator I use. Like, Blog and Hugo&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

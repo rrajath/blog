@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</loc>
-    <lastmod>2026-02-20T00:02:47-08:00</lastmod>
+    <loc>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</loc>
+    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-02-20T00:02:47-08:00</lastmod>
+    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-02-20T00:02:47-08:00</lastmod>
+    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-02-16T15:59:39-08:00</lastmod>
+    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/week-notes-26-07/</loc>
-    <lastmod>2026-02-16T15:59:39-08:00</lastmod>
+    <loc>//localhost:1313/posts/week-notes-26-19/</loc>
+    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/weeknotes/</loc>
+    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</loc>
+    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/week-notes-26-07/</loc>
     <lastmod>2026-02-16T15:59:39-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/moving-from-wireguard-to-tailscale/</loc>
