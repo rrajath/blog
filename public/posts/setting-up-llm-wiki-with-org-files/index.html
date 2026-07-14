@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet"> 
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Setting up llm-wiki with org files - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="//localhost:1313/posts/setting-up-llm-wiki-with-org-files/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Setting up llm-wiki with org files">
+  <meta property="og:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
+What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make “the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources”.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-07-13T22:14:00-07:00">
+    <meta property="article:modified_time" content="2026-07-13T22:14:14-07:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Setting up llm-wiki with org files">
+  <meta name="twitter:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
+What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make “the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources”.">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="//localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="//localhost:1313/css/main.css" /><link rel="stylesheet" type="text/css" href="//localhost:1313/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="//localhost:1313/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+
+
+<body>
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
+  <base href="//localhost:1313/">
+  <h1 class="site-title"><a href="//localhost:1313/">Rajath Ramakrishna</a></h1>
+  <div class="site-description"><nav class="nav social">
+	  <ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="https://social.lol/rrajath" title="Mastodon"><i data-feather="link"></i></a></ul>
+	</nav>
+  </div>
+
+  <nav class="nav">
+	<ul class="flat" style="display: flex; align-items: center; width: 100%;">
+	  
+	  <li>
+		<a href="/posts">All posts</a>
+	  </li>
+	  
+	  <li>
+		<a href="/about">About</a>
+	  </li>
+	  
+	  <li>
+		<a href="/micro">Micro</a>
+	  </li>
+	  
+	  <li>
+		<a href="/tags">Tags</a>
+	  </li>
+	  
+	  <li>
+		<a href="/now">Now</a>
+	  </li>
+	  
+	  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+	  <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+      
+      <style>
+           
+          :root {
+              --pagefind-ui-text: #eeeeee;
+              --pagefind-ui-background: #111111; 
+              --pagefind-ui-border: #333333;
+          }
+      
+           
+          .pagefind-ui__search-input {
+              background-color: transparent !important;
+              border: 0 !important;
+              border-bottom: 2px solid #FF7979 !important;
+              border-radius: 0 !important;
+              padding-left: 2.5rem !important;
+              color: inherit !important;
+              font-size: 1rem;
+          }
+          
+          .pagefind-ui__search-input:focus {
+              outline: none !important;
+              box-shadow: none !important;
+              border-bottom: 2px solid #984848 !important;
+          }
+      
+          .pagefind-ui__search-clear {
+              background-color: transparent !important;
+          }
+      
+           
+          .nav { width: 100%; }
+          
+          .nav .flat { 
+              display: flex; 
+              align-items: center; 
+              width: 100%; 
+              margin: 0; padding: 0;
+              flex-wrap: wrap; 
+          }
+          
+          .nav .flat li { 
+              margin-right: 15px; 
+              list-style: none;
+              flex-shrink: 0; 
+          }
+          
+          .nav .flat li a { white-space: nowrap; }
+      
+           
+          li.search-wrap {
+              margin-left: auto !important; 
+              display: flex;
+              align-items: center;
+               
+              position: static !important; 
+              flex-shrink: 0;
+          }
+      
+          #search {
+              width: 200px;
+              margin-top: -4px;
+              position: relative; 
+          }
+      
+           
+          .pagefind-ui__drawer {
+              position: absolute !important;
+              top: 80px !important;  
+              
+               
+              right: 1vw !important; 
+              left: auto !important; 
+              
+               
+              width: 90vw !important; 
+              max-width: 600px !important;  
+              
+              z-index: 9999 !important; 
+              background-color: #000000 !important; 
+              border: 1px solid #333 !important;
+              box-shadow: 0 10px 30px rgba(0,0,0, 1) !important;
+              padding: 15px !important; 
+              border-radius: 8px !important;
+              box-sizing: border-box !important;
+          }
+      
+           
+          .pagefind-ui__result-tag {
+              color: #ffffff !important;            
+              background-color: #222222 !important;  
+              border: 1px solid #444444 !important;  
+          }
+          
+          .pagefind-ui__result {
+              border-bottom: 1px solid #333 !important;
+          }
+      
+           
+          @media screen and (max-width: 600px) {
+              .nav .flat { justify-content: flex-start; }
+      
+              li.search-wrap {
+                  margin-left: 0 !important; 
+                  width: 100%; 
+                  margin-top: 15px; 
+                   
+                  position: relative !important; 
+              }
+      
+              #search { width: 100%; }
+              
+              .pagefind-ui__drawer {
+                  top: 100% !important; 
+                  right: 0 !important;
+                  left: 0 !important;
+                  width: 100% !important; 
+                  max-width: none !important;
+                  border: none !important;
+                  border-top: 1px solid #333 !important;
+                  border-radius: 0 !important;
+                  box-shadow: none !important;
+              }
+          }
+      </style>
+
+	  
+	  <li class="search-wrap">
+		<div id="search"></div>
+	  </li>
+	  <script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+					new PagefindUI({element: "#search"});
+				});
+	  </script>
+	</ul>
+  </nav>
+</div>
+
+
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Setting up llm-wiki with org files</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="//localhost:1313/posts/setting-up-llm-wiki-with-org-files/"><time class="dt-published" data-pagefind-meta="date">Jul 13, 2026</time></a> | 9
+					min read</div>
+			</div>
+
+			<div class="markdown">
+				
+				<p>I got to know about Andrej Karpathy&rsquo;s <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">llm-wiki</a> a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.</p>
+<h2 id="what-is-llm-wiki">What is llm-wiki?</h2>
+<p>llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make &ldquo;the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources&rdquo;.</p>
+<p>Having said this and the fact that LLMs tend to hallucinate every now and then, I didn&rsquo;t want to depend on its summaries completely. I didn&rsquo;t want to add notes on stuff I didn&rsquo;t read about. For example, I didn&rsquo;t want to give it a URL and ask it to summarize, synthesize and create concept pages from that. I only wanted to give notes that I deliberately wrote down.</p>
+<p>My workflow for capturing notes involved Emacs and org-roam. I already had 100+ notes in my org-roam and I didn&rsquo;t want disruption to my workflow. But since llm-wiki is just a skill (text instructions) and LLMs understand org-mode like it understands markdown, I wanted to make llm-wiki work with org files. This involved a few steps and I finally got a good working solution that I&rsquo;ve been using for a couple of months now.</p>
+<h2 id="converting-the-skill-to-support-org-mode-and-org-roam-workflows">Converting the skill to support org-mode and org-roam workflows</h2>
+<p>The skill seemed heavily dependent on using markdown files as input and working closely with an Obsidian vault. I used neither. I took notes in org-roam and used org files instead of markdown. I wanted to change the skill to be compatible with my workflow, which turned out to be surprisingly simple. I directly asked Claude to convert the original llm-wiki skill to something that supported org files. I proceeded to edit the skill such that it indexes specific org files and org directories where my notes are stored. I was okay with the output being markdown since I was hoping to be able to access it outside of org-roam and Emacs.</p>
+<h2 id="turning-the-wiki-pages-into-a-website">Turning the wiki pages into a website</h2>
+<p>Having a collection of markdown files, especially wiki pages, just on my computer was not adding a lot of value. I could access it only when I&rsquo;m in front of my laptop. I wanted those pages on the go so that I could read through them on my phone whenever I wanted.</p>
+<p>After searching for a few static site generators, I found Quartz fit the use case perfectly. It supports showing markdown files, interlinking between them, showing preview of those links on hover and also showing a graph of all the notes and the connections between them. I set up the static site generator so that the markdown files end up in the <code>content/</code> directory. After that, all that was left was commit and push.</p>
+<p>With this, I had a seamless setup. All I did was make notes like I did in org-roam. And then run the <code>/ingest</code> command which pulled the latest changes, read all the relevant org files, synthesized the files, committed and pushed.</p>
+<h2 id="detailed-setup-instructions">Detailed Setup Instructions</h2>
+<h3 id="converting-llm-wiki-skill-to-support-org-files">Converting llm-wiki skill to support org files</h3>
+<p>I directly asked Claude to convert the existing llm-wiki skill to support org files. Here&rsquo;s the prompt I used and I attached the <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#file-llm-wiki-md">llm-wiki skill file</a>:</p>
+<blockquote>
+<p>Here&rsquo;s the SKILL.md file for llm-wiki skill. It heavily references markdown as the input format. I write my notes in orgmode and I have a bunch of org files. Can you change the SKILL.md file to specify that the input format will be org files and orgmode entries? I want the skill to have placeholder values for a bunch of folders it needs to look at for org files. That&rsquo;s where it will get its input (besides web content). The workflow I&rsquo;m imagining is me writing org files on my phone which get synced to a folder on my laptop. There&rsquo;ll be a ~/wiki folder which is where all the output would live. The ~/wiki folder could have raw notes (from my org files).</p></blockquote>
+<h3 id="adding-this-to-a-project">Adding this to a project</h3>
+<p>I checked out <a href="https://quartz.jzhao.xyz/">Quartz</a> into <code>~/wiki</code> on my local.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#cb4b16"># Personal Knowledge Base
+</span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span><span style="color:#719e07">
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">&gt; </span><span style="font-style:italic">Schema document — read at the start of every session together with `wiki/index.md`.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#719e07">&gt; </span><span style="font-style:italic">Update after every major compile, ingest batch, or structural change.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">## Scope
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span><span style="display:flex;"><span>What this wiki covers:
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Personal notes, reading highlights, and ideas captured in org-roam
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Concepts, entities, and summaries distilled from those notes
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Cross-linked knowledge graph built from daily capture
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>What this wiki deliberately excludes:
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Raw org files (those stay in the org source dirs below)
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Ephemeral todos or calendar/agenda items
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">## Org source directories
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-roam (only use the files in this directory. Don&#39;t do a recursive search. There is a folder called journals in the org-roam folder. I dont&#39; want that folder ingested)
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/thoughts.org
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/resources.org
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/blog.org
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">## Operations
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span><span style="display:flex;"><span>This wiki follows the llm-wiki skill&#39;s five operations: <span style="color:#586e75">`compile`</span>, <span style="color:#586e75">`ingest`</span>, <span style="color:#586e75">`query`</span>, <span style="color:#586e75">`lint`</span>, <span style="color:#586e75">`audit`</span>.
+</span></span><span style="display:flex;"><span>Every operation appends an entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span>.
+</span></span><span style="display:flex;"><span>Full operation instructions: <span style="color:#586e75">`.claude/SKILL.md`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">## Naming conventions
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Concept pages** (<span style="color:#586e75">`wiki/concepts/`</span>): Title Case noun phrases.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Folder-split concepts** (<span style="color:#586e75">`wiki/concepts/&lt;topic&gt;/`</span>): used when a topic exceeds ~1200 words. Contains <span style="color:#586e75">`index.md`</span> + one file per aspect.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Entity pages** (<span style="color:#586e75">`wiki/entities/`</span>): Proper names.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Summary pages** (<span style="color:#586e75">`wiki/summaries/`</span>): kebab-case source slug.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>All pages require YAML frontmatter: <span style="color:#586e75">`title`</span>, <span style="color:#586e75">`type`</span>, <span style="color:#586e75">`created`</span>, <span style="color:#586e75">`updated`</span>, <span style="color:#586e75">`sources`</span>, <span style="color:#586e75">`tags`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">### Page size
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> Target 400–1200 words per page.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> If a topic exceeds ~1200 words, split into a subfolder with <span style="color:#586e75">`index.md`</span> + one file per aspect.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">### Diagrams and formulas
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> All diagrams are <span style="font-weight:bold">**mermaid**</span>. No ASCII art.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> All formulas are <span style="font-weight:bold">**KaTeX**</span> (inline <span style="color:#586e75">`$...$`</span> or block <span style="color:#586e75">`$$...$$`</span>).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">### Raw file policy
+</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> Small text sources → copy into <span style="color:#586e75">`raw/&lt;subfolder&gt;/`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Large binaries → create a pointer file at <span style="color:#586e75">`raw/refs/&lt;slug&gt;.md`</span> with <span style="color:#586e75">`kind: ref`</span> and <span style="color:#586e75">`external_path`</span> fields. Do not copy the binary.
+</span></span></code></pre></div><p>All the raw files, the synthesized outputs, the entities, the summaries, everything stays under the content folder in the repo. Quartz being a static site generator produces HTML from the wiki pages.</p>
+<h3 id="creating-custom-slash-commands">Creating custom slash commands</h3>
+<p>I created 5 custom slash commands:</p>
+<h4 id="ingest">Ingest</h4>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`ingest`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Before scanning org source directories for org files, verify each directory exists
+</span></span><span style="display:flex;"><span>(test -d). Skip any that don&#39;t. If none exist, skip the org-ingest step
+</span></span><span style="display:flex;"><span>entirely for this session — proceed with article/paper/chat-based ingest only.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">0.</span> First fetch the latest changes from remote using jj to keep the repo up to date.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Scan all org source directories listed in <span style="color:#586e75">`CLAUDE.md`</span> for <span style="color:#586e75">`.org`</span> files that are either (a) not yet present in <span style="color:#586e75">`raw/notes/`</span>, or (b) present but modified since last copied (compare by last-modified date or checksum).
+</span></span><span style="display:flex;"><span><span style="color:#719e07">3.</span> For each new or updated file:
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Copy it into <span style="color:#586e75">`raw/notes/`</span>, overwriting any existing copy.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Summarize its content and extract key concepts and entities.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Update or create relevant wiki pages in <span style="color:#586e75">`wiki/concepts/`</span>, <span style="color:#586e75">`wiki/entities/`</span>, or <span style="color:#586e75">`wiki/summaries/`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> Update <span style="color:#586e75">`wiki/index.md`</span> to reflect any new or changed pages.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> Append a session entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span> listing what was ingested.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">6.</span> Commit all changes and push to remote using jj commands.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>If no new or modified org files are found, say so and stop.
+</span></span><span style="display:flex;"><span>If there are many files, offer to ingest in batches of 5 to stay within context window limits.
+</span></span></code></pre></div><h4 id="query">Query</h4>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`query`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Read the user&#39;s question (provided after this command).
+</span></span><span style="display:flex;"><span><span style="color:#719e07">3.</span> Search the wiki pages in <span style="color:#586e75">`wiki/concepts/`</span>, <span style="color:#586e75">`wiki/entities/`</span>, and <span style="color:#586e75">`wiki/summaries/`</span> for relevant content.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> If the answer is found, respond clearly and cite the specific wiki page(s).
+</span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> If the answer is partially found, provide what&#39;s known and note the gaps.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">6.</span> If the answer is not in the wiki, say so — and offer to ingest new sources or flag it as an open research question.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">7.</span> Save the query and answer to <span style="color:#586e75">`outputs/queries/YYYYMMDD-&lt;slug&gt;.md`</span> for future reference.
+</span></span></code></pre></div><h4 id="audit">Audit</h4>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`audit`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Scan the <span style="color:#586e75">`audit/`</span> directory for open feedback files (those not in <span style="color:#586e75">`audit/resolved/`</span>).
+</span></span><span style="display:flex;"><span><span style="color:#719e07">3.</span> For each feedback file:
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Read the correction or note.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Locate the relevant wiki page(s).
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Apply the correction.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Move the feedback file to <span style="color:#586e75">`audit/resolved/`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> If there are contradictions between sources, state both perspectives, cite each source, and add the question to the &#34;Open research questions&#34; section of <span style="color:#586e75">`CLAUDE.md`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> Append a session entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span> summarising what was audited and resolved.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>If no open feedback files are found, say so and stop.
+</span></span></code></pre></div><h4 id="lint">Lint</h4>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`lint`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Scan all pages in <span style="color:#586e75">`wiki/`</span> and check for:
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> **Dead links**: internal links that point to pages that don&#39;t exist.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> **Orphan pages**: pages not linked from any other page or from <span style="color:#586e75">`wiki/index.md`</span>.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> **Missing frontmatter**: pages lacking required fields (<span style="color:#586e75">`title`</span>, <span style="color:#586e75">`type`</span>, <span style="color:#586e75">`created`</span>, <span style="color:#586e75">`updated`</span>, <span style="color:#586e75">`sources`</span>, <span style="color:#586e75">`tags`</span>).
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> **Oversized pages**: pages exceeding ~1200 words that haven&#39;t been split.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> **Coverage gaps**: concepts or entities mentioned in multiple pages but lacking their own dedicated page.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">3.</span> Report all issues grouped by type.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> For straightforward fixes (missing frontmatter fields, dead links to pages that exist under a different name), fix them directly.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> Append a session entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span> listing issues found and actions taken.
+</span></span></code></pre></div><h4 id="compile">Compile</h4>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`compile`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Review all pages in <span style="color:#586e75">`wiki/concepts/`</span>, <span style="color:#586e75">`wiki/entities/`</span>, and <span style="color:#586e75">`wiki/summaries/`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">3.</span> For each page:
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Check that frontmatter is complete (<span style="color:#586e75">`title`</span>, <span style="color:#586e75">`type`</span>, <span style="color:#586e75">`created`</span>, <span style="color:#586e75">`updated`</span>, <span style="color:#586e75">`sources`</span>, <span style="color:#586e75">`tags`</span>).
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Ensure cross-links between related pages are present and accurate.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Confirm page length is within 400–1200 words; split into a subfolder if over.
+</span></span><span style="display:flex;"><span>   <span style="color:#719e07">-</span> Verify all diagrams use Mermaid and all formulas use KaTeX.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> Update <span style="color:#586e75">`wiki/index.md`</span> with an accurate list of all current articles.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> Update the &#34;Current articles&#34; section of <span style="color:#586e75">`CLAUDE.md`</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">6.</span> Append a session entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span> summarising what was compiled and changed.
+</span></span></code></pre></div><h2 id="my-overall-workflow">My overall workflow</h2>
+<ol>
+<li>Write down notes in org-roam using org-mode.</li>
+<li>Once I&rsquo;m down making changes (creating new files, editing existing files, etc), I run the <code>/ingest</code> command in claude code</li>
+<li>Per the instructions in the <code>/ingest</code> slash command, claude first fetches the latest from github, runs the ingest workflow and then commits and pushes the changes to remote</li>
+</ol>
+<p>So, all I do is write notes and run <code>/ingest</code>. Every once in a while I run <code>/lint</code> or <code>/audit</code>. When I want to query something I run the <code>/query</code> slash command.</p>
+<h2 id="viewing-the-generated-site">Viewing the generated site</h2>
+<p>If I want to view the generated content (wiki pages, concepts, etc) locally, I just run <code>npx quartz build --serve</code>. Since everything gets pushed to remote, and the repo can be configured to be hosted on GitHub pages, the site can be accessed as <code>https://&lt;username&gt;.github.io</code> or <code>https://&lt;username&gt;.github.io/wiki</code>.</p>
+
+				
+			</div>
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+			</div>
+	</article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | Follow me on <a rel="me" href="https://social.lol/@rrajath">Mastodon</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+
+</html>
