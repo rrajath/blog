@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 13 Jul 2026 22:14:00 -0700</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jul 2026 23:30:00 -0700</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re: Your RSS Reader Is Robbing You</title>
+      <link>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</link>
+      <pubDate>Wed, 15 Jul 2026 23:30:00 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</guid>
+      <description>&lt;p&gt;I was browsing through some of the posts at bubbles.town and I came across a post by &lt;a href=&#34;https://antoniosantos.io/&#34;&gt;Antonio&lt;/a&gt; about how &amp;ldquo;&lt;a href=&#34;https://antoniosantos.io/your-rss-reader-is-robbing-you/&#34;&gt;Your RSS Reader Is Robbing You&lt;/a&gt;&amp;rdquo;. It instantly reminded me of another post I read on another blog a couple of months ago about a similar topic about how people painstakingly create their blog and how unique each personal website is because of all the love, thought and hard work would have gone in to them to make them look and function in a unique way.&lt;/p&gt;
+&lt;p&gt;For a long time I felt this way as well and I really wanted a way to visit beautiful websites through my RSS Reader since that&amp;rsquo;s how I consumed content from most of the blogs I followed. These posts were further confirmation that I was not alone in feeling this way. So, having said that, I have been recently using a kind of a low-key hack to at least nudge me to open the original website instead of reading the content in the feed reader.&lt;/p&gt;
+&lt;p&gt;This may or may not be supported in the apps you use, but here&amp;rsquo;s what I do. I use &lt;a href=&#34;https://www.freshrss.org/&#34;&gt;FreshRSS&lt;/a&gt; hosted on my Synology NAS for my feed subscription, organization, etc. And I use the beautiful &lt;a href=&#34;https://github.com/ReadYouApp/ReadYou&#34;&gt;Read You&lt;/a&gt; app on my Pixel that pulls feeds from my FreshRSS instance. In FreshRSS, in the subscription page for the feed, I just add a 🌐 icon at the beginning of the feed name. That way, in my feed reader (Read You) as soon as I see where the post is from and notice the 🌐 icon, I just hit the link in the feed to read them on the original website.&lt;/p&gt;
+&lt;p&gt;Hope this helps. Now, some of my contributions to beautiful personal websites that I&amp;rsquo;ve subscribed to for RSS feeds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ciechanow.ski/&#34;&gt;Bartosz Ciechanowski&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tonsky.me/&#34;&gt;Blog @ tonsky.me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://expressiveegg.org/&#34;&gt;Darren Allen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Setting up llm-wiki with org files</title>
       <link>//localhost:1313/posts/setting-up-llm-wiki-with-org-files/</link>

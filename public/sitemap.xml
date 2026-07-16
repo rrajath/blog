@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</loc>
-    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
+    <lastmod>2026-07-15T23:28:22-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-06-30T22:36:24-07:00</lastmod>
+    <lastmod>2026-07-15T23:28:22-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</loc>
+    <lastmod>2026-07-15T23:28:22-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/setting-up-llm-wiki-with-org-files/</loc>
+    <lastmod>2026-07-15T23:22:48-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/some-thoughts-on-personal-ai-assistants/</loc>
+    <lastmod>2026-07-15T22:59:56-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</loc>
+    <lastmod>2026-07-15T22:14:45-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
+    <lastmod>2026-06-30T22:39:27-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/week-notes-2026-26/</loc>
+    <lastmod>2026-06-30T22:39:27-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/week-notes/</loc>
+    <lastmod>2026-06-30T22:39:27-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/week-notes-26-19/</loc>
     <lastmod>2026-05-14T08:05:33-07:00</lastmod>
@@ -21,7 +36,7 @@
     <lastmod>2026-05-14T08:05:33-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/bloggo-an-android-app-to-blog-on-the-go/</loc>
-    <lastmod>2026-05-14T08:05:33-07:00</lastmod>
+    <lastmod>2026-06-30T22:39:27-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/week-notes-26-07/</loc>
     <lastmod>2026-02-16T15:59:39-08:00</lastmod>
@@ -37,6 +52,9 @@
   </url><url>
     <loc>//localhost:1313/posts/week-notes-26-06/</loc>
     <lastmod>2026-02-16T15:59:39-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</loc>
+    <lastmod>2026-07-15T23:01:56-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/openclaw/</loc>
     <lastmod>2026-02-08T13:58:40-08:00</lastmod>
@@ -59,15 +77,6 @@
     <loc>//localhost:1313/posts/openclaw-use-case-research-assistant-with-todoist/</loc>
     <lastmod>2026-02-01T09:53:22-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/android/</loc>
-    <lastmod>2026-01-31T14:40:24-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</loc>
-    <lastmod>2026-01-31T14:40:24-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/vibecoding/</loc>
-    <lastmod>2026-01-31T14:40:24-08:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/openclaw-adventures/</loc>
     <lastmod>2026-01-31T14:40:47-08:00</lastmod>
   </url><url>
@@ -81,6 +90,9 @@
     <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/org-retro-journal/</loc>
+    <lastmod>2026-01-26T22:56:44-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/vibecoding/</loc>
     <lastmod>2026-01-26T22:56:44-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/app-defaults-2025/</loc>
@@ -318,6 +330,9 @@
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/2018-year-in-review/</loc>
+    <lastmod>2024-11-13T22:52:05-08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/android/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/dex/</loc>

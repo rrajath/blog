@@ -7,15 +7,229 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 30 Jun 2026 22:36:23 -0700</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jul 2026 23:28:22 -0700</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re: Your RSS Reader Is Robbing You</title>
+      <link>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</link>
+      <pubDate>Wed, 15 Jul 2026 23:28:22 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</guid>
+      <description>&lt;p&gt;I was browsing through some of the posts at bubbles.town and I came across a post by &lt;a href=&#34;https://antoniosantos.io/&#34;&gt;Antonio&lt;/a&gt; about how &amp;ldquo;&lt;a href=&#34;https://antoniosantos.io/your-rss-reader-is-robbing-you/&#34;&gt;Your RSS Reader Is Robbing You&lt;/a&gt;&amp;rdquo;. It instantly reminded me of another post I read on another blog a couple of months ago about a similar topic about how people painstakingly create their blog and how unique each personal website is because of all the love, thought and hard work would have gone in to them to make them look and function in a unique way.&lt;/p&gt;
+&lt;p&gt;For a long time I felt this way as well and I really wanted a way to visit beautiful websites through my RSS Reader since that&amp;rsquo;s how I consumed content from most of the blogs I followed. These posts were further confirmation that I was not alone in feeling this way. So, having said that, I have been recently using a kind of a low-key hack to at least nudge me to open the original website instead of reading the content in the feed reader.&lt;/p&gt;
+&lt;p&gt;This may or may not be supported in the apps you use, but here&amp;rsquo;s what I do. I use &lt;a href=&#34;https://www.freshrss.org/&#34;&gt;FreshRSS&lt;/a&gt; hosted on my Synology NAS for my feed subscription, organization, etc. And I use the beautiful &lt;a href=&#34;https://github.com/ReadYouApp/ReadYou&#34;&gt;Read You&lt;/a&gt; app on my Pixel that pulls feeds from my FreshRSS instance. In FreshRSS, in the subscription page for the feed, I just add a 🌐 icon at the beginning of the feed name. That way, in my feed reader (Read You) as soon as I see where the post is from and notice the 🌐 icon, I just hit the link in the feed to read them on the original website.&lt;/p&gt;
+&lt;p&gt;Hope this helps. Now, some of my contributions to beautiful personal websites that I&amp;rsquo;ve subscribed to for RSS feeds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ciechanow.ski/&#34;&gt;Bartosz Ciechanowski&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tonsky.me/&#34;&gt;Blog @ tonsky.me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://expressiveegg.org/&#34;&gt;Darren Allen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting up llm-wiki with org files</title>
+      <link>//localhost:1313/posts/setting-up-llm-wiki-with-org-files/</link>
+      <pubDate>Mon, 13 Jul 2026 22:14:00 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/setting-up-llm-wiki-with-org-files/</guid>
+      <description>&lt;p&gt;I got to know about Andrej Karpathy&amp;rsquo;s &lt;a href=&#34;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f&#34;&gt;llm-wiki&lt;/a&gt; a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-llm-wiki&#34;&gt;What is llm-wiki?&lt;/h2&gt;
+&lt;p&gt;llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make &amp;ldquo;the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Having said this and the fact that LLMs tend to hallucinate every now and then, I didn&amp;rsquo;t want to depend on its summaries completely. I didn&amp;rsquo;t want to add notes on stuff I didn&amp;rsquo;t read about. For example, I didn&amp;rsquo;t want to give it a URL and ask it to summarize, synthesize and create concept pages from that. I only wanted to give notes that I deliberately wrote down.&lt;/p&gt;
+&lt;p&gt;My workflow for capturing notes involved Emacs and org-roam. I already had 100+ notes in my org-roam and I didn&amp;rsquo;t want disruption to my workflow. But since llm-wiki is just a skill (text instructions) and LLMs understand org-mode like it understands markdown, I wanted to make llm-wiki work with org files. This involved a few steps and I finally got a good working solution that I&amp;rsquo;ve been using for a couple of months now.&lt;/p&gt;
+&lt;h2 id=&#34;converting-the-skill-to-support-org-mode-and-org-roam-workflows&#34;&gt;Converting the skill to support org-mode and org-roam workflows&lt;/h2&gt;
+&lt;p&gt;The skill seemed heavily dependent on using markdown files as input and working closely with an Obsidian vault. I used neither. I took notes in org-roam and used org files instead of markdown. I wanted to change the skill to be compatible with my workflow, which turned out to be surprisingly simple. I directly asked Claude to convert the original llm-wiki skill to something that supported org files. I proceeded to edit the skill such that it indexes specific org files and org directories where my notes are stored. I was okay with the output being markdown since I was hoping to be able to access it outside of org-roam and Emacs.&lt;/p&gt;
+&lt;h2 id=&#34;turning-the-wiki-pages-into-a-website&#34;&gt;Turning the wiki pages into a website&lt;/h2&gt;
+&lt;p&gt;Having a collection of markdown files, especially wiki pages, just on my computer was not adding a lot of value. I could access it only when I&amp;rsquo;m in front of my laptop. I wanted those pages on the go so that I could read through them on my phone whenever I wanted.&lt;/p&gt;
+&lt;p&gt;After searching for a few static site generators, I found Quartz fit the use case perfectly. It supports showing markdown files, interlinking between them, showing preview of those links on hover and also showing a graph of all the notes and the connections between them. I set up the static site generator so that the markdown files end up in the &lt;code&gt;content/&lt;/code&gt; directory. After that, all that was left was commit and push.&lt;/p&gt;
+&lt;p&gt;With this, I had a seamless setup. All I did was make notes like I did in org-roam. And then run the &lt;code&gt;/ingest&lt;/code&gt; command which pulled the latest changes, read all the relevant org files, synthesized the files, committed and pushed.&lt;/p&gt;
+&lt;h2 id=&#34;detailed-setup-instructions&#34;&gt;Detailed Setup Instructions&lt;/h2&gt;
+&lt;h3 id=&#34;converting-llm-wiki-skill-to-support-org-files&#34;&gt;Converting llm-wiki skill to support org files&lt;/h3&gt;
+&lt;p&gt;I directly asked Claude to convert the existing llm-wiki skill to support org files. Here&amp;rsquo;s the prompt I used and I attached the &lt;a href=&#34;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#file-llm-wiki-md&#34;&gt;llm-wiki skill file&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s the SKILL.md file for llm-wiki skill. It heavily references markdown as the input format. I write my notes in orgmode and I have a bunch of org files. Can you change the SKILL.md file to specify that the input format will be org files and orgmode entries? I want the skill to have placeholder values for a bunch of folders it needs to look at for org files. That&amp;rsquo;s where it will get its input (besides web content). The workflow I&amp;rsquo;m imagining is me writing org files on my phone which get synced to a folder on my laptop. There&amp;rsquo;ll be a ~/wiki folder which is where all the output would live. The ~/wiki folder could have raw notes (from my org files).&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;adding-this-to-a-project&#34;&gt;Adding this to a project&lt;/h3&gt;
+&lt;p&gt;I checked out &lt;a href=&#34;https://quartz.jzhao.xyz/&#34;&gt;Quartz&lt;/a&gt; into &lt;code&gt;~/wiki&lt;/code&gt; on my local.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;# Personal Knowledge Base
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;Schema document — read at the start of every session together with `wiki/index.md`.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;Update after every major compile, ingest batch, or structural change.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;## Scope
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;What this wiki covers:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Personal notes, reading highlights, and ideas captured in org-roam
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Concepts, entities, and summaries distilled from those notes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Cross-linked knowledge graph built from daily capture
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;What this wiki deliberately excludes:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Raw org files (those stay in the org source dirs below)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Ephemeral todos or calendar/agenda items
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;## Org source directories
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; ~/org-roam (only use the files in this directory. Don&amp;#39;t do a recursive search. There is a folder called journals in the org-roam folder. I dont&amp;#39; want that folder ingested)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; ~/org-mode/thoughts.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; ~/org-mode/resources.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; ~/org-mode/blog.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;## Operations
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This wiki follows the llm-wiki skill&amp;#39;s five operations: &lt;span style=&#34;color:#586e75&#34;&gt;`compile`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`ingest`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`query`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`lint`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`audit`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Every operation appends an entry to &lt;span style=&#34;color:#586e75&#34;&gt;`log/YYYYMMDD.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Full operation instructions: &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;## Naming conventions
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Concept pages** (&lt;span style=&#34;color:#586e75&#34;&gt;`wiki/concepts/`&lt;/span&gt;): Title Case noun phrases.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Folder-split concepts** (&lt;span style=&#34;color:#586e75&#34;&gt;`wiki/concepts/&amp;lt;topic&amp;gt;/`&lt;/span&gt;): used when a topic exceeds ~1200 words. Contains &lt;span style=&#34;color:#586e75&#34;&gt;`index.md`&lt;/span&gt; + one file per aspect.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Entity pages** (&lt;span style=&#34;color:#586e75&#34;&gt;`wiki/entities/`&lt;/span&gt;): Proper names.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Summary pages** (&lt;span style=&#34;color:#586e75&#34;&gt;`wiki/summaries/`&lt;/span&gt;): kebab-case source slug.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;All pages require YAML frontmatter: &lt;span style=&#34;color:#586e75&#34;&gt;`title`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`type`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`created`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`updated`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`sources`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`tags`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;### Page size
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Target 400–1200 words per page.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; If a topic exceeds ~1200 words, split into a subfolder with &lt;span style=&#34;color:#586e75&#34;&gt;`index.md`&lt;/span&gt; + one file per aspect.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;### Diagrams and formulas
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; All diagrams are &lt;span style=&#34;font-weight:bold&#34;&gt;**mermaid**&lt;/span&gt;. No ASCII art.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; All formulas are &lt;span style=&#34;font-weight:bold&#34;&gt;**KaTeX**&lt;/span&gt; (inline &lt;span style=&#34;color:#586e75&#34;&gt;`$...$`&lt;/span&gt; or block &lt;span style=&#34;color:#586e75&#34;&gt;`$$...$$`&lt;/span&gt;).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;### Raw file policy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Small text sources → copy into &lt;span style=&#34;color:#586e75&#34;&gt;`raw/&amp;lt;subfolder&amp;gt;/`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Large binaries → create a pointer file at &lt;span style=&#34;color:#586e75&#34;&gt;`raw/refs/&amp;lt;slug&amp;gt;.md`&lt;/span&gt; with &lt;span style=&#34;color:#586e75&#34;&gt;`kind: ref`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`external_path`&lt;/span&gt; fields. Do not copy the binary.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;All the raw files, the synthesized outputs, the entities, the summaries, everything stays under the content folder in the repo. Quartz being a static site generator produces HTML from the wiki pages.&lt;/p&gt;
+&lt;h3 id=&#34;creating-custom-slash-commands&#34;&gt;Creating custom slash commands&lt;/h3&gt;
+&lt;p&gt;I created 5 custom slash commands:&lt;/p&gt;
+&lt;h4 id=&#34;ingest&#34;&gt;Ingest&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run the &lt;span style=&#34;color:#586e75&#34;&gt;`ingest`&lt;/span&gt; operation as defined in &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Before scanning org source directories for org files, verify each directory exists
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(test -d). Skip any that don&amp;#39;t. If none exist, skip the org-ingest step
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;entirely for this session — proceed with article/paper/chat-based ingest only.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;0.&lt;/span&gt; First fetch the latest changes from remote using jj to keep the repo up to date.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;1.&lt;/span&gt; Read &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; first.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;2.&lt;/span&gt; Scan all org source directories listed in &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; for &lt;span style=&#34;color:#586e75&#34;&gt;`.org`&lt;/span&gt; files that are either (a) not yet present in &lt;span style=&#34;color:#586e75&#34;&gt;`raw/notes/`&lt;/span&gt;, or (b) present but modified since last copied (compare by last-modified date or checksum).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;3.&lt;/span&gt; For each new or updated file:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Copy it into &lt;span style=&#34;color:#586e75&#34;&gt;`raw/notes/`&lt;/span&gt;, overwriting any existing copy.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Summarize its content and extract key concepts and entities.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Update or create relevant wiki pages in &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/concepts/`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/entities/`&lt;/span&gt;, or &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/summaries/`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;4.&lt;/span&gt; Update &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; to reflect any new or changed pages.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;5.&lt;/span&gt; Append a session entry to &lt;span style=&#34;color:#586e75&#34;&gt;`log/YYYYMMDD.md`&lt;/span&gt; listing what was ingested.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;6.&lt;/span&gt; Commit all changes and push to remote using jj commands.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;If no new or modified org files are found, say so and stop.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;If there are many files, offer to ingest in batches of 5 to stay within context window limits.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;query&#34;&gt;Query&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run the &lt;span style=&#34;color:#586e75&#34;&gt;`query`&lt;/span&gt; operation as defined in &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;1.&lt;/span&gt; Read &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; first.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;2.&lt;/span&gt; Read the user&amp;#39;s question (provided after this command).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;3.&lt;/span&gt; Search the wiki pages in &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/concepts/`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/entities/`&lt;/span&gt;, and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/summaries/`&lt;/span&gt; for relevant content.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;4.&lt;/span&gt; If the answer is found, respond clearly and cite the specific wiki page(s).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;5.&lt;/span&gt; If the answer is partially found, provide what&amp;#39;s known and note the gaps.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;6.&lt;/span&gt; If the answer is not in the wiki, say so — and offer to ingest new sources or flag it as an open research question.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;7.&lt;/span&gt; Save the query and answer to &lt;span style=&#34;color:#586e75&#34;&gt;`outputs/queries/YYYYMMDD-&amp;lt;slug&amp;gt;.md`&lt;/span&gt; for future reference.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;audit&#34;&gt;Audit&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run the &lt;span style=&#34;color:#586e75&#34;&gt;`audit`&lt;/span&gt; operation as defined in &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;1.&lt;/span&gt; Read &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; first.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;2.&lt;/span&gt; Scan the &lt;span style=&#34;color:#586e75&#34;&gt;`audit/`&lt;/span&gt; directory for open feedback files (those not in &lt;span style=&#34;color:#586e75&#34;&gt;`audit/resolved/`&lt;/span&gt;).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;3.&lt;/span&gt; For each feedback file:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Read the correction or note.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Locate the relevant wiki page(s).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Apply the correction.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Move the feedback file to &lt;span style=&#34;color:#586e75&#34;&gt;`audit/resolved/`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;4.&lt;/span&gt; If there are contradictions between sources, state both perspectives, cite each source, and add the question to the &amp;#34;Open research questions&amp;#34; section of &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;5.&lt;/span&gt; Append a session entry to &lt;span style=&#34;color:#586e75&#34;&gt;`log/YYYYMMDD.md`&lt;/span&gt; summarising what was audited and resolved.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;If no open feedback files are found, say so and stop.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;lint&#34;&gt;Lint&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run the &lt;span style=&#34;color:#586e75&#34;&gt;`lint`&lt;/span&gt; operation as defined in &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;1.&lt;/span&gt; Read &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; first.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;2.&lt;/span&gt; Scan all pages in &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/`&lt;/span&gt; and check for:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Dead links**: internal links that point to pages that don&amp;#39;t exist.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Orphan pages**: pages not linked from any other page or from &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Missing frontmatter**: pages lacking required fields (&lt;span style=&#34;color:#586e75&#34;&gt;`title`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`type`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`created`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`updated`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`sources`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`tags`&lt;/span&gt;).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Oversized pages**: pages exceeding ~1200 words that haven&amp;#39;t been split.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; **Coverage gaps**: concepts or entities mentioned in multiple pages but lacking their own dedicated page.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;3.&lt;/span&gt; Report all issues grouped by type.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;4.&lt;/span&gt; For straightforward fixes (missing frontmatter fields, dead links to pages that exist under a different name), fix them directly.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;5.&lt;/span&gt; Append a session entry to &lt;span style=&#34;color:#586e75&#34;&gt;`log/YYYYMMDD.md`&lt;/span&gt; listing issues found and actions taken.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;compile&#34;&gt;Compile&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Run the &lt;span style=&#34;color:#586e75&#34;&gt;`compile`&lt;/span&gt; operation as defined in &lt;span style=&#34;color:#586e75&#34;&gt;`.claude/SKILL.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;1.&lt;/span&gt; Read &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt; and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; first.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;2.&lt;/span&gt; Review all pages in &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/concepts/`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/entities/`&lt;/span&gt;, and &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/summaries/`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;3.&lt;/span&gt; For each page:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Check that frontmatter is complete (&lt;span style=&#34;color:#586e75&#34;&gt;`title`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`type`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`created`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`updated`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`sources`&lt;/span&gt;, &lt;span style=&#34;color:#586e75&#34;&gt;`tags`&lt;/span&gt;).
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Ensure cross-links between related pages are present and accurate.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Confirm page length is within 400–1200 words; split into a subfolder if over.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#719e07&#34;&gt;-&lt;/span&gt; Verify all diagrams use Mermaid and all formulas use KaTeX.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;4.&lt;/span&gt; Update &lt;span style=&#34;color:#586e75&#34;&gt;`wiki/index.md`&lt;/span&gt; with an accurate list of all current articles.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;5.&lt;/span&gt; Update the &amp;#34;Current articles&amp;#34; section of &lt;span style=&#34;color:#586e75&#34;&gt;`CLAUDE.md`&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;6.&lt;/span&gt; Append a session entry to &lt;span style=&#34;color:#586e75&#34;&gt;`log/YYYYMMDD.md`&lt;/span&gt; summarising what was compiled and changed.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;my-overall-workflow&#34;&gt;My overall workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Write down notes in org-roam using org-mode.&lt;/li&gt;
+&lt;li&gt;Once I&amp;rsquo;m down making changes (creating new files, editing existing files, etc), I run the &lt;code&gt;/ingest&lt;/code&gt; command in claude code&lt;/li&gt;
+&lt;li&gt;Per the instructions in the &lt;code&gt;/ingest&lt;/code&gt; slash command, claude first fetches the latest from github, runs the ingest workflow and then commits and pushes the changes to remote&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So, all I do is write notes and run &lt;code&gt;/ingest&lt;/code&gt;. Every once in a while I run &lt;code&gt;/lint&lt;/code&gt; or &lt;code&gt;/audit&lt;/code&gt;. When I want to query something I run the &lt;code&gt;/query&lt;/code&gt; slash command.&lt;/p&gt;
+&lt;h2 id=&#34;viewing-the-generated-site&#34;&gt;Viewing the generated site&lt;/h2&gt;
+&lt;p&gt;If I want to view the generated content (wiki pages, concepts, etc) locally, I just run &lt;code&gt;npx quartz build --serve&lt;/code&gt;. Since everything gets pushed to remote, and the repo can be configured to be hosted on GitHub pages, the site can be accessed as &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; or &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io/wiki&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts on personal AI assistants</title>
+      <link>//localhost:1313/posts/some-thoughts-on-personal-ai-assistants/</link>
+      <pubDate>Wed, 08 Jul 2026 00:40:00 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/some-thoughts-on-personal-ai-assistants/</guid>
+      <description>&lt;p&gt;I used to use OpenClaw for a bit when it got popular. I was excited like many, but not so much to get myself a Mac Mini. I wanted to see what a personal assistant could do for me. I wrote about some of my adventures with OpenClaw in &lt;a href=&#34;https://rrajath.com/posts/openclaw-adventures/&#34;&gt;my&lt;/a&gt; &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-research-assistant-with-todoist/&#34;&gt;previous&lt;/a&gt; &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist/&#34;&gt;blog&lt;/a&gt; &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/&#34;&gt;posts&lt;/a&gt;. I also didn&amp;rsquo;t give it access to everything I had like some people did and
+I only gave it access to Todoist and Raindrop which were the two apps that could actually benefit from some automation. Beyond that, I made it do some level of research and made it generate reports, to which I made some enhancements later on.&lt;/p&gt;
+&lt;p&gt;I found that OpenClaw depended on skills that were posted on &lt;a href=&#34;https://clawhub.ai/&#34;&gt;ClawdHub&lt;/a&gt; and that a significant portion of those were prompt injected. This did make me feel very uncomfortable. Also, I was running OpenClaw on my Raspberry Pi and it was taking up a lot of RAM. I only had 8GB RAM on it. These, in addition to the bugginess of OpenClaw, the rate at which updates were rolling in and breaking things, made me want to just quit. But I had hope.&lt;/p&gt;
+&lt;p&gt;Before I gave up, I thought of seeing what else was out there. I wanted something lighter and came across &lt;a href=&#34;https://hermes-agent.nousresearch.com/&#34;&gt;Hermes Agent&lt;/a&gt;. This was a lot better than OpenClaw and it wrote skills from scratch. It basically created new skills. It was a lot more impressive than OpenClaw. It had a better memory system, and you could just swap the memory with something else, like &lt;a href=&#34;https://honcho.dev/&#34;&gt;Honcho&lt;/a&gt;. It was a lot more reliable than OpenClaw and I was genuinely happy that I finally found a personal assistant I could use reliably.&lt;/p&gt;
+&lt;p&gt;This was okay for a few weeks and my usage was pretty minimal. I was basically using the same workflows with Hermes Agent as I did with OpenClaw. And it worked for the most part. But there were times when the most basic requests would just flat out fail. It said it updated its memory and skills, yet it just failed. If it happened just once, I would have let it go, but it happened some 3+ times.&lt;/p&gt;
+&lt;p&gt;One such example is where I had a &lt;a href=&#34;https://rrajath.com/posts/openclaw-use-case-add-groceries-to-todoist/&#34;&gt;skill to add groceries&lt;/a&gt; to my Todoist Shopping List project. All I wanted was to just throw a list of groceries at Hermes via Discord with no context and it should create that item in my Todoist&amp;rsquo;s Shopping List project. This was working well. But once in a while it would respond with something like, &amp;ldquo;I see you pasted some groceries, what would you like me do with it?&amp;rdquo;. Or, I would just type banana in the chat, hoping it would add that to my Todoist. And instead it would respond with 🍌&lt;/p&gt;
+&lt;p&gt;For something that I&amp;rsquo;d want to use as a personal AI assistant, I couldn&amp;rsquo;t rely on it. At all. Maybe we&amp;rsquo;re not there yet.
+We have new AI assistants that pop up every day. Each such project boasts about how it&amp;rsquo;s better than its competitor. Yet, nothing has made a big enough splash for everyone to consistently and reliably use the assistant where it makes a genuine difference in their lives.&lt;/p&gt;
+&lt;p&gt;Setting up crazy workflows, multiple agents, dozens of skills, and of course, dashboards, is easy. The purpose of such AI assistants would be to be in the state of &amp;ldquo;set it and forget it&amp;rdquo; and have it do things on our behalf, in the background. But when it hallucinates, gives up, or straight up not understand something that it used to, it becomes an extra step of verification, baby-sitting and hand-holding, which kind of defies the point of an assistant.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m excited to see the improvements in the AI assistants and whatever comes next, but I&amp;rsquo;m not ready to use one on a daily basis.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Playing around with LLMs and coding agents</title>
       <link>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</link>
-      <pubDate>Tue, 30 Jun 2026 22:36:23 -0700</pubDate>
+      <pubDate>Tue, 30 Jun 2026 22:38:00 -0700</pubDate>
       
       <guid>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been vibecoding a bunch of mobile and web apps lately. I haven&amp;rsquo;t had the chance to sit and write blog posts about it. I will be writing some blog posts on each app I vibecoded, my thoughts on it, what I ran into with each one and how opinions about vibecoding are being shaped.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s been an interesting exercise and I&amp;rsquo;ve been having conflicting thoughts about vibecoding itself and also some mixed emotions about the apps I build. I&amp;rsquo;m curious to see how this plays out in the next few weeks/months.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week Notes - 2026-26</title>
+      <link>//localhost:1313/posts/week-notes-2026-26/</link>
+      <pubDate>Mon, 22 Jun 2026 08:51:11 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/week-notes-2026-26/</guid>
+      <description>&lt;p&gt;The last several weeks have been busy. Ever since I got laid off, I thought I&amp;rsquo;d have more time. And in some ways, I do. But with a little one at home, my hands are almost always full. Besides caring for and playing with the little one, I&amp;rsquo;m trying to balance chores, prepping for interviews, and working out, I&amp;rsquo;m also trying to vibecode mobile and web apps on the side to preserve my sanity.&lt;/p&gt;
+&lt;h2 id=&#34;fable-5-adventures&#34;&gt;Fable 5 adventures&lt;/h2&gt;
+&lt;p&gt;Fable 5 was available for 3 days and I was already a day late into the game. I was reading some of the hype around it and I thought of giving it a try. I was blown away by what it could do.&lt;/p&gt;
+&lt;h3 id=&#34;cull-android-app&#34;&gt;Cull (android app)&lt;/h3&gt;
+&lt;p&gt;I built a huge feature for my photo culling app where I can now keep track of the photos I&amp;rsquo;ve processed and the ones I haven&amp;rsquo;t. I also added gestures (I love gestures) and it excelled at that in one shot. I had previously tried adding them via 3 different models and they all failed miserably. I also asked it to identify and fix all of the performance issues and optimize the app as much as possible so that it efficient and feels buttery smooth to use. It did an awesome job&lt;/p&gt;
+&lt;h3 id=&#34;grove-android-app&#34;&gt;Grove (android app)&lt;/h3&gt;
+&lt;p&gt;I built a &lt;a href=&#34;http://github.com/rrajath/grove&#34;&gt;new app called Grove&lt;/a&gt; using Fable 5 that was supposed to be a replacement for the note taking app I used on my Android phone called Orgzly Revived. That app is awesome, except for some very specific features that I really wanted. So, I thought I&amp;rsquo;ll build the app from the ground up and Fable 5 did an amazing job with it.&lt;/p&gt;
+&lt;h2 id=&#34;other-chores&#34;&gt;Other chores&lt;/h2&gt;
+&lt;p&gt;Been putting off chores for a while and wanted to get some of it done. I go through phases of making a lot of progress completing my to-do list items, and just days of inactivity and not making any progress.&lt;/p&gt;
+&lt;p&gt;Overall it was a good week. I&amp;rsquo;m very happy with how the apps turned out and I&amp;rsquo;ve been testing them and using them a lot. I&amp;rsquo;ve also been adding small features and bug fixes. I&amp;rsquo;ll find some time to write blog posts about these apps, what they do, how I built them, and what problems I ran into.&lt;/p&gt;
 </description>
     </item>
     
@@ -47,7 +261,7 @@
 &lt;li&gt;Any posts or pages I change go through commits and they have a commit history. I (or anyone) can go back and see the previous versions of those pages.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This very setup became a source of friction for me. Whenever I had to post something, I had to be on my laptop to commit the changes and push to GitHub. This was not always feasible because I often wasn&amp;rsquo;t near my personal laptop. I did play around with writing posts in my notes app on my phone (Orgzly) and later transferring them to the GitHub repo (via ox-hugo on Emacs), but that workflow was a little clunky as well. It was the closest I came to having a seamless workflow.&lt;/p&gt;
-&lt;p&gt;What I really needed was an app in which I could write blog posts, preview the markdown files and push to GitHub - all from my phone. To solve this, I &lt;del&gt;built&lt;/del&gt; vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/hugowriter&#34;&gt;Bloggo&lt;/a&gt; that lets me blog from my phone. It&amp;rsquo;s simple and does the job well. It&amp;rsquo;s exactly what I need; nothing more, nothing less. The app needs a GitHub Personal Access Token in order to be able to push files to the repo. It also needs the name of the repo, the name of the branch, and the folder where the files get pushed. You can also configure the frontmatter that gets added to every post so that you don&amp;rsquo;t have to add them manually. That&amp;rsquo;s pretty much it.&lt;/p&gt;
+&lt;p&gt;What I really needed was an app in which I could write blog posts, preview the markdown files and push to GitHub - all from my phone. To solve this, I &lt;del&gt;built&lt;/del&gt; vibe-coded an Android app called &lt;a href=&#34;https://github.com/rrajath/bloggo&#34;&gt;Bloggo&lt;/a&gt; that lets me blog from my phone. It&amp;rsquo;s simple and does the job well. It&amp;rsquo;s exactly what I need; nothing more, nothing less. The app needs a GitHub Personal Access Token in order to be able to push files to the repo. It also needs the name of the repo, the name of the branch, and the folder where the files get pushed. You can also configure the frontmatter that gets added to every post so that you don&amp;rsquo;t have to add them manually. That&amp;rsquo;s pretty much it.&lt;/p&gt;
 &lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Here are some screenshots:
 &lt;img src=&#34;//localhost:1313/images/bloggo-main-screenshot.png&#34; alt=&#34;Bloggo main page showing published and draft posts&#34;&gt;
@@ -141,6 +355,26 @@ Settings page with fields for GitHub PAT, repo name, branch name, etc.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Expander - an Android app for text expansion</title>
+      <link>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</link>
+      <pubDate>Sun, 08 Feb 2026 13:59:00 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</guid>
+      <description>&lt;p&gt;I use text expansion a lot for the words or phrases that I frequently use. This works well on Gboard, the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in Orgzly. There weren&amp;rsquo;t good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I&amp;rsquo;m all for paying money for good apps, but a monthly subscription for a text expansion app didn&amp;rsquo;t make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.&lt;/p&gt;
+&lt;p&gt;With assistance from Claude Code, I built an Android app called Expander that does exactly what I need. Nothing more, nothing less. No ads, no tracking, lightweight. Modern Material 3 UI. Once the snippet is configured, typing it in any app and hitting space would replace the text that was typed with the full snippet. I also added the feature to export and import snippets into a JSON file. That really comes in handy while changing phones.&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Here are some screenshots of the list page and the settings page.&lt;/p&gt;
+&lt;p&gt;&amp;lt;Screenshot 1&amp;gt;
+&amp;lt;Screenshot 2&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;And here&amp;rsquo;s a demo on how it works.&lt;/p&gt;
+&lt;p&gt;&amp;lt;Demo&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I mostly used Claude Code for this and I was really impressed by how good it actually is. This would have taken me weeks to learn Kotlin, learn the Android app framework, the latest architecture and design guidelines and implement it. With Claude Code, the whole thing was done in a couple of hours. Even to the point where debug and release APKs get generated on every code push.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>OpenClaw use case: improvement to Todoist grocery helper</title>
       <link>//localhost:1313/posts/openclaw-use-case-improvement-to-todoist-grocery-helper/</link>
       <pubDate>Sun, 08 Feb 2026 13:57:30 -0800</pubDate>
@@ -204,31 +438,6 @@ Settings page with fields for GitHub PAT, repo name, branch name, etc.&lt;/p&gt;
 &lt;p&gt;To automate research tasks like comparing headphones, or summarizing a the comment thread of a HackerNews post, I asked the bot to create a cron job every 4 hours and do the research.&lt;/p&gt;
 &lt;p&gt;Now every 6 hours it checks Todoist and looks for tasks with the label &lt;code&gt;ellie&lt;/code&gt; (the name of my bot) and picks up the task. It does all the research and puts what it finds in a markdown file in a specific directory. It also adds additional metadata, if any, at the end of the file. Once it does all that, it notifies me on Discord with a brief summary of what it did.&lt;/p&gt;
 &lt;p&gt;With this, my Todoist workflow hasn&amp;rsquo;t changed at all. I still add tasks to Todoist, except I add a label to some of the tasks. The rest is handled by OpenClaw cron job. Once it notifies me on Discord about the task completion, I can ask it to mark the task as complete in Todoist, and it does that for me.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Expander - an Android app for text expansion</title>
-      <link>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</link>
-      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
-      
-      <guid>//localhost:1313/posts/expander-an-android-app-for-text-expansion/</guid>
-      <description>&lt;p&gt;I use text expansion a lot for the words or phrases that I frequently use. This works well on &lt;a href=&#34;https://support.google.com/gboard&#34;&gt;Gboard&lt;/a&gt;, the default keyboard on Android where you can configure text shortcuts. But it does not support dynamic data like current date, day or time. I need that for adding journal entries in &lt;a href=&#34;https://orgzly.com/&#34;&gt;Orgzly&lt;/a&gt;. There weren&amp;rsquo;t good apps for this and the only one that was good enough was Typing Hero. This did the job, but had a limit on how many shortcuts one could create and anything beyond that needed a subscription. I&amp;rsquo;m all for paying money for good apps, but a monthly subscription for a text expansion app didn&amp;rsquo;t make sense to me. Sure, the subscription got me a few more features and most of those features were not super useful to me. So, I decided to build my own.&lt;/p&gt;
-&lt;p&gt;With assistance from &lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Claude Code&lt;/a&gt;, I built an Android app called &lt;a href=&#34;https://github.com/rrajath/expander&#34;&gt;Expander&lt;/a&gt; that does exactly what I need. Nothing more, nothing less. No ads, no tracking, lightweight. Modern &lt;a href=&#34;https://m3.material.io/&#34;&gt;Material 3 UI&lt;/a&gt;. Once the snippet is configured, typing it in any app and hitting space would replace the text that was typed with the full snippet. I also added the feature to export and import snippets into a JSON file. That really comes in handy while changing phones.&lt;/p&gt;
-&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
-&lt;p&gt;Here are some screenshots of the list page and the settings page.&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/expander-screenshot-3.png&#34; width=&#34;400&#34; height=&#34;800&#34;&gt;&lt;figcaption&gt;
-      &lt;h4&gt;List Page&lt;/h4&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/expander-screenshot-2.png&#34; width=&#34;400&#34; height=&#34;800&#34;&gt;&lt;figcaption&gt;
-      &lt;h4&gt;Settings Page&lt;/h4&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;I mostly used Claude Code for this and I was really impressed by how good it actually is. This would have taken me weeks to learn &lt;a href=&#34;https://kotlinlang.org/&#34;&gt;Kotlin&lt;/a&gt;, learn the Android app framework, the latest architecture and design guidelines and implement it. With Claude Code, the whole thing was done in a couple of hours. Even to the point where debug and release APKs get generated on every code push.&lt;/p&gt;
 </description>
     </item>
     
