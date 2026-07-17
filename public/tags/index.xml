@@ -72,20 +72,29 @@
     </item>
     
     <item>
-      <title>Emacs</title>
-      <link>//localhost:1313/tags/emacs/</link>
-      <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
+      <title>Android</title>
+      <link>//localhost:1313/tags/android/</link>
+      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
       
-      <guid>//localhost:1313/tags/emacs/</guid>
+      <guid>//localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vibecoding</title>
       <link>//localhost:1313/tags/vibecoding/</link>
-      <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
+      <pubDate>Sat, 31 Jan 2026 09:23:54 -0800</pubDate>
       
       <guid>//localhost:1313/tags/vibecoding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>//localhost:1313/tags/emacs/</link>
+      <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
+      
+      <guid>//localhost:1313/tags/emacs/</guid>
       <description></description>
     </item>
     
@@ -275,15 +284,6 @@
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/tags/2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>//localhost:1313/tags/android/</link>
-      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     

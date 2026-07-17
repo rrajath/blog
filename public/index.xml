@@ -7,7 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Jul 2026 23:30:00 -0700</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jul 2026 17:25:03 -0700</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immich Cull: A web app to cull images on Immich</title>
+      <link>//localhost:1313/posts/immich-cull-a-web-app-to-cull-images-on-immich/</link>
+      <pubDate>Thu, 16 Jul 2026 17:25:03 -0700</pubDate>
+      
+      <guid>//localhost:1313/posts/immich-cull-a-web-app-to-cull-images-on-immich/</guid>
+      <description>&lt;p&gt;Most of us take a lot of photos on our phones and don&amp;rsquo;t do a good job of cleaning them up by deleting bad/redundant ones. As time goes on, more and more photos get accumulated and they fill up both the phone and the cloud storage only to reach a point where we&amp;rsquo;re out of storage and need to pay for more. Or, we have so many photos that it&amp;rsquo;s exhausting to look for a specific photo in a sea of similar photos.&lt;/p&gt;
+&lt;p&gt;This happened to me and I wanted a simple solution to cull photos. Besides what I have on my phone, I store my photos on my Synology NAS. I couldn&amp;rsquo;t find a good culling app that supported deleting photos from the NAS. There are ways to mount the NAS and feed the files to the culling app, but I just wanted a simple solution where I could just compare two images, zoom in on both images to see which one&amp;rsquo;s better shot, pin images and delete them in bulk. Plus, in the age of LLMs where coding agents have gotten so much better, I decided to build my own culling app with exactly the features and the keyboard shortcuts I wanted.&lt;/p&gt;
+&lt;p&gt;All I wanted were the following features:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Side-by-side comparison of photos&lt;/strong&gt;. These would be photos that were taken together. I didn&amp;rsquo;t need similarity detection, I didn&amp;rsquo;t need an ML pipeline or a vector database to find similar images, nothing. I just wanted adjacent photos side by side so I could compare them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synced zooms and bulk deletes&lt;/strong&gt;. I wanted both photos that were side by side to sync the zooming and panning actions. That way, I could look at the same part of both photos. I also wanted to mark photos for deletion and then bulk delete them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keyboard shortcuts for navigation&lt;/strong&gt;. I wanted to do everything from keyboard - navigation, marking photos for deletion, performing bulk deletes, everything except maybe zooming photos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grouping&lt;/strong&gt;. I didn&amp;rsquo;t want to go through my library of tens of thousands of photos and comparing each of them side-by-side. I instead wanted the photos that were taken close to each other were grouped together and I would only go through a handful to a couple dozen photos at a time. Much less cognitive load that way.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With all this in mind, I ended up building Immich Cull - a web app that loads photos from Immich and presents a side by side comparison of adjacent images. It had the ability to pin images, mark for deletion and bulk delete. I also made sure to add keyboard shortcuts to perform all the operations.&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Here are some screenshots and screencasts of Immich Cull. I&amp;rsquo;ll explain what&amp;rsquo;s going on in each so that there&amp;rsquo;s context.&lt;/p&gt;
+&lt;h3 id=&#34;homepage&#34;&gt;Homepage&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/immich-cull-homepage.png&#34; alt=&#34;&#34;&gt;
+The Library page takes the user through the images in the library. I&amp;rsquo;m only loading them 7 days at a time. The Albums page is for culling photos in a specific album. This is not something I need because the creation of an album signifies that the photos are already selected. But there&amp;rsquo;s a use case here where I could just put all the images taken (including duplicates) during a trip into an album in order to share it with people as soon as the trip is over, instead of taking days or weeks to sort through all the images and then create the album.&lt;/p&gt;
+&lt;h3 id=&#34;library&#34;&gt;Library&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/immich-cull-library.png&#34; alt=&#34;&#34;&gt;
+The Library is basically a reverse chronological view of all the photos and I could pick any photo and start my culling.&lt;/p&gt;
+&lt;h3 id=&#34;albums&#34;&gt;Albums&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/immich-cull-albums.png&#34; alt=&#34;&#34;&gt;
+This is for culling images inside albums. Works very similar to Library view. I can jump into any image in the album and start culling.&lt;/p&gt;
+&lt;h3 id=&#34;culling-experience&#34;&gt;Culling Experience&lt;/h3&gt;
+&lt;figure&gt;&lt;img src=&#34;//localhost:1313/images/ImmichCull_UX.gif&#34;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;{{&amp;lt; rawhtml &amp;gt;}}
+&amp;lt;!&amp;ndash; html codes here&amp;ndash;&amp;gt;
+&amp;lt;video width=100% controls autoplay&amp;gt;
+&amp;lt;source src=&amp;quot;/videos/ImmichCull_UX.webm&amp;quot; type=&amp;ldquo;video/webm&amp;rdquo;&amp;gt;
+Your browser does not support the video tag.
+&amp;lt;/video&amp;gt;
+{{&amp;lt; /rawhtml &amp;gt;}}
+This shows a side by side comparison of images. I could pin an image and go through rest of the images on the right and mark images for deletion.&lt;/p&gt;
+&lt;h3 id=&#34;settings&#34;&gt;Settings&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/immich-cull-settings.png&#34; alt=&#34;&#34;&gt;
+Besides the obvious settings for setting the Immich instance URL and the API key, there are settings that define how long of a time window I should define for burst shots. That is, culling is usually done on similar photos, especially the ones taken around the same time within a narrow time window. That&amp;rsquo;s what the Group Assets button does on the Library and the Album page.&lt;/p&gt;
+&lt;h3 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/immich-cull-keyboard-shortcuts.png&#34; alt=&#34;&#34;&gt;
+This is self explanatory and I wanted shortcuts that were easy to remember and use.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+&lt;p&gt;This was built a few months ago before Claude Design was released. I had previously, and naively, tried to build web apps by prompting Claude to &amp;ldquo;create beautiful and elegant web pages&amp;rdquo; only to find that it did a really bad job. I didn&amp;rsquo;t know there were skills to help with that. Especially, the frontend-design skill. So, that&amp;rsquo;s what I used for this and the web app actually looks decent. I didn&amp;rsquo;t care so much about UI except that it had to look pleasant enough to use. And what Claude ended up building was good enough.&lt;/p&gt;
+&lt;p&gt;I also didn&amp;rsquo;t think through the features and the UX much. I wanted to get the web app built quickly and I was impatient. This was one of the first web apps I built using Claude Code, and I didn&amp;rsquo;t spend enough time thinking through the experience, feature set, etc.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m writing this blog post a couple months after I built this and my learning/advice would have been to use the frontend-design skill while designing UI for web apps. But now that we have Claude Design, it does a much better job with frontend UI. And not just that, we can give feedback about specific UI elements.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Re: Your RSS Reader Is Robbing You</title>
       <link>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</link>
