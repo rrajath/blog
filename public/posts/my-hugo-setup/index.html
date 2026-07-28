@@ -16,24 +16,24 @@
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My Hugo Setup - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:url" content="//localhost:1313/posts/my-hugo-setup/">
-  <meta property="og:site_name" content="Rajath Ramakrishna">
-  <meta property="og:title" content="My Hugo Setup">
-  <meta property="og:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.
+	<meta property="og:site_name" content="Rajath Ramakrishna">
+	<meta property="og:title" content="My Hugo Setup">
+	<meta property="og:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.
 I needed a minimal theme for my blog and after searching a bit, I found ezhil. This checked most of my boxes:
 looks simple and minimal configurable feather icons for my socials light/dark theme switch (nice to have) I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to “auto” it depends on the device’s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2020-06-29T22:32:42-07:00">
-    <meta property="article:modified_time" content="2024-11-13T22:52:05-08:00">
-    <meta property="article:tag" content="Hugo">
-    <meta property="article:tag" content="100DaysToOffload">
-      <meta property="og:see_also" content="//localhost:1313/posts/my-hugo-setup-part-3/">
-      <meta property="og:see_also" content="//localhost:1313/posts/my-hugo-setup-part-2/">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2020-06-29T22:32:42-07:00">
+		<meta property="article:modified_time" content="2024-11-13T22:52:05-08:00">
+		<meta property="article:tag" content="Hugo">
+		<meta property="article:tag" content="100DaysToOffload">
+			<meta property="og:see_also" content="//localhost:1313/posts/my-hugo-setup-part-3/">
+			<meta property="og:see_also" content="//localhost:1313/posts/my-hugo-setup-part-2/">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My Hugo Setup">
-  <meta name="twitter:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="My Hugo Setup">
+	<meta name="twitter:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.
 I needed a minimal theme for my blog and after searching a bit, I found ezhil. This checked most of my boxes:
 looks simple and minimal configurable feather icons for my socials light/dark theme switch (nice to have) I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to “auto” it depends on the device’s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
@@ -249,14 +249,14 @@ looks simple and minimal configurable feather icons for my socials light/dark th
 <p>Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.</p>
 <h3 id="post-links-and-summaries-on-home-page">Post links and summaries on home page</h3>
 <p>The recent posts section (on the home page) was of the format:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;post_title&gt; -- &lt;summary&gt;
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;post_title&gt; -- &lt;summary&gt;
 </span></span></code></pre></div><p>This felt a little cluttered for two reasons:</p>
 <ol>
 <li>Both the title and the summary were on the same line next to each other</li>
 <li>Title and summary were of the same font size</li>
 </ol>
 <p>I wanted the title to be a little bigger and have its own line, so I made the following changes to <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29">themes/ezhil/layouts/index.html</a>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">a</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;title u-url&#34;</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{ .RelPermalink }}&#34;</span>&gt;&lt;<span style="color:#268bd2">font</span> size<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;+2&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#268bd2">font</span>&gt;&lt;/<span style="color:#268bd2">a</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">a</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;title u-url&#34;</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{ .RelPermalink }}&#34;</span>&gt;&lt;<span style="color:#268bd2">font</span> size<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;+2&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#268bd2">font</span>&gt;&lt;/<span style="color:#268bd2">a</span>&gt;
 </span></span><span style="display:flex;"><span>		&lt;<span style="color:#268bd2">div</span>&gt;
 </span></span><span style="display:flex;"><span>		    &lt;<span style="color:#268bd2">span</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;description&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>		        {{ if isset .Params &#34;description&#34; }}
@@ -270,7 +270,7 @@ looks simple and minimal configurable feather icons for my socials light/dark th
 <h3 id="added-reading-time">Added reading time</h3>
 <p>I remember Jekyll didn&rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&rsquo;s nice to have reading time displayed at the top of the post.</p>
 <p>In <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11">themes/ezhil/layouts/_default/single.html</a>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>| {{ .ReadingTime }} min read
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>| {{ .ReadingTime }} min read
 </span></span></code></pre></div><p>Added the above text next to the publish date. I also added permalink to the publish date.</p>
 <h3 id="added-a-page-for-micro-posts">Added a page for Micro Posts</h3>
 <p>Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called <a href="https://rrajath.com/micro/">Micro</a> and created my own template that is based off of  the standard list page, but a little different.</p>

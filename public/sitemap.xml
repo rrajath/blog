@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/immich-cull-a-web-app-to-cull-images-on-immich/</loc>
-    <lastmod>2026-07-16T17:25:03-07:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2026-07-16T17:25:03-07:00</lastmod>
+    <lastmod>2026-07-27T22:01:36-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-07-16T17:25:03-07:00</lastmod>
+    <lastmod>2026-07-27T22:01:36-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/week-notes-26-30/</loc>
+    <lastmod>2026-07-27T22:01:36-07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/immich-cull-a-web-app-to-cull-images-on-immich/</loc>
+    <lastmod>2026-07-16T19:25:05-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/re-your-rss-reader-is-robbing-you/</loc>
     <lastmod>2026-07-15T23:43:59-07:00</lastmod>
@@ -18,7 +21,7 @@
     <lastmod>2026-07-15T23:31:06-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/some-thoughts-on-personal-ai-assistants/</loc>
-    <lastmod>2026-07-15T23:31:10-07:00</lastmod>
+    <lastmod>2026-07-27T21:47:32-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/playing-around-with-llms-and-coding-agents/</loc>
     <lastmod>2026-07-15T22:14:45-07:00</lastmod>

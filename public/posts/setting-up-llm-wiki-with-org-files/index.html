@@ -16,19 +16,19 @@
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Setting up llm-wiki with org files - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:url" content="//localhost:1313/posts/setting-up-llm-wiki-with-org-files/">
-  <meta property="og:site_name" content="Rajath Ramakrishna">
-  <meta property="og:title" content="Setting up llm-wiki with org files">
-  <meta property="og:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
+	<meta property="og:site_name" content="Rajath Ramakrishna">
+	<meta property="og:title" content="Setting up llm-wiki with org files">
+	<meta property="og:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
 What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make “the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources”.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-07-13T22:14:00-07:00">
-    <meta property="article:modified_time" content="2026-07-15T23:31:06-07:00">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-07-13T22:14:00-07:00">
+		<meta property="article:modified_time" content="2026-07-15T23:31:06-07:00">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Setting up llm-wiki with org files">
-  <meta name="twitter:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Setting up llm-wiki with org files">
+	<meta name="twitter:description" content="I got to know about Andrej Karpathy’s llm-wiki a few months ago. I was intrigued by it, but never got around to using it. The fact that I could capture raw notes on the topic I was researching and the LLM could not only make connections between them, but find topics in my notes and create concept pages was something I saw value in.
 What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for building personal knowledge bases using LLMs. The idea is that instead of using LLMs like RAG where you upload documents and ask it to search through them and generate an answer, you make “the LLM incrementally build and maintain a persistent wiki - a structured, interlinked collection of markdown files that sits between you and the raw sources”.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
@@ -241,16 +241,17 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 <h3 id="converting-llm-wiki-skill-to-support-org-files">Converting llm-wiki skill to support org files</h3>
 <p>I directly asked Claude to convert the existing llm-wiki skill to support org files. Here&rsquo;s the prompt I used and I attached the <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#file-llm-wiki-md">llm-wiki skill file</a>:</p>
 <blockquote>
-<p>Here&rsquo;s the SKILL.md file for llm-wiki skill. It heavily references markdown as the input format. I write my notes in orgmode and I have a bunch of org files. Can you change the SKILL.md file to specify that the input format will be org files and orgmode entries? I want the skill to have placeholder values for a bunch of folders it needs to look at for org files. That&rsquo;s where it will get its input (besides web content). The workflow I&rsquo;m imagining is me writing org files on my phone which get synced to a folder on my laptop. There&rsquo;ll be a ~/wiki folder which is where all the output would live. The ~/wiki folder could have raw notes (from my org files).</p></blockquote>
+<p>Here&rsquo;s the SKILL.md file for llm-wiki skill. It heavily references markdown as the input format. I write my notes in orgmode and I have a bunch of org files. Can you change the SKILL.md file to specify that the input format will be org files and orgmode entries? I want the skill to have placeholder values for a bunch of folders it needs to look at for org files. That&rsquo;s where it will get its input (besides web content). The workflow I&rsquo;m imagining is me writing org files on my phone which get synced to a folder on my laptop. There&rsquo;ll be a ~/wiki folder which is where all the output would live. The ~/wiki folder could have raw notes (from my org files).</p>
+</blockquote>
 <h3 id="adding-this-to-a-project">Adding this to a project</h3>
 <p>I checked out <a href="https://quartz.jzhao.xyz/">Quartz</a> into <code>~/wiki</code> on my local.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#cb4b16"># Personal Knowledge Base
-</span></span></span><span style="display:flex;"><span><span style="color:#cb4b16"></span><span style="color:#719e07">
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#cb4b16"># Personal Knowledge Base
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">
 </span></span></span><span style="display:flex;"><span><span style="color:#719e07">&gt; </span><span style="font-style:italic">Schema document — read at the start of every session together with `wiki/index.md`.
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#719e07">&gt; </span><span style="font-style:italic">Update after every major compile, ingest batch, or structural change.
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">&gt; </span><span style="font-style:italic">Update after every major compile, ingest batch, or structural change.
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">## Scope
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>What this wiki covers:
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Personal notes, reading highlights, and ideas captured in org-roam
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Concepts, entities, and summaries distilled from those notes
@@ -261,20 +262,20 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Ephemeral todos or calendar/agenda items
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">## Org source directories
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-roam (only use the files in this directory. Don&#39;t do a recursive search. There is a folder called journals in the org-roam folder. I dont&#39; want that folder ingested)
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/thoughts.org
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/resources.org
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> ~/org-mode/blog.org
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">## Operations
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>This wiki follows the llm-wiki skill&#39;s five operations: <span style="color:#586e75">`compile`</span>, <span style="color:#586e75">`ingest`</span>, <span style="color:#586e75">`query`</span>, <span style="color:#586e75">`lint`</span>, <span style="color:#586e75">`audit`</span>.
 </span></span><span style="display:flex;"><span>Every operation appends an entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span>.
 </span></span><span style="display:flex;"><span>Full operation instructions: <span style="color:#586e75">`.claude/SKILL.md`</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">## Naming conventions
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Concept pages** (<span style="color:#586e75">`wiki/concepts/`</span>): Title Case noun phrases.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Folder-split concepts** (<span style="color:#586e75">`wiki/concepts/&lt;topic&gt;/`</span>): used when a topic exceeds ~1200 words. Contains <span style="color:#586e75">`index.md`</span> + one file per aspect.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> **Entity pages** (<span style="color:#586e75">`wiki/entities/`</span>): Proper names.
@@ -283,21 +284,21 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span>All pages require YAML frontmatter: <span style="color:#586e75">`title`</span>, <span style="color:#586e75">`type`</span>, <span style="color:#586e75">`created`</span>, <span style="color:#586e75">`updated`</span>, <span style="color:#586e75">`sources`</span>, <span style="color:#586e75">`tags`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">### Page size
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> Target 400–1200 words per page.
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Target 400–1200 words per page.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> If a topic exceeds ~1200 words, split into a subfolder with <span style="color:#586e75">`index.md`</span> + one file per aspect.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">### Diagrams and formulas
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> All diagrams are <span style="font-weight:bold">**mermaid**</span>. No ASCII art.
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> All diagrams are <span style="font-weight:bold">**mermaid**</span>. No ASCII art.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> All formulas are <span style="font-weight:bold">**KaTeX**</span> (inline <span style="color:#586e75">`$...$`</span> or block <span style="color:#586e75">`$$...$$`</span>).
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">### Raw file policy
-</span></span></span><span style="display:flex;"><span><span style="color:#268bd2"></span><span style="color:#719e07">-</span> Small text sources → copy into <span style="color:#586e75">`raw/&lt;subfolder&gt;/`</span>.
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Small text sources → copy into <span style="color:#586e75">`raw/&lt;subfolder&gt;/`</span>.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">-</span> Large binaries → create a pointer file at <span style="color:#586e75">`raw/refs/&lt;slug&gt;.md`</span> with <span style="color:#586e75">`kind: ref`</span> and <span style="color:#586e75">`external_path`</span> fields. Do not copy the binary.
 </span></span></code></pre></div><p>All the raw files, the synthesized outputs, the entities, the summaries, everything stays under the content folder in the repo. Quartz being a static site generator produces HTML from the wiki pages.</p>
 <h3 id="creating-custom-slash-commands">Creating custom slash commands</h3>
 <p>I created 5 custom slash commands:</p>
 <h4 id="ingest">Ingest</h4>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`ingest`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`ingest`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Before scanning org source directories for org files, verify each directory exists
 </span></span><span style="display:flex;"><span>(test -d). Skip any that don&#39;t. If none exist, skip the org-ingest step
@@ -317,7 +318,7 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span>If no new or modified org files are found, say so and stop.
 </span></span><span style="display:flex;"><span>If there are many files, offer to ingest in batches of 5 to stay within context window limits.
 </span></span></code></pre></div><h4 id="query">Query</h4>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`query`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`query`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Read the user&#39;s question (provided after this command).
@@ -327,7 +328,7 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span><span style="color:#719e07">6.</span> If the answer is not in the wiki, say so — and offer to ingest new sources or flag it as an open research question.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">7.</span> Save the query and answer to <span style="color:#586e75">`outputs/queries/YYYYMMDD-&lt;slug&gt;.md`</span> for future reference.
 </span></span></code></pre></div><h4 id="audit">Audit</h4>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`audit`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`audit`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Scan the <span style="color:#586e75">`audit/`</span> directory for open feedback files (those not in <span style="color:#586e75">`audit/resolved/`</span>).
@@ -341,7 +342,7 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>If no open feedback files are found, say so and stop.
 </span></span></code></pre></div><h4 id="lint">Lint</h4>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`lint`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`lint`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Scan all pages in <span style="color:#586e75">`wiki/`</span> and check for:
@@ -354,7 +355,7 @@ What is llm-wiki? llm-wiki is a skill developed by Andrej Karpathy used for buil
 </span></span><span style="display:flex;"><span><span style="color:#719e07">4.</span> For straightforward fixes (missing frontmatter fields, dead links to pages that exist under a different name), fix them directly.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">5.</span> Append a session entry to <span style="color:#586e75">`log/YYYYMMDD.md`</span> listing issues found and actions taken.
 </span></span></code></pre></div><h4 id="compile">Compile</h4>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`compile`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Run the <span style="color:#586e75">`compile`</span> operation as defined in <span style="color:#586e75">`.claude/SKILL.md`</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">1.</span> Read <span style="color:#586e75">`CLAUDE.md`</span> and <span style="color:#586e75">`wiki/index.md`</span> first.
 </span></span><span style="display:flex;"><span><span style="color:#719e07">2.</span> Review all pages in <span style="color:#586e75">`wiki/concepts/`</span>, <span style="color:#586e75">`wiki/entities/`</span>, and <span style="color:#586e75">`wiki/summaries/`</span>.
