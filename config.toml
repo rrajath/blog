@@ -29,10 +29,6 @@ rssLimit = 20
     # Blog subtitle which appears below blog title. Supports markdown.
     # subtitle = "random ramblings"
 
-    [params.author]
-        name = "Rajath Ramakrishna"
-        email = ""
-
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
 
@@ -62,6 +58,10 @@ rssLimit = 20
     customJS = ["https://code.jquery.com/jquery-3.4.1.js"]
 
     enableGitInfo = true
+
+    [params.author]
+        name = "Rajath Ramakrishna"
+        email = ""
 
 # Front matter configs
 [frontmatter]
