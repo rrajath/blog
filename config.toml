@@ -29,6 +29,10 @@ rssLimit = 20
     # Blog subtitle which appears below blog title. Supports markdown.
     # subtitle = "random ramblings"
 
+    [params.author]
+        name = "Rajath Ramakrishna"
+        email = ""
+
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
 
