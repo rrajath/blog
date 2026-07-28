@@ -63,6 +63,10 @@ main() {
   echo "Building the site..."
   hugo --gc --minify
 
+  # Generate the Pagefind search index
+  echo "Generating Pagefind search index..."
+  npx --yes pagefind --site public
+
 }
 
 set -euo pipefail
