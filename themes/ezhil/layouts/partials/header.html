@@ -13,6 +13,25 @@
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script>
+	(function () {
+		var STORAGE_KEY = "theme";
+		var configMode = "{{ .Site.Params.mode }}";
+		var stored = null;
+		try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+		var theme;
+		if (stored === "light" || stored === "dark") {
+			theme = stored;
+		} else if (configMode === "dark") {
+			theme = "dark";
+		} else if (configMode === "auto") {
+			theme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+		} else {
+			theme = "light";
+		}
+		document.documentElement.setAttribute("data-theme", theme);
+	})();
+	</script>
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
@@ -39,11 +58,9 @@
 	{{- if isset .Site.Params "customcss" }}
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}{{ .Site.Params.customCSS }}" />
 	{{ end }}
-	{{- if or (eq .Site.Params.mode "auto") (eq .Site.Params.mode "dark") -}}
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/dark.css" {{ if eq .Site.Params.mode "auto" }}media="(prefers-color-scheme: dark)"{{ end }} />
+	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/dark.css" />
 	{{- if isset .Site.Params "customdarkcss" }}
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}{{ .Site.Params.customDarkCSS }}" {{ if eq .Site.Params.mode "auto" }}media="(prefers-color-scheme: dark)"{{ end }} />
-	{{- end }}
+	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}{{ .Site.Params.customDarkCSS }}" />
 	{{- end }}
 
 	{{ if and (isset .Site.Params "social") (isset .Site.Params "feathericonscdn") (eq .Site.Params.featherIconsCDN true) -}}

@@ -1,96 +1,116 @@
-body {
+[data-theme="dark"] body {
 	color: #ddd;
 	background-color: #000;
 }
 
-::-moz-selection {
+[data-theme="dark"] ::-moz-selection {
     background: #666;
     text-shadow: none
 }
 
-::selection {
+[data-theme="dark"] ::selection {
     background: #666;
     text-shadow: none
 }
 
-hr {
+[data-theme="dark"] hr {
     border-color: #333;
 }
 
-blockquote {
+[data-theme="dark"] blockquote {
 	border-color: #ddd;
 }
 
-h1,h2,h3,h4,h5,h6 {
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
 	color: #ddd;
 }
 
-a,a:hover {
+[data-theme="dark"] a,
+[data-theme="dark"] a:hover {
 	color: #ff7979;
 	text-decoration: none;
 }
 
-.site-description a,
-.site-description a:hover {
+[data-theme="dark"] .site-description a,
+[data-theme="dark"] .site-description a:hover {
 	color: #ddd;
 	text-decoration: underline;
 }
 
-a:hover {
+[data-theme="dark"] a:hover {
 	opacity: 0.8;
 }
 
-.underline {
+[data-theme="dark"] .underline {
 		text-decoration: underline;
 }
 
-.post-tags .tags a {
+[data-theme="dark"] .post-tags .tags a {
     border: 1px solid #ddd;
 	color: #ddd;
 }
 
-.site-title a {
+[data-theme="dark"] .site-title a {
 	color: #ddd;
 	text-decoration: none !important;
 }
 
-.header nav,
-.footer {
+[data-theme="dark"] .header nav,
+[data-theme="dark"] .footer {
 	border-color: #333;
 }
 
-.highlight {
+[data-theme="dark"] .highlight {
 	background-color: #333;
 }
 
-table th {
+[data-theme="dark"] table th {
 	background-color: #333;
 }
 
-table th, table td {
+[data-theme="dark"] table th,
+[data-theme="dark"] table td {
     padding: 10px 20px;
     border: 1px solid #666;
 }
 
-code {
+[data-theme="dark"] code {
 		display: inline-block;
 		color: darkseagreen;
 }
 
+/* Theme toggle icon visibility */
+.theme-toggle .icon-moon {
+	display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+	display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+	display: inline-block;
+}
+
 /* Pagefind Dark Mode Overrides */
-:root {
+:root[data-theme="dark"] {
     --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #111111; 
+    --pagefind-ui-background: #111111;
     --pagefind-ui-border: #333333;
 }
 
 /* Force white text in search input when dark mode is active */
-.pagefind-ui__search-input {
-    color: #ffffff !important; 
+[data-theme="dark"] .pagefind-ui__search-input {
+    color: #ffffff !important;
 }
 
 /* Dark background for the results drawer */
-.pagefind-ui__drawer {
+[data-theme="dark"] .pagefind-ui__drawer {
     background-color: #000000 !important;
     color: #eeeeee !important;
     border: 1px solid #333 !important;
@@ -98,7 +118,7 @@ code {
 }
 
 /* Dark tags */
-.pagefind-ui__result-tag {
+[data-theme="dark"] .pagefind-ui__result-tag {
     color: #ffffff !important;
     background-color: #222222 !important;
     border: 1px solid #444444 !important;
