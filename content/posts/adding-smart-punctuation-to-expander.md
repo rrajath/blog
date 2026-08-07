@@ -1,8 +1,9 @@
 +++
 title = "Adding smart punctuation to Expander"
 author = ["Rajath Ramakrishna"]
-lastmod = 2026-08-07T15:23:14-07:00
-draft = true
+date = 2026-08-07T16:05:00-07:00
+lastmod = 2026-08-07T16:05:37-07:00
+draft = false
 +++
 
 I use [GBoard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) on my Pixel 10 Pro. I've been a GBoard user for several years. It has all the smartness that makes typing a breeze. However, it's missing one setting - smart punctuation. Let me explain.
