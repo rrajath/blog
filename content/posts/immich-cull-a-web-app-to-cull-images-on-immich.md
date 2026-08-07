@@ -47,10 +47,7 @@ This is for culling images inside albums. Works very similar to Library view. I 
 
 ### Culling Experience {#culling-experience}
 
-<video width=100% controls autoplay>
-    <source src="/videos/ImmichCull_UX.webm" type="video/webm">
-    Your browser does not support the video tag.
-</video>
+{{< video src="/videos/ImmichCull_UX.webm" >}}
 
 This shows a side by side comparison of images. I could pin an image and go through rest of the images on the right and mark images for deletion.
 
