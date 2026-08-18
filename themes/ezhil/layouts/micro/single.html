@@ -17,10 +17,10 @@
 			<div class="markdown">
 				{{if .Params.series}}
 				{{ $name := index .Params.series 0 }}
-				<p class="series_top_page" style="font-weight:50; background-color:#333"><i>This post is part of the <a
+				<p class="series_top_page"><i>This post is part of the <a
 							href="{{.Site.BaseURL}}/series/{{$name | urlize}}">{{$name}}</a> series.</i></p>
 				{{end}}
-				<span style="font-weight:50; background-color:#333"><i>This is a micro post. For more micro posts, visit <a
+				<span class="series_top_page"><i>This is a micro post. For more micro posts, visit <a
 							href="https://rrajath.com/micro">rrajath.com/micro</a> or click on the Micro link on the top nav
 						bar</i></span>
 				{{ .Content }}
