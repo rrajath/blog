@@ -1,9 +1,9 @@
 ---
 title: Week Notes - 2026-36
-date: 2026-09-09T08:33:04-07:00
+date: 2026-09-09T08:33:45-07:00
 tags: [weeknotes]
 slug: week-notes-2026-36
-draft: true
+draft: false
 ---
 
 Last week was productive for app development. Here are some highlights.  
