@@ -2,11 +2,11 @@
 title: "Knowember 2026"
 author: ["Rajath Ramakrishna"]
 date: 2026-11-05T12:48:00-08:00
-lastmod: 2026-11-05T12:48:47-08:00
+lastmod: 2026-11-05T12:59:01-08:00
 draft: false
 ---
 
-I found out about this [blogging event](https://robertbirming.com/knowember/) on [social.lol](https://social.lol/@birming/117564897088106381). This seems to be a fun way to introduce myself based off of a pre-selected set of questions/prompts that everyone participating in this blogging event gets. Anyway, here's my entry.
+I found out about this [blogging event](https://robertbirming.com/knowember/) on [social.lol](https://social.lol/@birming/117564897088106381) (thanks [Robert](https://robertbirming.com)) This seems to be a fun way to introduce myself based off of a pre-selected set of questions/prompts that everyone participating in this blogging event gets. Anyway, here's my entry.
 
 
 ## A photo {#a-photo}
