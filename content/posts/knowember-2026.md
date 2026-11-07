@@ -2,7 +2,8 @@
 title: "Knowember 2026"
 author: ["Rajath Ramakrishna"]
 date: 2026-11-05T12:48:00-08:00
-lastmod: 2026-11-05T12:59:01-08:00
+lastmod: 2026-11-07T12:16:22-08:00
+tags: ["knowember"]
 draft: false
 ---
 
@@ -28,3 +29,5 @@ I currently live in Seattle, Washington, USA. I update my blog sometimes from my
 ## What my blog is mostly about {#what-my-blog-is-mostly-about}
 
 My blog is mostly about things I'm exploring, and that keeps changing. Sometimes it's about a specific Emacs tip that I found. Sometimes it's a workflow I've grown fond of. Sometimes it's about how I'm making use of LLMs in my day to day to solve specific and obscure problems. And sometimes (rarely) the posts tend to get a little philosophical.
+
+{{< figure src="/images/knowember-ink.png" >}}
