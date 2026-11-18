@@ -2,7 +2,7 @@
 title: "Week Notes - 2026-26"
 date: 2026-06-22T08:51:11-07:00
 draft: false
-tags: ["week-notes"]
+tags: ["weeknotes"]
 ---
 
 The last several weeks have been busy. Ever since I got laid off, I thought I'd have more time. And in some ways, I do. But with a little one at home, my hands are almost always full. Besides caring for and playing with the little one, I'm trying to balance chores, prepping for interviews, and working out, I'm also trying to vibecode mobile and web apps on the side to preserve my sanity. 
