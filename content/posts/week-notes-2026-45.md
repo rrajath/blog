@@ -1,7 +1,7 @@
 ---
 title: Week Notes - 2026-45
-date: 2026-11-17T23:29:53-08:00
-tags: ["week-notes"]
+date: 2026-11-17T23:33:22-08:00
+tags: ["weeknotes"]
 slug: week-notes-2026-45
 ---
 
